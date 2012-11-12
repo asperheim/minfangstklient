@@ -21,6 +21,18 @@
 		9A126D9C164D1BC20037538A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126D7D164D1BC20037538A /* Foundation.framework */; };
 		9A126DA4164D1BC20037538A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A126DA2164D1BC20037538A /* InfoPlist.strings */; };
 		9A126DA7164D1BC20037538A /* MinFangstTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126DA6164D1BC20037538A /* MinFangstTests.m */; };
+		9A126DC9164D1D9C0037538A /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126DBC164D1CBE0037538A /* libRestKit.a */; };
+		9A126DCB164D1DCF0037538A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126DCA164D1DCF0037538A /* CFNetwork.framework */; };
+		9A126DCD164D1DD70037538A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126DCC164D1DD70037538A /* CoreData.framework */; };
+		9A126DCF164D1DDD0037538A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126DCE164D1DDD0037538A /* MobileCoreServices.framework */; };
+		9A126DD1164D1DE50037538A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126DD0164D1DE50037538A /* Security.framework */; };
+		9A126DD3164D1DEB0037538A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126DD2164D1DEB0037538A /* SystemConfiguration.framework */; };
+		9A126DD5164D1DF20037538A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126DD4164D1DF20037538A /* QuartzCore.framework */; };
+		9A126DD7164D1DFB0037538A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126DD6164D1DFB0037538A /* libxml2.dylib */; };
+		9A126DDB164D1E6F0037538A /* MFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126DD9164D1E6F0037538A /* MFLoginViewController.m */; };
+		9A126DDC164D1E6F0037538A /* MFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A126DDA164D1E6F0037538A /* MFLoginViewController.xib */; };
+		9A126DDF164D20340037538A /* MFClientLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126DDE164D20340037538A /* MFClientLogin.m */; };
+		9A126DE2164D20950037538A /* MFClientInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126DE1164D20950037538A /* MFClientInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +42,48 @@
 			proxyType = 1;
 			remoteGlobalIDString = 9A126D76164D1BC20037538A;
 			remoteInfo = MinFangst;
+		};
+		9A126DBB164D1CBE0037538A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A126DB0164D1CBE0037538A /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		9A126DBD164D1CBE0037538A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A126DB0164D1CBE0037538A /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		9A126DBF164D1CBE0037538A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A126DB0164D1CBE0037538A /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		9A126DC1164D1CBE0037538A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A126DB0164D1CBE0037538A /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		9A126DC3164D1CBE0037538A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A126DB0164D1CBE0037538A /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 259C301615128079003066A2;
+			remoteInfo = RestKitResources;
+		};
+		9A126DC5164D1D510037538A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A126DB0164D1CBE0037538A /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -53,6 +107,21 @@
 		9A126DA3164D1BC20037538A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9A126DA5164D1BC20037538A /* MinFangstTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinFangstTests.h; sourceTree = "<group>"; };
 		9A126DA6164D1BC20037538A /* MinFangstTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinFangstTests.m; sourceTree = "<group>"; };
+		9A126DB0164D1CBE0037538A /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = "../RestKit-RestKit-d3cad8d/RestKit.xcodeproj"; sourceTree = "<group>"; };
+		9A126DCA164D1DCF0037538A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9A126DCC164D1DD70037538A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9A126DCE164D1DDD0037538A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		9A126DD0164D1DE50037538A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9A126DD2164D1DEB0037538A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9A126DD4164D1DF20037538A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9A126DD6164D1DFB0037538A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		9A126DD8164D1E6F0037538A /* MFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFLoginViewController.h; sourceTree = "<group>"; };
+		9A126DD9164D1E6F0037538A /* MFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFLoginViewController.m; sourceTree = "<group>"; };
+		9A126DDA164D1E6F0037538A /* MFLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFLoginViewController.xib; sourceTree = "<group>"; };
+		9A126DDD164D20340037538A /* MFClientLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFClientLogin.h; sourceTree = "<group>"; };
+		9A126DDE164D20340037538A /* MFClientLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFClientLogin.m; sourceTree = "<group>"; };
+		9A126DE0164D20950037538A /* MFClientInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFClientInfo.h; sourceTree = "<group>"; };
+		9A126DE1164D20950037538A /* MFClientInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFClientInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +129,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A126DD7164D1DFB0037538A /* libxml2.dylib in Frameworks */,
+				9A126DD5164D1DF20037538A /* QuartzCore.framework in Frameworks */,
+				9A126DD3164D1DEB0037538A /* SystemConfiguration.framework in Frameworks */,
+				9A126DD1164D1DE50037538A /* Security.framework in Frameworks */,
+				9A126DCF164D1DDD0037538A /* MobileCoreServices.framework in Frameworks */,
+				9A126DCD164D1DD70037538A /* CoreData.framework in Frameworks */,
+				9A126DCB164D1DCF0037538A /* CFNetwork.framework in Frameworks */,
+				9A126DC9164D1D9C0037538A /* libRestKit.a in Frameworks */,
 				9A126D7C164D1BC20037538A /* UIKit.framework in Frameworks */,
 				9A126D7E164D1BC20037538A /* Foundation.framework in Frameworks */,
 				9A126D80164D1BC20037538A /* CoreGraphics.framework in Frameworks */,
@@ -82,6 +159,14 @@
 		9A126D6C164D1BC10037538A = {
 			isa = PBXGroup;
 			children = (
+				9A126DD6164D1DFB0037538A /* libxml2.dylib */,
+				9A126DD4164D1DF20037538A /* QuartzCore.framework */,
+				9A126DD2164D1DEB0037538A /* SystemConfiguration.framework */,
+				9A126DD0164D1DE50037538A /* Security.framework */,
+				9A126DCE164D1DDD0037538A /* MobileCoreServices.framework */,
+				9A126DCC164D1DD70037538A /* CoreData.framework */,
+				9A126DCA164D1DCF0037538A /* CFNetwork.framework */,
+				9A126DB0164D1CBE0037538A /* RestKit.xcodeproj */,
 				9A126D81164D1BC20037538A /* MinFangst */,
 				9A126D9F164D1BC20037538A /* MinFangstTests */,
 				9A126D7A164D1BC20037538A /* Frameworks */,
@@ -115,6 +200,13 @@
 				9A126D8A164D1BC20037538A /* MFAppDelegate.h */,
 				9A126D8B164D1BC20037538A /* MFAppDelegate.m */,
 				9A126D82164D1BC20037538A /* Supporting Files */,
+				9A126DD8164D1E6F0037538A /* MFLoginViewController.h */,
+				9A126DD9164D1E6F0037538A /* MFLoginViewController.m */,
+				9A126DDA164D1E6F0037538A /* MFLoginViewController.xib */,
+				9A126DDD164D20340037538A /* MFClientLogin.h */,
+				9A126DDE164D20340037538A /* MFClientLogin.m */,
+				9A126DE0164D20950037538A /* MFClientInfo.h */,
+				9A126DE1164D20950037538A /* MFClientInfo.m */,
 			);
 			path = MinFangst;
 			sourceTree = "<group>";
@@ -152,6 +244,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9A126DB1164D1CBE0037538A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A126DBC164D1CBE0037538A /* libRestKit.a */,
+				9A126DBE164D1CBE0037538A /* RestKitTests.octest */,
+				9A126DC0164D1CBE0037538A /* RestKit.framework */,
+				9A126DC2164D1CBE0037538A /* RestKitFrameworkTests.octest */,
+				9A126DC4164D1CBE0037538A /* RestKitResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +270,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				9A126DC6164D1D510037538A /* PBXTargetDependency */,
 			);
 			name = MinFangst;
 			productName = MinFangst;
@@ -211,6 +316,12 @@
 			mainGroup = 9A126D6C164D1BC10037538A;
 			productRefGroup = 9A126D78164D1BC20037538A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9A126DB1164D1CBE0037538A /* Products */;
+					ProjectRef = 9A126DB0164D1CBE0037538A /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9A126D76164D1BC20037538A /* MinFangst */,
@@ -218,6 +329,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9A126DBC164D1CBE0037538A /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = 9A126DBB164D1CBE0037538A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9A126DBE164D1CBE0037538A /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = 9A126DBD164D1CBE0037538A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9A126DC0164D1CBE0037538A /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = 9A126DBF164D1CBE0037538A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9A126DC2164D1CBE0037538A /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = 9A126DC1164D1CBE0037538A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9A126DC4164D1CBE0037538A /* RestKitResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitResources.bundle;
+			remoteRef = 9A126DC3164D1CBE0037538A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9A126D75164D1BC20037538A /* Resources */ = {
@@ -228,6 +377,7 @@
 				9A126D8E164D1BC20037538A /* Default.png in Resources */,
 				9A126D90164D1BC20037538A /* Default@2x.png in Resources */,
 				9A126D92164D1BC20037538A /* Default-568h@2x.png in Resources */,
+				9A126DDC164D1E6F0037538A /* MFLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +414,9 @@
 			files = (
 				9A126D88164D1BC20037538A /* main.m in Sources */,
 				9A126D8C164D1BC20037538A /* MFAppDelegate.m in Sources */,
+				9A126DDB164D1E6F0037538A /* MFLoginViewController.m in Sources */,
+				9A126DDF164D20340037538A /* MFClientLogin.m in Sources */,
+				9A126DE2164D20950037538A /* MFClientInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +435,11 @@
 			isa = PBXTargetDependency;
 			target = 9A126D76164D1BC20037538A /* MinFangst */;
 			targetProxy = 9A126D9D164D1BC20037538A /* PBXContainerItemProxy */;
+		};
+		9A126DC6164D1D510037538A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = 9A126DC5164D1D510037538A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -360,7 +518,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MinFangst/MinFangst-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "MinFangst/MinFangst-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -371,7 +534,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MinFangst/MinFangst-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "MinFangst/MinFangst-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -430,6 +598,7 @@
 				9A126DAC164D1BC20037538A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A126DAD164D1BC20037538A /* Build configuration list for PBXNativeTarget "MinFangstTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +607,7 @@
 				9A126DAF164D1BC20037538A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

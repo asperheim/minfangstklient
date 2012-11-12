@@ -7,6 +7,8 @@
 //
 
 #import "MFAppDelegate.h"
+#import "MFLoginViewController.h"
+#import <RestKit/RestKit.h>
 
 @implementation MFAppDelegate
 
@@ -14,8 +16,18 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+
+    MFLoginViewController * loginVC = [[MFLoginViewController alloc] initWithNibName: @"MFLoginViewController" bundle:nil];
+    
+ 
+    
+    
+    self.window.rootViewController = loginVC;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
