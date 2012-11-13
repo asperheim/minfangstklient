@@ -183,8 +183,6 @@
 		84A56D8A1652714F00B64D66 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9A126DD8164D1E6F0037538A /* MFLoginViewController.h */,
-				9A126DD9164D1E6F0037538A /* MFLoginViewController.m */,
 				9A126DDA164D1E6F0037538A /* MFLoginViewController.xib */,
 			);
 			name = Views;
@@ -197,6 +195,15 @@
 				84A56D8D165271AA00B64D66 /* MFUtils.m */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		84A56D97165285CD00B64D66 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9A126DD8164D1E6F0037538A /* MFLoginViewController.h */,
+				9A126DD9164D1E6F0037538A /* MFLoginViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		84AC26871650EB25008B1F02 /* Products */ = {
@@ -252,6 +259,7 @@
 		9A126D81164D1BC20037538A /* MinFangst */ = {
 			isa = PBXGroup;
 			children = (
+				84A56D97165285CD00B64D66 /* Controllers */,
 				84A56D8B1652718B00B64D66 /* Helpers */,
 				84A56D8A1652714F00B64D66 /* Views */,
 				84A56D891652713600B64D66 /* Models */,
