@@ -30,8 +30,8 @@
     manager.serializationMIMEType = RKMIMETypeJSON;
     
     //NOTE:
-    //  mapping = REST API -> CLIENT
-    //  serialization = CLIENT -> REST API
+    //  object mapping = REST API -> CLIENT (mapping response from server to an object)
+    //  serialization = CLIENT -> REST API (serialize an object to be sent to server)
     
     //creates mapping for ClientInfo
     RKObjectMapping* clientInfoMapping = [MFClientInfo objectMapping];
@@ -62,6 +62,8 @@
     [manager.mappingProvider setSerializationMapping:loginMapping.inverseMapping forClass:[MFLogin class]];
     
     //creates a route for POST to /login
+    //when we have this, then RKObjectManager knows that it's supposed to route
+    //MFClientLogin objects to /login when we do a POST
     RKObjectRouter* router = [manager router];
     [router routeClass:[MFClientLogin class] toResourcePath:@"/login" forMethod:RKRequestMethodPOST];
 }
@@ -71,7 +73,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    //initiate retkit releated stuff
+    //initiate RestKit releated stuff
     [self setupRestKit];
 
     MFLoginViewController * loginVC = [[MFLoginViewController alloc] initWithNibName: @"MFLoginViewController" bundle:nil];    
