@@ -10,6 +10,7 @@
 		841BB3D51650EE27006B59C8 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC26921650EB26008B1F02 /* libRestKit.a */; };
 		841BB3D91650F999006B59C8 /* MFLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BB3D81650F999006B59C8 /* MFLogin.m */; };
 		841BB3DC165117E9006B59C8 /* MFSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BB3DB165117E9006B59C8 /* MFSession.m */; };
+		84A56D8E165271AA00B64D66 /* MFUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A56D8D165271AA00B64D66 /* MFUtils.m */; };
 		9A126D7C164D1BC20037538A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126D7B164D1BC20037538A /* UIKit.framework */; };
 		9A126D7E164D1BC20037538A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126D7D164D1BC20037538A /* Foundation.framework */; };
 		9A126D80164D1BC20037538A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126D7F164D1BC20037538A /* CoreGraphics.framework */; };
@@ -94,6 +95,8 @@
 		841BB3D81650F999006B59C8 /* MFLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFLogin.m; sourceTree = "<group>"; };
 		841BB3DA165117E9006B59C8 /* MFSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSession.h; sourceTree = "<group>"; };
 		841BB3DB165117E9006B59C8 /* MFSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSession.m; sourceTree = "<group>"; };
+		84A56D8C165271AA00B64D66 /* MFUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUtils.h; sourceTree = "<group>"; };
+		84A56D8D165271AA00B64D66 /* MFUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUtils.m; sourceTree = "<group>"; };
 		84AC26861650EB25008B1F02 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = "../../Downloads/RestKit-RestKit-d3cad8d/RestKit.xcodeproj"; sourceTree = "<group>"; };
 		9A126D77164D1BC20037538A /* MinFangst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinFangst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A126D7B164D1BC20037538A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -162,6 +165,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84A56D891652713600B64D66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9A126DDD164D20340037538A /* MFClientLogin.h */,
+				9A126DDE164D20340037538A /* MFClientLogin.m */,
+				9A126DE0164D20950037538A /* MFClientInfo.h */,
+				9A126DE1164D20950037538A /* MFClientInfo.m */,
+				841BB3D71650F999006B59C8 /* MFLogin.h */,
+				841BB3D81650F999006B59C8 /* MFLogin.m */,
+				841BB3DA165117E9006B59C8 /* MFSession.h */,
+				841BB3DB165117E9006B59C8 /* MFSession.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		84A56D8A1652714F00B64D66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A126DD8164D1E6F0037538A /* MFLoginViewController.h */,
+				9A126DD9164D1E6F0037538A /* MFLoginViewController.m */,
+				9A126DDA164D1E6F0037538A /* MFLoginViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		84A56D8B1652718B00B64D66 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				84A56D8C165271AA00B64D66 /* MFUtils.h */,
+				84A56D8D165271AA00B64D66 /* MFUtils.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		84AC26871650EB25008B1F02 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,20 +252,12 @@
 		9A126D81164D1BC20037538A /* MinFangst */ = {
 			isa = PBXGroup;
 			children = (
+				84A56D8B1652718B00B64D66 /* Helpers */,
+				84A56D8A1652714F00B64D66 /* Views */,
+				84A56D891652713600B64D66 /* Models */,
 				9A126D8A164D1BC20037538A /* MFAppDelegate.h */,
 				9A126D8B164D1BC20037538A /* MFAppDelegate.m */,
 				9A126D82164D1BC20037538A /* Supporting Files */,
-				9A126DD8164D1E6F0037538A /* MFLoginViewController.h */,
-				9A126DD9164D1E6F0037538A /* MFLoginViewController.m */,
-				9A126DDA164D1E6F0037538A /* MFLoginViewController.xib */,
-				9A126DDD164D20340037538A /* MFClientLogin.h */,
-				9A126DDE164D20340037538A /* MFClientLogin.m */,
-				9A126DE0164D20950037538A /* MFClientInfo.h */,
-				9A126DE1164D20950037538A /* MFClientInfo.m */,
-				841BB3D71650F999006B59C8 /* MFLogin.h */,
-				841BB3D81650F999006B59C8 /* MFLogin.m */,
-				841BB3DA165117E9006B59C8 /* MFSession.h */,
-				841BB3DB165117E9006B59C8 /* MFSession.m */,
 			);
 			path = MinFangst;
 			sourceTree = "<group>";
@@ -429,6 +458,7 @@
 				9A126DE2164D20950037538A /* MFClientInfo.m in Sources */,
 				841BB3D91650F999006B59C8 /* MFLogin.m in Sources */,
 				841BB3DC165117E9006B59C8 /* MFSession.m in Sources */,
+				84A56D8E165271AA00B64D66 /* MFUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

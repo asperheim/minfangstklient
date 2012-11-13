@@ -16,6 +16,5 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnLoggInn;
 - (IBAction)btnLoggInnClick:(id)sender;
 - (void) sendRequest: (MFClientLogin *) clientLogin;
-- (NSString *) md5HexDigest: (NSString * ) input;
 
 @end

@@ -18,6 +18,5 @@
 
 - (id) initWithType: (NSString * ) type ClientId: (NSString * ) clientId SoftwareVersion: (NSString*) softwareVersion;
 
-+(NSString*)GetUUID;
 + (RKObjectMapping*)objectMapping;
 @end

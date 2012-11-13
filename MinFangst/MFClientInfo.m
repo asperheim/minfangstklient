@@ -25,15 +25,6 @@
     return self;
 }
 
-+ (NSString *)GetUUID
-{
-    CFUUIDRef newUniqueId = CFUUIDCreate(kCFAllocatorDefault);
-    NSString * uuidString = (__bridge_transfer NSString*)CFUUIDCreateString(kCFAllocatorDefault, newUniqueId);
-    CFRelease(newUniqueId);
-    
-    return uuidString;
-}
-
 + (RKObjectMapping*)objectMapping {
     RKObjectMapping* clientInfoMapping = [RKObjectMapping mappingForClass:[MFClientInfo class]];
     [clientInfoMapping mapKeyPath:@"Id" toAttribute:@"Id"];

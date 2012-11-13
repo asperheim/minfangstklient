@@ -10,7 +10,7 @@
 #import "MFClientLogin.h"
 #import "MFClientInfo.h"
 #import <RestKit/RestKit.h>
-#import <CommonCrypto/CommonDigest.h>
+#import "MFUtils.h"
 #import "MFLogin.h"
 
 @interface MFLoginViewController ()
@@ -42,10 +42,10 @@
 
 - (IBAction)btnLoggInnClick:(id)sender {
     
-    NSString * pass = [self md5HexDigest:self.txtPassord.text];
+    NSString * pass = [MFUtils md5HexDigest:self.txtPassord.text];
     //NSLog(@"Brukernavn: %@,Password: %@, hash: %@", self.txtBrukernavn.text, self.txtPassord.text, pass);
     
-    MFClientInfo * clientInfo = [[MFClientInfo alloc] initWithType:@"Iphone Test" ClientId:[MFClientInfo GetUUID] SoftwareVersion:@"1.0"];
+    MFClientInfo * clientInfo = [[MFClientInfo alloc] initWithType:@"Iphone Test" ClientId:[MFUtils GetUUID] SoftwareVersion:@"1.0"];
     
     MFClientLogin * clientLogin = [[MFClientLogin alloc] initWithUsername:self.txtBrukernavn.text Password:pass ClientInfo:clientInfo];
     
@@ -67,22 +67,7 @@
     //[[RKObjectManager sharedManager] postObject:clientLogin delegate:self];
 }
 
-- (NSString*) md5HexDigest:(NSString*) input {
-    const char* str = [input UTF8String];
-    
-    unsigned char result[CC_MD5_DIGEST_LENGTH];
-    
-    CC_MD5(str, strlen(str), result);
-    
-    NSMutableString *ret = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
-    
-    for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
-        
-        [ret appendFormat:@"%02x",result[i]];
-    }
-    
-    return ret;
-}
+
 
 //RKRequestDelegate method
 

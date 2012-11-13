@@ -13,7 +13,9 @@
 #import "MFLogin.h"
 
 @interface MFAppDelegate()
+
 - (void)setupRestKit;
+
 @end
 
 @implementation MFAppDelegate
@@ -31,7 +33,7 @@
     
     //NOTE:
     //  object mapping = REST API -> CLIENT (mapping response from server to an object)
-    //  serialization = CLIENT -> REST API (serialize an object to be sent to server)
+    //  serialization mapping = CLIENT -> REST API (serialize an object to be sent to server)
     
     //creates mapping for ClientInfo
     RKObjectMapping* clientInfoMapping = [MFClientInfo objectMapping];
