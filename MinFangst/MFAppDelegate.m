@@ -9,20 +9,72 @@
 #import "MFAppDelegate.h"
 #import "MFLoginViewController.h"
 #import <RestKit/RestKit.h>
+#import "MFSession.h"
+#import "MFLogin.h"
+
+@interface MFAppDelegate()
+- (void)setupRestKit;
+@end
 
 @implementation MFAppDelegate
+
+- (void)setupRestKit {
+    
+    //instantiate RKClient(not sure if needed) and RKObjectManager
+    NSString* path = @"http://192.168.20.194/fishback/api";
+    [RKClient clientWithBaseURLString:path];
+    RKObjectManager* manager = [RKObjectManager objectManagerWithBaseURLString:path];
+    
+    //set some MIME related properties
+    manager.acceptMIMEType = RKMIMETypeJSON;
+    manager.serializationMIMEType = RKMIMETypeJSON;
+    
+    //NOTE:
+    //  mapping = REST API -> CLIENT
+    //  serialization = CLIENT -> REST API
+    
+    //creates mapping for ClientInfo
+    RKObjectMapping* clientInfoMapping = [MFClientInfo objectMapping];
+    
+    //creates mapping for ClientLogin
+    RKObjectMapping* clientLoginMapping = [MFClientLogin objectMapping];
+    
+    //adds the object mappings to the mappingProvider
+    [manager.mappingProvider addObjectMapping:clientInfoMapping];
+    [manager.mappingProvider addObjectMapping:clientLoginMapping];
+    
+    //adds serialization mapping for ClientLogin and ClientInfo
+    [manager.mappingProvider setSerializationMapping:clientInfoMapping.inverseMapping forClass:[MFClientInfo class]];
+    [manager.mappingProvider setSerializationMapping:clientLoginMapping.inverseMapping forClass:[MFClientLogin class]];
+    
+    //creates mapping for Session
+    RKObjectMapping* sessionMapping = [MFSession objectMapping];
+    
+    //creates mapping for Login
+    RKObjectMapping* loginMapping = [MFLogin objectMapping];
+    
+    //adds object mapping for Login and Session
+    [manager.mappingProvider setMapping:loginMapping forKeyPath:@"Login"];
+    [manager.mappingProvider setMapping:sessionMapping forKeyPath:@"Session"];
+    
+    //adds serialization mapping for Login and Session
+    [manager.mappingProvider setSerializationMapping:sessionMapping.inverseMapping forClass:[MFSession class]];
+    [manager.mappingProvider setSerializationMapping:loginMapping.inverseMapping forClass:[MFLogin class]];
+    
+    //creates a route for POST to /login
+    RKObjectRouter* router = [manager router];
+    [router routeClass:[MFClientLogin class] toResourcePath:@"/login" forMethod:RKRequestMethodPOST];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
+    //initiate retkit releated stuff
+    [self setupRestKit];
 
-    MFLoginViewController * loginVC = [[MFLoginViewController alloc] initWithNibName: @"MFLoginViewController" bundle:nil];
-    
- 
-    
-    
+    MFLoginViewController * loginVC = [[MFLoginViewController alloc] initWithNibName: @"MFLoginViewController" bundle:nil];    
     self.window.rootViewController = loginVC;
     
     self.window.backgroundColor = [UIColor whiteColor];

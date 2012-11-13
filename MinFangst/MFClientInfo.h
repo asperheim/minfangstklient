@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <RestKit/RestKit.h>
 
 @interface MFClientInfo : NSObject
 
@@ -17,6 +18,6 @@
 
 - (id) initWithType: (NSString * ) type ClientId: (NSString * ) clientId SoftwareVersion: (NSString*) softwareVersion;
 
-- (NSDictionary * ) toDictionary;
-
++(NSString*)GetUUID;
++ (RKObjectMapping*)objectMapping;
 @end

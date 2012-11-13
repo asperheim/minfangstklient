@@ -31,18 +31,18 @@
     return self;
 }
 
-- (NSDictionary *) toDictionary {
++ (RKObjectMapping*)objectMapping {
     
+    RKObjectMapping* clientLoginMapping = [RKObjectMapping mappingForClass:[MFClientLogin class]];
+    [clientLoginMapping mapKeyPath:@"Id" toAttribute:@"Id"];
+    [clientLoginMapping mapKeyPath:@"Username" toAttribute:@"Username"];
+    [clientLoginMapping mapKeyPath:@"Password" toAttribute:@"Password"];
+    [clientLoginMapping mapKeyPath:@"ClientInfo" toRelationship:@"ClientInfo" withMapping:[MFClientInfo objectMapping]];
     
+    clientLoginMapping.setDefaultValueForMissingAttributes = YES;
+    clientLoginMapping.setNilForMissingRelationships = YES;
     
-    NSDictionary * tempDict =
-    [NSDictionary dictionaryWithObjectsAndKeys: [NSNumber numberWithInt:Id], @"Id",
-                                                Username, @"Username",
-                                                Password, @"Password",
-                                                [ClientInfo toDictionary], @"ClientInfo",
-                                                nil];
-    
-    return tempDict;
+    return clientLoginMapping;
 }
 
 @end

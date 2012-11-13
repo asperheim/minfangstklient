@@ -25,13 +25,25 @@
     return self;
 }
 
--(NSDictionary * ) toDictionary {
-    NSDictionary * tempDict =
-    [NSDictionary dictionaryWithObjectsAndKeys: [NSNumber numberWithInt:Id], @"Id",
-     Type, @"Type",
-     ClientId, @"ClientId",
-     SoftwareVersion, @"SoftwareVersion", nil];
++ (NSString *)GetUUID
+{
+    CFUUIDRef newUniqueId = CFUUIDCreate(kCFAllocatorDefault);
+    NSString * uuidString = (__bridge_transfer NSString*)CFUUIDCreateString(kCFAllocatorDefault, newUniqueId);
+    CFRelease(newUniqueId);
     
-    return tempDict;
+    return uuidString;
+}
+
++ (RKObjectMapping*)objectMapping {
+    RKObjectMapping* clientInfoMapping = [RKObjectMapping mappingForClass:[MFClientInfo class]];
+    [clientInfoMapping mapKeyPath:@"Id" toAttribute:@"Id"];
+    [clientInfoMapping mapKeyPath:@"Type" toAttribute:@"Type"];
+    [clientInfoMapping mapKeyPath:@"ClientId" toAttribute:@"ClientId"];
+    [clientInfoMapping mapKeyPath:@"SoftwareVersion" toAttribute:@"SoftwareVersion"];
+    
+    clientInfoMapping.setDefaultValueForMissingAttributes = YES;
+    clientInfoMapping.setNilForMissingRelationships = YES;
+    
+    return clientInfoMapping;
 }
 @end

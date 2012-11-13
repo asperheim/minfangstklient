@@ -11,13 +11,9 @@
 #import "MFClientInfo.h"
 #import <RestKit/RestKit.h>
 #import <CommonCrypto/CommonDigest.h>
+#import "MFLogin.h"
 
-
-@interface MFLoginViewController (){
-    
-    NSArray * data;
-}
-
+@interface MFLoginViewController ()
 
 @end
 
@@ -36,15 +32,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    RKURL *baseURL = [RKURL URLWithBaseURLString:@"http://192.168.20.194/fishback/api/"];
-    RKObjectManager *objectManager = [RKObjectManager objectManagerWithBaseURL:baseURL];
-    objectManager.client.baseURL = baseURL;
-    
-    RKObjectMapping *clientLoginMapping = [RKObjectMapping mappingForClass:[MFClientLogin class]];
-    
-    [clientLoginMapping mapKeyPathsToAttributes:@"Id", @"Id", nil];
-    
-    [objectManager.mappingProvider setMapping:clientLoginMapping forKeyPath:@"response.ClientLogins"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,27 +43,28 @@
 - (IBAction)btnLoggInnClick:(id)sender {
     
     NSString * pass = [self md5HexDigest:self.txtPassord.text];
+    //NSLog(@"Brukernavn: %@,Password: %@, hash: %@", self.txtBrukernavn.text, self.txtPassord.text, pass);
     
-    MFClientInfo * clientInfo = [[MFClientInfo alloc] initWithType:@"Iphone Test" ClientId:@"111-1-111-11-11" SoftwareVersion:@"1.0"];
+    MFClientInfo * clientInfo = [[MFClientInfo alloc] initWithType:@"Iphone Test" ClientId:[MFClientInfo GetUUID] SoftwareVersion:@"1.0"];
     
     MFClientLogin * clientLogin = [[MFClientLogin alloc] initWithUsername:self.txtBrukernavn.text Password:pass ClientInfo:clientInfo];
-    
     
     [self sendRequest: clientLogin];
 }
 
 
-- (void) sendRequest: (MFClientLogin *) clientLogin
-{
+- (void) sendRequest: (MFClientLogin *) clientLogin {
     
-    RKObjectManager *objectManager = [RKObjectManager sharedManager];
+    NSLog(@"Sending request...");
     
-    objectManager.serializationMIMEType = RKMIMETypeJSON;
-    
-    objectManager.acceptMIMEType = RKMIMETypeJSON;
-  
-    RKClient* client = [RKClient clientWithBaseURL:@"http://192.168.20.194/fishback/api"];
-    [client post:@"/login" params:clientLogin delegate:<#(NSObject<RKRequestDelegate> *)#>: delegate:self];
+    //have to use this postObject method, due to the response object (MFLogin) not
+    //being of the same type as the object posted (MFClientLogin)
+    //loader.targetObjct = nil makes us able to map to different type
+    [[RKObjectManager sharedManager] postObject:clientLogin usingBlock:^(RKObjectLoader* loader) {
+        loader.targetObject = nil;
+        loader.delegate = self;
+    }];
+    //[[RKObjectManager sharedManager] postObject:clientLogin delegate:self];
 }
 
 - (NSString*) md5HexDigest:(NSString*) input {
@@ -96,23 +84,39 @@
     return ret;
 }
 
-- (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error
-{
-    NSLog(@"Error: %@", [error localizedDescription]);
-}
+//RKRequestDelegate method
 
 - (void)request:(RKRequest*)request didLoadResponse:(RKResponse*)response {
-    NSLog(@"response code: %d", [response statusCode]);
+    if ([request isGET]) {
+        // Handling GET
+        
+        if ([response isOK]) {
+            // Success! Let's take a look at the data
+            NSLog(@"Retrieved from GET: %@", [response bodyAsString]);
+        }
+        
+    } else if ([request isPOST]) {
+        
+        // Handling POST
+        if ([response isJSON]) {
+            NSLog(@"Got a JSON response back from our POST: %@", [response bodyAsString]);
+        }
+    }
 }
 
-- (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects
-{
-    NSLog(@"objects[%d]", [objects count]);
-    data = objects;
-    
-    //[self.tableView reloadData];
+//RKObjectLoaderDelegate methods
+
+- (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects {
+    MFLogin* userLogin = [objects objectAtIndex:0];
+    //NSLog(@"didLoadObjects!: %@", userLogin);
+    NSLog(@"Got %d objects from server! First object is: %@", objects.count, userLogin);
 }
-- (void) block:(RKObjectLoader* ) loader {
-    
+
+- (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error {
+    NSLog(@"Encountered an error: %@", error);
+}
+
+- (void)objectLoaderDidLoadUnexpectedResponse:(RKObjectLoader *)objectLoader {
+    NSLog(@"objectLoaderDidLoadUnexpectedResponse!");
 }
 @end

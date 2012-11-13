@@ -16,10 +16,8 @@
 @property (weak, nonatomic) NSString* Password;
 @property (weak, nonatomic) MFClientInfo * ClientInfo;
 
-- (NSDictionary*) toDictionary;
-
 - (id) initWithUsername: (NSString * ) username Password: (NSString * ) password ClientInfo: (MFClientInfo*) clientInfo;
 
-
++ (RKObjectMapping*)objectMapping;
 
 @end
