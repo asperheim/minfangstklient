@@ -10,9 +10,10 @@
 #import <RestKit/RestKit.h>
 
 @interface MFSession : NSObject
-@property int Id;
-@property (nonatomic, retain) NSString* Token;
-@property (nonatomic, retain) NSDate* Begin;
-@property (nonatomic, retain) NSDate* Expires;
+@property (nonatomic) int Id;
+@property (strong, nonatomic) NSString* Token;
+@property (strong, nonatomic) NSDate* Begin;
+@property (strong, nonatomic) NSDate* Expires;
+
 + (RKObjectMapping*)objectMapping;
 @end

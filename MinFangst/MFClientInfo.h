@@ -12,9 +12,9 @@
 @interface MFClientInfo : NSObject
 
 @property (nonatomic) int Id;
-@property (weak, nonatomic) NSString * Type;
-@property (weak, nonatomic) NSString * ClientId;
-@property (weak, nonatomic) NSString * SoftwareVersion;
+@property (strong, nonatomic) NSString * Type;
+@property (strong, nonatomic) NSString * ClientId;
+@property (strong, nonatomic) NSString * SoftwareVersion;
 
 - (id) initWithType: (NSString * ) type ClientId: (NSString * ) clientId SoftwareVersion: (NSString*) softwareVersion;
 

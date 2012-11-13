@@ -12,9 +12,10 @@
 #import <RestKit/RestKit.h>
 #import "MFUtils.h"
 #import "MFLogin.h"
+#import "MFDashboardViewController.h"
 
 @interface MFLoginViewController ()
-
+- (void)launchDashboard;
 @end
 
 @implementation MFLoginViewController
@@ -93,8 +94,9 @@
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects {
     MFLogin* userLogin = [objects objectAtIndex:0];
-    //NSLog(@"didLoadObjects!: %@", userLogin);
-    NSLog(@"Got %d objects from server! First object is: %@", objects.count, userLogin);
+    
+    [self launchDashboard];
+    //NSLog(@"Got %d objects from server! First object is: %@", objects.count, userLogin);
 }
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error {
@@ -103,5 +105,14 @@
 
 - (void)objectLoaderDidLoadUnexpectedResponse:(RKObjectLoader *)objectLoader {
     NSLog(@"objectLoaderDidLoadUnexpectedResponse!");
+}
+
+-(void)launchDashboard {
+    MFDashboardViewController* dashboardVC = [[MFDashboardViewController alloc] initWithNibName:@"MFDashboardViewController" bundle:nil];
+    UINavigationController* dashboardNVC = [[UINavigationController alloc] initWithRootViewController:dashboardVC];
+    dashboardNVC.title = @"Min Fangst";
+    
+    [self.navigationController pushViewController:dashboardNVC animated:YES];
+    
 }
 @end

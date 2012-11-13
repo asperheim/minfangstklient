@@ -11,6 +11,7 @@
 #import <RestKit/RestKit.h>
 #import "MFSession.h"
 #import "MFLogin.h"
+#import "MFDashboardViewController.h"
 
 @interface MFAppDelegate()
 

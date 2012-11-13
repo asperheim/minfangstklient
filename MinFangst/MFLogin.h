@@ -11,10 +11,10 @@
 #import <RestKit/RestKit.h>
 
 @interface MFLogin : NSObject
-@property int Id;
-@property (nonatomic, retain) NSDate* LoginTime;
-@property (nonatomic, retain) NSDate* LogoutTime;
-@property (nonatomic, retain) NSString* Ip;
-@property (nonatomic, retain) MFSession* Session;
+@property (nonatomic) int Id;
+@property (strong, nonatomic) NSDate* LoginTime;
+@property (strong, nonatomic) NSDate* LogoutTime;
+@property (strong, nonatomic) NSString* Ip;
+@property (strong, nonatomic) MFSession* Session;
 + (RKObjectMapping*)objectMapping;
 @end

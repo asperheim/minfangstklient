@@ -12,9 +12,9 @@
 
 @interface MFClientLogin : NSObject
 @property (nonatomic) int Id;
-@property (weak, nonatomic) NSString* Username;
-@property (weak, nonatomic) NSString* Password;
-@property (weak, nonatomic) MFClientInfo * ClientInfo;
+@property (strong, nonatomic) NSString* Username;
+@property (strong, nonatomic) NSString* Password;
+@property (strong, nonatomic) MFClientInfo * ClientInfo;
 
 - (id) initWithUsername: (NSString * ) username Password: (NSString * ) password ClientInfo: (MFClientInfo*) clientInfo;
 
