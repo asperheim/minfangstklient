@@ -40,8 +40,8 @@
     RKObjectMapping* clientLoginMapping = [MFClientLogin objectMapping];
     
     //adds the object mappings to the mappingProvider
-    [manager.mappingProvider addObjectMapping:clientInfoMapping];
-    [manager.mappingProvider addObjectMapping:clientLoginMapping];
+    [manager.mappingProvider setMapping:clientInfoMapping forKeyPath:@"ClientInfo"];
+    [manager.mappingProvider setMapping:clientLoginMapping forKeyPath:@"ClientLogin"];
     
     //adds serialization mapping for ClientLogin and ClientInfo
     [manager.mappingProvider setSerializationMapping:clientInfoMapping.inverseMapping forClass:[MFClientInfo class]];
