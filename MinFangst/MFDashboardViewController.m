@@ -7,6 +7,9 @@
 //
 
 #import "MFDashboardViewController.h"
+#import "MFFishRecognitionViewController.h"
+#import "MFMapViewController.h"
+#import "MFBlogViewController.h"
 
 @interface MFDashboardViewController ()
 
@@ -36,12 +39,21 @@
 }
 
 - (IBAction)btnBlogClick:(id)sender {
+    MFBlogViewController* blogVC = [[MFBlogViewController alloc] initWithNibName:@"MFBlogViewController" bundle:nil];
+    
+    [self.navigationController pushViewController:blogVC animated:YES];
 }
 
 - (IBAction)btnMapClick:(id)sender {
+    MFMapViewController* mapVC = [[MFMapViewController alloc] initWithNibName:@"MFMapViewController" bundle:nil];
+    
+    [self.navigationController pushViewController:mapVC animated:YES];
 }
 
 - (IBAction)btnFishFaceClick:(id)sender {
+    MFFishRecognitionViewController* fishRecVC = [[MFFishRecognitionViewController alloc] initWithNibName:@"MFFishRecognitionViewController" bundle:nil];
+    
+    [self.navigationController pushViewController:fishRecVC animated:YES];
 }
 
 - (IBAction)btnFishFactsClick:(id)sender {

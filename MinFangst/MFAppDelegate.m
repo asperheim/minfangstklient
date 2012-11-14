@@ -78,9 +78,17 @@
     
     //initiate RestKit releated stuff
     [self setupRestKit];
+    
+    MFDashboardViewController* dashboardVC = [[MFDashboardViewController alloc] initWithNibName:@"MFDashboardViewController" bundle:nil];
+    dashboardVC.title = @"Min Fangst";
+    UINavigationController* navController = [[UINavigationController alloc] initWithRootViewController:dashboardVC];
+    
+    self.window.rootViewController = navController;
 
     MFLoginViewController * loginVC = [[MFLoginViewController alloc] initWithNibName: @"MFLoginViewController" bundle:nil];    
-    self.window.rootViewController = loginVC;
+    
+    navController.navigationBar.hidden = YES;
+    [navController pushViewController:loginVC animated:YES];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

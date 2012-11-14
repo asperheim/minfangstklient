@@ -108,11 +108,8 @@
 }
 
 -(void)launchDashboard {
-    MFDashboardViewController* dashboardVC = [[MFDashboardViewController alloc] initWithNibName:@"MFDashboardViewController" bundle:nil];
-    UINavigationController* dashboardNVC = [[UINavigationController alloc] initWithRootViewController:dashboardVC];
-    dashboardNVC.title = @"Min Fangst";
     
-    [self.navigationController pushViewController:dashboardNVC animated:YES];
-    
+    self.navigationController.navigationBar.hidden = NO;
+    [self.navigationController popViewControllerAnimated:YES];
 }
 @end
