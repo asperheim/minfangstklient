@@ -35,6 +35,8 @@
     
     imageMapping.setDefaultValueForMissingAttributes = YES;
     imageMapping.setNilForMissingRelationships = YES;
+    
+    return imageMapping;
 }
 
 @end

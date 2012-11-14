@@ -30,5 +30,7 @@
     
     fishEventMapping.setDefaultValueForMissingAttributes = YES;
     fishEventMapping.setNilForMissingRelationships = YES;
+    
+    return fishEventMapping;
 }
 @end

@@ -26,5 +26,7 @@
     
     locationMapping.setDefaultValueForMissingAttributes = YES;
     locationMapping.setNilForMissingRelationships = YES;
+    
+    return locationMapping;
 }
 @end
