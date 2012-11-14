@@ -19,4 +19,21 @@
 @synthesize CreateDate;
 @synthesize EditDate;
 
++ (RKObjectMapping*)objectMapping {
+    RKObjectMapping* blogEntryMapping = [RKObjectMapping mappingForClass:[MFBlogEntry class]];
+    [blogEntryMapping mapKeyPath:@"Id" toAttribute:@"Id"];
+    [blogEntryMapping mapKeyPath:@"User" toAttribute:@"User"];
+    [blogEntryMapping mapKeyPath:@"Title" toAttribute:@"Title"];
+    [blogEntryMapping mapKeyPath:@"Content" toAttribute:@"Content"];
+    [blogEntryMapping mapKeyPath:@"Tags" toAttribute:@"Tags"];
+    [blogEntryMapping mapKeyPath:@"FishEvents" toAttribute:@"FishEvents"];
+    [blogEntryMapping mapKeyPath:@"CreateDate" toAttribute:@"CreateDate"];
+    [blogEntryMapping mapKeyPath:@"EditDate" toAttribute:@"EditDate"];
+    
+    blogEntryMapping.setDefaultValueForMissingAttributes = YES;
+    blogEntryMapping.setNilForMissingRelationships = YES;
+    
+    return blogEntryMapping;
+}
+
 @end

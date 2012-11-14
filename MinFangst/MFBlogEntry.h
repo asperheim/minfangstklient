@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <RestKit/RestKit.h>
+#import "MFUser.h"
 
 @interface MFBlogEntry : NSObject
 
 @property (nonatomic) int Id;
-@property (strong, nonatomic) MFUser* user;
+@property (strong, nonatomic) MFUser* User;
 @property (strong, nonatomic) NSString* Title;
 @property (strong, nonatomic) NSString* Content;
 @property (strong, nonatomic) NSMutableArray* Tags;
