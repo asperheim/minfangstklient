@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "MFUser.h"
-#import "MFLocation"
+#import "MFLocation.h"
 
 @interface MFImage : NSObject
 
@@ -21,6 +21,6 @@
 @property (strong, nonatomic) NSString* FileName;
 @property (strong, nonatomic) NSString* OriginalFileName;
 
-+ (RKObjectMapping)objectMapping;
++ (RKObjectMapping*)objectMapping;
 
 @end

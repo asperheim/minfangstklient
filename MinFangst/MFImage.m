@@ -21,7 +21,7 @@
 @synthesize FileName;
 @synthesize OriginalFileName;
 
-+ (RKObjectMapping)objectMapping {
++ (RKObjectMapping*)objectMapping {
     
     RKObjectMapping* imageMapping = [RKObjectMapping mappingForClass:[MFImage class]];
     [imageMapping mapKeyPath:@"Id" toAttribute:@"Id"];
