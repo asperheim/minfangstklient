@@ -22,4 +22,6 @@
 @property (strong, nonatomic) NSMutableArray* Addresses;
 @property (strong, nonatomic) NSMutableArray*Phones;
 
++ (RKObjectMapping*)objectMapping;
+
 @end

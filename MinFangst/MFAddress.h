@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <RestKit/RestKit.h>
 
 @interface MFAddress : NSObject
 
@@ -14,5 +15,7 @@
 @property (strong, nonatomic) NSString* Street;
 @property (strong, nonatomic) NSString* ZipCode;
 @property (strong, nonatomic) NSDate* Date;
+
++ (RKObjectMapping*)objectMapping;
 
 @end

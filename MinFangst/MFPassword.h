@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <RestKit/RestKit.h>
 
 @interface MFPassword : NSObject
 
@@ -14,5 +15,7 @@
 @property (strong, nonatomic) NSString* PasswordClearText;
 @property (strong, nonatomic) NSString* PasswordHash;
 @property (strong, nonatomic) NSDate* Date;
+
++ (RKObjectMapping*)objectMapping;
 
 @end
