@@ -15,4 +15,17 @@
 @synthesize PasswordHash;
 @synthesize Date;
 
++ (RKObjectMapping*)objectMapping {
+    
+    RKObjectMapping* passwordMapping = [RKObjectMapping mappingForClass:[MFPassword class]];
+    [passwordMapping mapKeyPath:@"Id" toAttribute:@"Id"];
+    [passwordMapping mapKeyPath:@"PasswordClearText" toAttribute:@"PasswordClearText"];
+    [passwordMapping mapKeyPath:@"PasswordHash" toAttribute:@"PasswordHash"];
+    [passwordMapping mapKeyPath:@"Date" toAttribute:@"Date"];
+
+    passwordMapping.setDefaultValueForMissingAttributes = YES;
+    passwordMapping.setNilForMissingRelationships = YES;
+    
+    return passwordMapping;
+}
 @end

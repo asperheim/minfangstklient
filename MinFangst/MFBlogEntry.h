@@ -21,4 +21,6 @@
 @property (strong, nonatomic) NSDate* CreateDate;
 @property (strong, nonatomic) NSDate* EditDate;
 
++ (RKObjectMapping*)objectMapping;
+
 @end

@@ -34,10 +34,10 @@
     [userMapping mapKeyPath:@"Lastname" toAttribute:@"Lastname"];
     [userMapping mapKeyPath:@"Birthdate" toAttribute:@"Birthdate"];
     
-    /*[userMapping mapKeyPath:@"Passwords" toRelationship:@"Passwords" withMapping:[MFPassword objectMapping]];
+    [userMapping mapKeyPath:@"Passwords" toRelationship:@"Passwords" withMapping:[MFPassword objectMapping]];
     [userMapping mapKeyPath:@"Emails" toRelationship:@"Emails" withMapping:[MFEmail objectMapping]];
     [userMapping mapKeyPath:@"Addresses" toRelationship:@"Addresses" withMapping:[MFAddress objectMapping]];
-    [userMapping mapKeyPath:@"Phones" toRelationship:@"Phones" withMapping:[MFPhone objectMapping]];*/
+    [userMapping mapKeyPath:@"Phones" toRelationship:@"Phones" withMapping:[MFPhone objectMapping]];
     
     userMapping.setDefaultValueForMissingAttributes = YES;
     userMapping.setNilForMissingRelationships = YES;

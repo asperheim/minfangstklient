@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <RestKit/RestKit.h>
 
 @interface MFEmail : NSObject
 
@@ -14,5 +15,7 @@
 @property (strong, nonatomic) NSString* Address;
 @property (nonatomic) int Priority;
 @property (strong, nonatomic) NSDate* Date;
+
++ (RKObjectMapping*)objectMapping;
 
 @end
