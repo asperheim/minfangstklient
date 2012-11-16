@@ -9,24 +9,35 @@
 #import "MFFishEvent.h"
 #import "MFImage.h"
 
-@implementation MFFishEvent
+@implementation MFFishEvent {
+    CLLocationCoordinate2D _coordinate;
+}
 
 @synthesize Id;
 @synthesize Location;
 @synthesize DateTime;
 @synthesize Images;
-@synthesize Title;
-@synthesize Comment;
+@synthesize title;
+@synthesize subtitle;
+
+@synthesize coordinate = _coordinate;
+
+- (id) init {
+    if (self = [super init]) {
+        
+    }
+    return self;
+}
 
 + (RKObjectMapping *)objectMapping {
     
     RKObjectMapping* fishEventMapping = [RKObjectMapping mappingForClass:[MFFishEvent class]];
     [fishEventMapping mapKeyPath:@"Id" toAttribute:@"Id"];
-    [fishEventMapping mapKeyPath:@"Location" toAttribute:@"Location"];
+    [fishEventMapping mapKeyPath:@"Location" toRelationship:@"Location" withMapping:[MFLocation objectMapping]];
     [fishEventMapping mapKeyPath:@"DateTime" toAttribute:@"DateTime"];
     [fishEventMapping mapKeyPath:@"Images" toRelationship:@"Images" withMapping:[MFImage objectMapping]];
-    [fishEventMapping mapKeyPath:@"Title" toAttribute:@"Title"];
-    [fishEventMapping mapKeyPath:@"Comment" toAttribute:@"Comment"];
+    [fishEventMapping mapKeyPath:@"Title" toAttribute:@"title"];
+    [fishEventMapping mapKeyPath:@"Comment" toAttribute:@"subtitle"];
     
     fishEventMapping.setDefaultValueForMissingAttributes = YES;
     fishEventMapping.setNilForMissingRelationships = YES;

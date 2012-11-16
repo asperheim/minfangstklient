@@ -9,15 +9,18 @@
 #import <Foundation/Foundation.h>
 #import "MFLocation.h"
 #import <RestKit/RestKit.h>
+#import <MapKit/MapKit.h>
 
-@interface MFFishEvent : NSObject
+@interface MFFishEvent : NSObject <MKAnnotation>
 
 @property (nonatomic) int Id;
 @property (strong, nonatomic) MFLocation* Location;
 @property (strong, nonatomic) NSDate* DateTime;
 @property (strong, nonatomic) NSMutableArray* Images;
-@property (strong, nonatomic) NSString* Title;
-@property (strong, nonatomic) NSString* Comment;
+
+@property (nonatomic, assign) NSString *title;
+@property (nonatomic, assign) NSString *subtitle;
+@property (nonatomic,assign) CLLocationCoordinate2D coordinate;
 
 + (RKObjectMapping*)objectMapping;
 @end

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import <RestKit/RestKit.h>
 
-@interface MFMapViewController : UIViewController
+@interface MFMapViewController : UIViewController <RKRequestDelegate, RKObjectLoaderDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end

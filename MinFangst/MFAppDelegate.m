@@ -12,6 +12,9 @@
 #import "MFSession.h"
 #import "MFLogin.h"
 #import "MFDashboardViewController.h"
+#import "MFFishEvent.h"
+#import "MFLocation.h"
+#import "MFUser.h"
 
 @interface MFAppDelegate()
 
@@ -64,11 +67,27 @@
     [manager.mappingProvider setSerializationMapping:sessionMapping.inverseMapping forClass:[MFSession class]];
     [manager.mappingProvider setSerializationMapping:loginMapping.inverseMapping forClass:[MFLogin class]];
     
+    //MFFishEvent
+    RKObjectMapping* fishEventMapping = [MFFishEvent objectMapping];
+    [manager.mappingProvider setMapping:fishEventMapping forKeyPath:@"FishEvent"];
+    [manager.mappingProvider setSerializationMapping:fishEventMapping.inverseMapping forClass:[MFFishEvent class]];
+    
+    //MFLocation
+    RKObjectMapping* locationMapping = [MFLocation objectMapping];
+    [manager.mappingProvider setMapping:locationMapping forKeyPath:@"Location"];
+    [manager.mappingProvider setSerializationMapping:locationMapping.inverseMapping forClass:[MFLocation class]];
+    
+    //MFUser
+    RKObjectMapping* userMapping = [MFUser objectMapping];
+    [manager.mappingProvider setMapping:userMapping forKeyPath:@"User"];
+    [manager.mappingProvider setSerializationMapping:userMapping.inverseMapping forClass:[MFUser class]];
+    
     //creates a route for POST to /login
     //when we have this, then RKObjectManager knows that it's supposed to route
     //MFClientLogin objects to /login when we do a POST
     RKObjectRouter* router = [manager router];
     [router routeClass:[MFClientLogin class] toResourcePath:@"/login" forMethod:RKRequestMethodPOST];
+    
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
