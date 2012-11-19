@@ -11,9 +11,12 @@
 #import <RestKit/RestKit.h>
 
 @interface MFLoginViewController : UIViewController <RKRequestDelegate, RKObjectLoaderDelegate>
+
 @property (weak, nonatomic) IBOutlet UITextField *txtBrukernavn;
 @property (weak, nonatomic) IBOutlet UITextField *txtPassord;
 @property (weak, nonatomic) IBOutlet UIButton *btnLoggInn;
+
+
 - (IBAction)btnLoggInnClick:(id)sender;
 - (void) sendRequest: (MFClientLogin *) clientLogin;
 

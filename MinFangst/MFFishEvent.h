@@ -18,9 +18,9 @@
 @property (strong, nonatomic) NSDate* DateTime;
 @property (strong, nonatomic) NSMutableArray* Images;
 
-@property (nonatomic, assign) NSString *title;
-@property (nonatomic, assign) NSString *subtitle;
-@property (nonatomic,assign) CLLocationCoordinate2D coordinate;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
 
 + (RKObjectMapping*)objectMapping;
 @end

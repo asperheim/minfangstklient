@@ -11,10 +11,11 @@
 #import <CoreLocation/CoreLocation.h>
 #import "MFFishEvent.h"
 #import <RestKit/RestKit.h>
+#import "MFMapViewEditEventControllerViewController.h"
 
 @interface MFMapViewController ()
 
-@property (nonatomic, copy) NSMutableArray* fishEvents;
+
 - (void)getFishEvents;
 
 @end
@@ -23,6 +24,8 @@
 
 @synthesize mapView;
 @synthesize fishEvents;
+@synthesize longPressRecog;
+@synthesize currentUserMadeAnnot;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,19 +41,33 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    // Set up view
+    self.title = @"Fiskekart";
+    
+    
+    // Set up mapview
     [mapView setZoomEnabled:YES];
     [mapView setScrollEnabled:YES];
     [mapView setMapType:MKMapTypeStandard];
     
+    
+    // Set up startup region
     MKCoordinateRegion region;
     CLLocationDegrees degreesLat = 59.920269;
     CLLocationDegrees degreesLong = 10.749332;
     region.center = CLLocationCoordinate2DMake(degreesLat, degreesLong);
     region.span = MKCoordinateSpanMake(0.1, 0.1);
     [mapView setRegion:region animated:YES];
-    [[mapView dequeueReusableAnnotationViewWithIdentifier:] retain]
     
+    // Download fishevents and populate map
     [self getFishEvents];
+    
+    
+    // Set properties for UI Elements
+    longPressRecog.minimumPressDuration = 2;
+    
+    //
+    
 }
 
 - (void)getFishEvents {
@@ -87,11 +104,12 @@
     
     for(MFFishEvent *fishevent in objects) {
         CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(fishevent.Location.Latitude, fishevent.Location.Longitude);
-        fishevent.coordinate= coord;
+        fishevent.coordinate = coord;
     }
     
-    //[fishEvents addObjectsFromArray:objects];
-    [mapView addAnnotations:objects];
+    fishEvents = [objects copy];
+    
+    [mapView addAnnotations:fishEvents];
 }
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error {
@@ -99,4 +117,32 @@
 }
 
 
+- (IBAction)pressFor2Sek:(id)sender {
+    if (longPressRecog.state != UIGestureRecognizerStateBegan)
+        return;
+    
+    CGPoint touchPoint = [longPressRecog locationInView:self.mapView];
+    
+    CLLocationCoordinate2D touchMapCoordinate =
+    [self.mapView convertPoint:touchPoint toCoordinateFromView:self.mapView];
+    
+    currentUserMadeAnnot = [[MFFishEvent alloc] init];
+    
+    //[currentUserMadeAnnot setCoordinate:touchMapCoordinate];
+    
+    [currentUserMadeAnnot setCoordinate: CLLocationCoordinate2DMake(59.9, 10.7)];
+    
+    currentUserMadeAnnot.title = @"Fisketur!";
+    currentUserMadeAnnot.subtitle = [NSString stringWithFormat: @"Lat: %f\nLat: %f\nHer har jeg fisket",
+                                     currentUserMadeAnnot.coordinate.latitude,
+                                     currentUserMadeAnnot.coordinate.longitude];
+    
+    [self.mapView addAnnotation:currentUserMadeAnnot];
+    
+    
+    MFMapViewEditEventControllerViewController * mapEditEventVC = [[MFMapViewEditEventControllerViewController alloc] initWithNibName:@"MFMapViewEditEventControllerViewController" bundle:nil passedData:currentUserMadeAnnot];
+    
+    [self.navigationController pushViewController:mapEditEventVC animated:YES];
+    
+}
 @end

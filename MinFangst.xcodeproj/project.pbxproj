@@ -71,6 +71,8 @@
 		9A126DDC164D1E6F0037538A /* MFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A126DDA164D1E6F0037538A /* MFLoginViewController.xib */; };
 		9A126DDF164D20340037538A /* MFClientLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126DDE164D20340037538A /* MFClientLogin.m */; };
 		9A126DE2164D20950037538A /* MFClientInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126DE1164D20950037538A /* MFClientInfo.m */; };
+		9AED2498165684B400350CF9 /* MFMapViewEditEventControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AED2496165684B400350CF9 /* MFMapViewEditEventControllerViewController.m */; };
+		9AED2499165684B400350CF9 /* MFMapViewEditEventControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AED2497165684B400350CF9 /* MFMapViewEditEventControllerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -234,6 +236,9 @@
 		9A126DDE164D20340037538A /* MFClientLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFClientLogin.m; sourceTree = "<group>"; };
 		9A126DE0164D20950037538A /* MFClientInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFClientInfo.h; sourceTree = "<group>"; };
 		9A126DE1164D20950037538A /* MFClientInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFClientInfo.m; sourceTree = "<group>"; };
+		9AED2495165684B400350CF9 /* MFMapViewEditEventControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMapViewEditEventControllerViewController.h; sourceTree = "<group>"; };
+		9AED2496165684B400350CF9 /* MFMapViewEditEventControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMapViewEditEventControllerViewController.m; sourceTree = "<group>"; };
+		9AED2497165684B400350CF9 /* MFMapViewEditEventControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFMapViewEditEventControllerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -443,6 +448,9 @@
 				84B2BB8F1653AB2700CC9F6F /* MFMapViewController.h */,
 				84B2BB901653AB2700CC9F6F /* MFMapViewController.m */,
 				84B2BB911653AB2700CC9F6F /* MFMapViewController.xib */,
+				9AED2495165684B400350CF9 /* MFMapViewEditEventControllerViewController.h */,
+				9AED2496165684B400350CF9 /* MFMapViewEditEventControllerViewController.m */,
+				9AED2497165684B400350CF9 /* MFMapViewEditEventControllerViewController.xib */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -690,6 +698,7 @@
 				84B2BB8516539EDC00CC9F6F /* zbar-samples.png in Resources */,
 				84B2BB931653AB2700CC9F6F /* MFMapViewController.xib in Resources */,
 				84B2BB9D1653C10B00CC9F6F /* MFBlogViewController.xib in Resources */,
+				9AED2499165684B400350CF9 /* MFMapViewEditEventControllerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,6 +754,7 @@
 				84B2BBC71653E12300CC9F6F /* MFImage.m in Sources */,
 				84B2BBCA1653E56E00CC9F6F /* MFLocation.m in Sources */,
 				84B2BBCD1653E60B00CC9F6F /* MFFishEvent.m in Sources */,
+				9AED2498165684B400350CF9 /* MFMapViewEditEventControllerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

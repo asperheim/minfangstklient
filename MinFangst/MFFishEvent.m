@@ -9,9 +9,7 @@
 #import "MFFishEvent.h"
 #import "MFImage.h"
 
-@implementation MFFishEvent {
-    CLLocationCoordinate2D _coordinate;
-}
+@implementation MFFishEvent
 
 @synthesize Id;
 @synthesize Location;
@@ -20,10 +18,10 @@
 @synthesize title;
 @synthesize subtitle;
 
-@synthesize coordinate = _coordinate;
+@synthesize coordinate;
 
 - (id) init {
-    if (self = [super init]) {
+    if (self == [super init]) {
         
     }
     return self;
