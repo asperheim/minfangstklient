@@ -70,6 +70,7 @@
     //MFFishEvent
     RKObjectMapping* fishEventMapping = [MFFishEvent objectMapping];
     [manager.mappingProvider setMapping:fishEventMapping forKeyPath:@"FishEvent"];
+    
     [manager.mappingProvider setSerializationMapping:fishEventMapping.inverseMapping forClass:[MFFishEvent class]];
     
     //MFLocation
@@ -81,12 +82,18 @@
     RKObjectMapping* userMapping = [MFUser objectMapping];
     [manager.mappingProvider setMapping:userMapping forKeyPath:@"User"];
     [manager.mappingProvider setSerializationMapping:userMapping.inverseMapping forClass:[MFUser class]];
+
     
     //creates a route for POST to /login
     //when we have this, then RKObjectManager knows that it's supposed to route
     //MFClientLogin objects to /login when we do a POST
     RKObjectRouter* router = [manager router];
     [router routeClass:[MFClientLogin class] toResourcePath:@"/login" forMethod:RKRequestMethodPOST];
+    
+    // Route for posting fishevents
+    [router routeClass:[MFFishEvent class] toResourcePath:@"/fishevent" forMethod:RKRequestMethodPOST];
+    
+
     
 }
 

@@ -11,11 +11,13 @@
 #import "MFMapViewController.h"
 #import <MapKit/MapKit.h>
 
-@interface MFMapViewEditEventControllerViewController : UIViewController
+@interface MFMapViewEditEventControllerViewController : UIViewController <RKRequestDelegate, RKObjectLoaderDelegate>
 @property (strong, nonatomic) MFFishEvent * currentUserMadeAnnot;
 @property (strong, nonatomic) IBOutlet UITextField *txtName;
-@property (strong, nonatomic) IBOutlet UITextField *txtLat;
-@property (strong, nonatomic) IBOutlet UITextField *txtLong;
+@property (weak, nonatomic) IBOutlet UILabel *lblCoords;
+@property (weak, nonatomic) IBOutlet UICollectionView *cellViewBilder;
+
 @property (strong, nonatomic) IBOutlet UITextView *txtCommentField;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed;
+
 @end

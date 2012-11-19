@@ -20,11 +20,19 @@
 
 @synthesize coordinate;
 
-- (id) init {
-    if (self == [super init]) {
-        
+
+- (void) setCoordinate:(CLLocationCoordinate2D)newCoordinate {
+    
+    if (self.Location == nil) {
+        self.Location = [[MFLocation alloc] init];
     }
-    return self;
+    
+    self.Location.Longitude = newCoordinate.longitude;
+    self.Location.Latitude = newCoordinate.latitude;
+    
+    self->coordinate = newCoordinate;
+
+    
 }
 
 + (RKObjectMapping *)objectMapping {

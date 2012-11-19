@@ -12,6 +12,7 @@
 #import "MFFishEvent.h"
 #import <RestKit/RestKit.h>
 #import "MFMapViewEditEventControllerViewController.h"
+#import "MFLocation.h"
 
 @interface MFMapViewController ()
 
@@ -103,11 +104,10 @@
     NSLog(@"Did load %d objects!", objects.count);
     
     for(MFFishEvent *fishevent in objects) {
-        CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(fishevent.Location.Latitude, fishevent.Location.Longitude);
-        fishevent.coordinate = coord;
+        [fishevent setCoordinate: CLLocationCoordinate2DMake(fishevent.Location.Latitude, fishevent.Location.Longitude)];
     }
     
-    fishEvents = [objects copy];
+    fishEvents = [NSMutableArray arrayWithArray: objects];
     
     [mapView addAnnotations:fishEvents];
 }
@@ -128,19 +128,16 @@
     
     currentUserMadeAnnot = [[MFFishEvent alloc] init];
     
-    //[currentUserMadeAnnot setCoordinate:touchMapCoordinate];
-    
-    [currentUserMadeAnnot setCoordinate: CLLocationCoordinate2DMake(59.9, 10.7)];
-    
+    [currentUserMadeAnnot setCoordinate:touchMapCoordinate];
+
     currentUserMadeAnnot.title = @"Fisketur!";
-    currentUserMadeAnnot.subtitle = [NSString stringWithFormat: @"Lat: %f\nLat: %f\nHer har jeg fisket",
-                                     currentUserMadeAnnot.coordinate.latitude,
-                                     currentUserMadeAnnot.coordinate.longitude];
+    currentUserMadeAnnot.subtitle = @"Her har jeg fisket";
     
     [self.mapView addAnnotation:currentUserMadeAnnot];
-    
+    [fishEvents addObject:currentUserMadeAnnot];
     
     MFMapViewEditEventControllerViewController * mapEditEventVC = [[MFMapViewEditEventControllerViewController alloc] initWithNibName:@"MFMapViewEditEventControllerViewController" bundle:nil passedData:currentUserMadeAnnot];
+    
     
     [self.navigationController pushViewController:mapEditEventVC animated:YES];
     

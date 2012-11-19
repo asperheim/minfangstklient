@@ -23,4 +23,6 @@
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;
 
 + (RKObjectMapping*)objectMapping;
+
+- (void) setCoordinate:(CLLocationCoordinate2D) newCoordinate;
 @end
