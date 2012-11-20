@@ -21,6 +21,8 @@
 @property (strong, nonatomic) NSMutableArray* Emails;
 @property (strong, nonatomic) NSMutableArray* Addresses;
 @property (strong, nonatomic) NSMutableArray*Phones;
+//@property (strong, nonatomic) NSMutableArray* BlogEntries;
+//@property (strong, nonatomic) NSMutableArray* FishEvents;
 
 + (RKObjectMapping*)objectMapping;
 

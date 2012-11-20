@@ -11,6 +11,8 @@
 #import "MFEmail.h"
 #import "MFAddress.h"
 #import "MFPhone.h"
+#import "MFBlogEntry.h"
+#import "MFFishEvent.h"
 
 @implementation MFUser
 
@@ -23,7 +25,8 @@
 @synthesize Emails;
 @synthesize Addresses;
 @synthesize Phones;
-
+//@synthesize BlogEntries;
+//@synthesize FishEvents;
 
 + (RKObjectMapping*)objectMapping {
     
@@ -38,6 +41,8 @@
     [userMapping mapKeyPath:@"Emails" toRelationship:@"Emails" withMapping:[MFEmail objectMapping]];
     [userMapping mapKeyPath:@"Addresses" toRelationship:@"Addresses" withMapping:[MFAddress objectMapping]];
     [userMapping mapKeyPath:@"Phones" toRelationship:@"Phones" withMapping:[MFPhone objectMapping]];
+    /*[userMapping mapKeyPath:@"BlogEntries" toRelationship:@"BlogEntries" withMapping:[MFBlogEntry objectMapping]];
+    [userMapping mapKeyPath:@"FishEvents" toRelationship:@"FishEvents" withMapping:[MFFishEvent objectMapping]];*/
     
     userMapping.setDefaultValueForMissingAttributes = YES;
     userMapping.setNilForMissingRelationships = YES;

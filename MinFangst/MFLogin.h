@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "MFSession.h"
 #import <RestKit/RestKit.h>
+@class MFUser;
 
 @interface MFLogin : NSObject
 @property (nonatomic) int Id;
+@property (strong, nonatomic) MFUser* User;
 @property (strong, nonatomic) NSDate* LoginTime;
 @property (strong, nonatomic) NSDate* LogoutTime;
 @property (strong, nonatomic) NSString* Ip;

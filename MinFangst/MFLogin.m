@@ -8,9 +8,11 @@
 
 #import "MFLogin.h"
 #import "MFSession.h"
+#import "MFUser.h"
 
 @implementation MFLogin
 @synthesize Id;
+@synthesize User;
 @synthesize LoginTime;
 @synthesize LogoutTime;
 @synthesize Ip;
@@ -25,6 +27,7 @@
     
     RKObjectMapping* loginMapping = [RKObjectMapping mappingForClass:[MFLogin class]];
     [loginMapping mapKeyPath:@"Id" toAttribute:@"Id"];
+    [loginMapping mapKeyPath:@"User" toRelationship:@"User" withMapping:[MFUser objectMapping]];
     [loginMapping mapKeyPath:@"LoginTime" toAttribute:@"LoginTime"];
     [loginMapping mapKeyPath:@"LogoutTime" toAttribute:@"LogoutTime"];
     [loginMapping mapKeyPath:@"Ip" toAttribute:@"Ip"];

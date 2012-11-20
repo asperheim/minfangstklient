@@ -31,7 +31,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        NSLog(@"objectToBePassed %@", objectToBePassed.Location);
+        //NSLog(@"objectToBePassed %@", objectToBePassed.Location);
         self.currentUserMadeAnnot = objectToBePassed;
 
         
@@ -79,15 +79,15 @@
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
-    [alert show];
     
+    [[RKObjectManager sharedManager] postObject:currentUserMadeAnnot delegate:self];
     
-    
-    [[RKObjectManager sharedManager] postObject:currentUserMadeAnnot usingBlock:^(RKObjectLoader* loader) {
-        loader.delegate = self;
+    /*[[RKObjectManager sharedManager] postObject:currentUserMadeAnnot usingBlock:^(RKObjectLoader *loader) {
         [loader.mappingProvider setMapping:[MFFishEvent objectMapping] forKeyPath:@"FishEvent"];
-    }];
-    
+        loader.targetObject = nil;
+        loader.delegate = self;
+    }];*/
+    [alert show];
 }
 
 

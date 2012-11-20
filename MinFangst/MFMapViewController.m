@@ -13,6 +13,8 @@
 #import <RestKit/RestKit.h>
 #import "MFMapViewEditEventControllerViewController.h"
 #import "MFLocation.h"
+#import "MFSharedInstances.h"
+#import "MFImage.h"
 
 @interface MFMapViewController ()
 
@@ -126,12 +128,15 @@
     CLLocationCoordinate2D touchMapCoordinate =
     [self.mapView convertPoint:touchPoint toCoordinateFromView:self.mapView];
     
+    NSDate* currentTime = [NSDate date];
     currentUserMadeAnnot = [[MFFishEvent alloc] init];
     
     [currentUserMadeAnnot setCoordinate:touchMapCoordinate];
-
+    
     currentUserMadeAnnot.title = @"Fisketur!";
     currentUserMadeAnnot.subtitle = @"Her har jeg fisket";
+    currentUserMadeAnnot.User = [MFSharedInstances sharedInstance].login.User;
+    currentUserMadeAnnot.DateTime = currentTime;
     
     [self.mapView addAnnotation:currentUserMadeAnnot];
     [fishEvents addObject:currentUserMadeAnnot];

@@ -15,6 +15,7 @@
 #import "MFFishEvent.h"
 #import "MFLocation.h"
 #import "MFUser.h"
+#import "MFImage.h"
 
 @interface MFAppDelegate()
 
@@ -27,7 +28,8 @@
 - (void)setupRestKit {
     
     //instantiate RKClient(not sure if needed) and RKObjectManager
-    NSString* path = @"http://fishback.azurewebsites.net/api";
+    //NSString* path = @"http://fishback.azurewebsites.net/api";
+    NSString* path = @"http://192.168.20.194/fishback/api";
     [RKClient clientWithBaseURLString:path];
     RKObjectManager* manager = [RKObjectManager objectManagerWithBaseURLString:path];
     
@@ -70,7 +72,6 @@
     //MFFishEvent
     RKObjectMapping* fishEventMapping = [MFFishEvent objectMapping];
     [manager.mappingProvider setMapping:fishEventMapping forKeyPath:@"FishEvent"];
-    
     [manager.mappingProvider setSerializationMapping:fishEventMapping.inverseMapping forClass:[MFFishEvent class]];
     
     //MFLocation
@@ -82,7 +83,11 @@
     RKObjectMapping* userMapping = [MFUser objectMapping];
     [manager.mappingProvider setMapping:userMapping forKeyPath:@"User"];
     [manager.mappingProvider setSerializationMapping:userMapping.inverseMapping forClass:[MFUser class]];
-
+    
+    //MFImage
+    RKObjectMapping* imageMapping = [MFImage objectMapping];
+    [manager.mappingProvider setMapping:imageMapping forKeyPath:@"Image"];
+    [manager.mappingProvider setSerializationMapping:imageMapping.inverseMapping forClass:[MFImage class]];
     
     //creates a route for POST to /login
     //when we have this, then RKObjectManager knows that it's supposed to route
@@ -92,8 +97,6 @@
     
     // Route for posting fishevents
     [router routeClass:[MFFishEvent class] toResourcePath:@"/fishevent" forMethod:RKRequestMethodPOST];
-    
-
     
 }
 

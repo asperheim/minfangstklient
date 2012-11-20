@@ -13,6 +13,7 @@
 #import "MFUtils.h"
 #import "MFLogin.h"
 #import "MFDashboardViewController.h"
+#import "MFSharedInstances.h"
 
 @interface MFLoginViewController ()
 - (void)launchDashboard;
@@ -93,7 +94,8 @@
 //RKObjectLoaderDelegate methods
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects {
-    MFLogin* userLogin = [objects objectAtIndex:0];
+    
+    [MFSharedInstances sharedInstance].login = [objects objectAtIndex:0];
     
     [self launchDashboard];
     //NSLog(@"Got %d objects from server! First object is: %@", objects.count, userLogin);

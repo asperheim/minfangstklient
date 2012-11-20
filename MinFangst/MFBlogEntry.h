@@ -17,7 +17,7 @@
 @property (strong, nonatomic) NSString* Title;
 @property (strong, nonatomic) NSString* Content;
 @property (strong, nonatomic) NSMutableArray* Tags;
-@property (strong, nonatomic) NSMutableArray* FishEvents;
+//@property (strong, nonatomic) NSMutableArray* FishEvents;
 @property (strong, nonatomic) NSDate* CreateDate;
 @property (strong, nonatomic) NSDate* EditDate;
 

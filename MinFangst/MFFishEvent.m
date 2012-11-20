@@ -8,13 +8,16 @@
 
 #import "MFFishEvent.h"
 #import "MFImage.h"
+#import "MFBlogEntry.h"
 
 @implementation MFFishEvent
 
 @synthesize Id;
+@synthesize User;
 @synthesize Location;
 @synthesize DateTime;
 @synthesize Images;
+//@synthesize BlogEntry;
 @synthesize title;
 @synthesize subtitle;
 
@@ -39,9 +42,11 @@
     
     RKObjectMapping* fishEventMapping = [RKObjectMapping mappingForClass:[MFFishEvent class]];
     [fishEventMapping mapKeyPath:@"Id" toAttribute:@"Id"];
+    [fishEventMapping mapKeyPath:@"User" toRelationship:@"User" withMapping:[MFUser objectMapping]];
     [fishEventMapping mapKeyPath:@"Location" toRelationship:@"Location" withMapping:[MFLocation objectMapping]];
     [fishEventMapping mapKeyPath:@"DateTime" toAttribute:@"DateTime"];
     [fishEventMapping mapKeyPath:@"Images" toRelationship:@"Images" withMapping:[MFImage objectMapping]];
+    //[fishEventMapping mapKeyPath:@"BlogEntry" toRelationship:@"BlogEntry" withMapping:[MFBlogEntry objectMapping]];
     [fishEventMapping mapKeyPath:@"Title" toAttribute:@"title"];
     [fishEventMapping mapKeyPath:@"Comment" toAttribute:@"subtitle"];
     

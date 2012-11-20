@@ -10,14 +10,17 @@
 #import "MFLocation.h"
 #import <RestKit/RestKit.h>
 #import <MapKit/MapKit.h>
+#import "MFUser.h"
+@class MFBlogEntry;
 
 @interface MFFishEvent : NSObject <MKAnnotation>
 
 @property (nonatomic) int Id;
+@property (strong, nonatomic) MFUser* User;
 @property (strong, nonatomic) MFLocation* Location;
 @property (strong, nonatomic) NSDate* DateTime;
 @property (strong, nonatomic) NSMutableArray* Images;
-
+//@property (strong, nonatomic) MFBlogEntry* BlogEntry;
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *subtitle;
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;

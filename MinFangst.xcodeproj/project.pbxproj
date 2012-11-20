@@ -10,6 +10,8 @@
 		841BB3D51650EE27006B59C8 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC26921650EB26008B1F02 /* libRestKit.a */; };
 		841BB3D91650F999006B59C8 /* MFLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BB3D81650F999006B59C8 /* MFLogin.m */; };
 		841BB3DC165117E9006B59C8 /* MFSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BB3DB165117E9006B59C8 /* MFSession.m */; };
+		843F54D0165B71C60056EA1A /* MFSharedInstances.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54CF165B71C60056EA1A /* MFSharedInstances.m */; };
+		843F54D2165BA6FF0056EA1A /* backgroundFish.png in Resources */ = {isa = PBXBuildFile; fileRef = 843F54D1165BA6FF0056EA1A /* backgroundFish.png */; };
 		84A56D8E165271AA00B64D66 /* MFUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A56D8D165271AA00B64D66 /* MFUtils.m */; };
 		84A6433716528DCA0082F3AF /* minFangstLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A6433616528DCA0082F3AF /* minFangstLogo.png */; };
 		84A6434C165293370082F3AF /* MFDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6434A165293370082F3AF /* MFDashboardViewController.m */; };
@@ -132,6 +134,9 @@
 		841BB3D81650F999006B59C8 /* MFLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFLogin.m; sourceTree = "<group>"; };
 		841BB3DA165117E9006B59C8 /* MFSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSession.h; sourceTree = "<group>"; };
 		841BB3DB165117E9006B59C8 /* MFSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSession.m; sourceTree = "<group>"; };
+		843F54CE165B71C60056EA1A /* MFSharedInstances.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSharedInstances.h; sourceTree = "<group>"; };
+		843F54CF165B71C60056EA1A /* MFSharedInstances.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSharedInstances.m; sourceTree = "<group>"; };
+		843F54D1165BA6FF0056EA1A /* backgroundFish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundFish.png; sourceTree = "<group>"; };
 		84A56D8C165271AA00B64D66 /* MFUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUtils.h; sourceTree = "<group>"; };
 		84A56D8D165271AA00B64D66 /* MFUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUtils.m; sourceTree = "<group>"; };
 		84A6433616528DCA0082F3AF /* minFangstLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minFangstLogo.png; sourceTree = "<group>"; };
@@ -309,6 +314,8 @@
 				84B2BBC91653E56E00CC9F6F /* MFLocation.m */,
 				84B2BBCB1653E60B00CC9F6F /* MFFishEvent.h */,
 				84B2BBCC1653E60B00CC9F6F /* MFFishEvent.m */,
+				843F54CE165B71C60056EA1A /* MFSharedInstances.h */,
+				843F54CF165B71C60056EA1A /* MFSharedInstances.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -367,6 +374,7 @@
 		84B2BB0616537F8100CC9F6F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				843F54D1165BA6FF0056EA1A /* backgroundFish.png */,
 				84B2BB6116539DD000CC9F6F /* fishFacts.png */,
 				84B2BB5816539C1900CC9F6F /* blog.png */,
 				84B2BB5916539C1900CC9F6F /* logOut.png */,
@@ -699,6 +707,7 @@
 				84B2BB931653AB2700CC9F6F /* MFMapViewController.xib in Resources */,
 				84B2BB9D1653C10B00CC9F6F /* MFBlogViewController.xib in Resources */,
 				9AED2499165684B400350CF9 /* MFMapViewEditEventControllerViewController.xib in Resources */,
+				843F54D2165BA6FF0056EA1A /* backgroundFish.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,6 +764,7 @@
 				84B2BBCA1653E56E00CC9F6F /* MFLocation.m in Sources */,
 				84B2BBCD1653E60B00CC9F6F /* MFFishEvent.m in Sources */,
 				9AED2498165684B400350CF9 /* MFMapViewEditEventControllerViewController.m in Sources */,
+				843F54D0165B71C60056EA1A /* MFSharedInstances.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
