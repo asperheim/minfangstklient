@@ -12,9 +12,12 @@
 #import <MapKit/MapKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import <RestKit/RestKit.h>
+#import "MFImageCell.h"
 
 
-@interface MFMapViewEditEventControllerViewController ()
+@interface MFMapViewEditEventControllerViewController () {
+    BOOL isSaved;
+}
 
 - (IBAction)saveButtonClick:(id)sender;
 
@@ -27,14 +30,14 @@
 @synthesize txtCommentField;
 @synthesize lblCoords;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed currentMapView:(MKMapView *)mapView
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         //NSLog(@"objectToBePassed %@", objectToBePassed.Location);
         self.currentUserMadeAnnot = objectToBePassed;
-
-        
+        self->isSaved = NO;
+        self.mapView = mapView;
     }
     return self;
 }
@@ -67,6 +70,12 @@
     self.txtCommentField.layer.masksToBounds = YES;
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    if (!isSaved) {
+        [self.mapView removeAnnotation:currentUserMadeAnnot];
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -74,20 +83,23 @@
 }
 
 - (IBAction) saveButtonClick:(id)sender {
+    
+    currentUserMadeAnnot.title = self.txtName.text;
+    currentUserMadeAnnot.subtitle = self.txtCommentField.text;
+    
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Fisketur"
                                                     message:@"Fisketuren er lagret"
-                                                   delegate:nil
+                                                   delegate:self
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
     
     [[RKObjectManager sharedManager] postObject:currentUserMadeAnnot delegate:self];
     
-    /*[[RKObjectManager sharedManager] postObject:currentUserMadeAnnot usingBlock:^(RKObjectLoader *loader) {
-        [loader.mappingProvider setMapping:[MFFishEvent objectMapping] forKeyPath:@"FishEvent"];
-        loader.targetObject = nil;
-        loader.delegate = self;
-    }];*/
     [alert show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 
@@ -125,5 +137,21 @@
 - (void)objectLoaderDidLoadUnexpectedResponse:(RKObjectLoader *)objectLoader {
     NSLog(@"objectLoaderDidLoadUnexpectedResponse!");
 }
+
+//UICollectionViewDelegate methods
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 4;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"inside collectionView:cellForItemAtIndexPath:");
+    MFImageCell* cell = [cv dequeueReusableCellWithReuseIdentifier:@"MY_CELL" forIndexPath:indexPath];
+    
+    //cell.label.text = [NSString stringWithFormat:@"%d",indexPath.item];
+    
+    return cell;
+}
+
 
 @end

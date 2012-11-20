@@ -12,6 +12,7 @@
 		841BB3DC165117E9006B59C8 /* MFSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BB3DB165117E9006B59C8 /* MFSession.m */; };
 		843F54D0165B71C60056EA1A /* MFSharedInstances.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54CF165B71C60056EA1A /* MFSharedInstances.m */; };
 		843F54D2165BA6FF0056EA1A /* backgroundFish.png in Resources */ = {isa = PBXBuildFile; fileRef = 843F54D1165BA6FF0056EA1A /* backgroundFish.png */; };
+		843F54D5165BCB7F0056EA1A /* MFImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54D4165BCB7F0056EA1A /* MFImageCell.m */; };
 		84A56D8E165271AA00B64D66 /* MFUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A56D8D165271AA00B64D66 /* MFUtils.m */; };
 		84A6433716528DCA0082F3AF /* minFangstLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A6433616528DCA0082F3AF /* minFangstLogo.png */; };
 		84A6434C165293370082F3AF /* MFDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6434A165293370082F3AF /* MFDashboardViewController.m */; };
@@ -137,6 +138,8 @@
 		843F54CE165B71C60056EA1A /* MFSharedInstances.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSharedInstances.h; sourceTree = "<group>"; };
 		843F54CF165B71C60056EA1A /* MFSharedInstances.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSharedInstances.m; sourceTree = "<group>"; };
 		843F54D1165BA6FF0056EA1A /* backgroundFish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundFish.png; sourceTree = "<group>"; };
+		843F54D3165BCB7F0056EA1A /* MFImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFImageCell.h; sourceTree = "<group>"; };
+		843F54D4165BCB7F0056EA1A /* MFImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFImageCell.m; sourceTree = "<group>"; };
 		84A56D8C165271AA00B64D66 /* MFUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUtils.h; sourceTree = "<group>"; };
 		84A56D8D165271AA00B64D66 /* MFUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUtils.m; sourceTree = "<group>"; };
 		84A6433616528DCA0082F3AF /* minFangstLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minFangstLogo.png; sourceTree = "<group>"; };
@@ -459,6 +462,8 @@
 				9AED2495165684B400350CF9 /* MFMapViewEditEventControllerViewController.h */,
 				9AED2496165684B400350CF9 /* MFMapViewEditEventControllerViewController.m */,
 				9AED2497165684B400350CF9 /* MFMapViewEditEventControllerViewController.xib */,
+				843F54D3165BCB7F0056EA1A /* MFImageCell.h */,
+				843F54D4165BCB7F0056EA1A /* MFImageCell.m */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -765,6 +770,7 @@
 				84B2BBCD1653E60B00CC9F6F /* MFFishEvent.m in Sources */,
 				9AED2498165684B400350CF9 /* MFMapViewEditEventControllerViewController.m in Sources */,
 				843F54D0165B71C60056EA1A /* MFSharedInstances.m in Sources */,
+				843F54D5165BCB7F0056EA1A /* MFImageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

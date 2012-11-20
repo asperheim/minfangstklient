@@ -11,7 +11,7 @@
 #import <RestKit/RestKit.h>
 #import "MFFishEvent.h"
 
-@interface MFMapViewController : UIViewController <RKRequestDelegate, RKObjectLoaderDelegate>
+@interface MFMapViewController : UIViewController <MKMapViewDelegate ,RKRequestDelegate, RKObjectLoaderDelegate>
 @property (strong, nonatomic, retain) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic, retain) MFFishEvent * currentUserMadeAnnot;
 @property (strong, nonatomic, retain) NSMutableArray* fishEvents;

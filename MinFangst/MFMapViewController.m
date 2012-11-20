@@ -47,11 +47,11 @@
     // Set up view
     self.title = @"Fiskekart";
     
-    
     // Set up mapview
     [mapView setZoomEnabled:YES];
     [mapView setScrollEnabled:YES];
     [mapView setMapType:MKMapTypeStandard];
+    mapView.delegate = self;
     
     
     // Set up startup region
@@ -141,7 +141,37 @@
     [self.mapView addAnnotation:currentUserMadeAnnot];
     [fishEvents addObject:currentUserMadeAnnot];
     
-    MFMapViewEditEventControllerViewController * mapEditEventVC = [[MFMapViewEditEventControllerViewController alloc] initWithNibName:@"MFMapViewEditEventControllerViewController" bundle:nil passedData:currentUserMadeAnnot];
+    MFMapViewEditEventControllerViewController * mapEditEventVC = [[MFMapViewEditEventControllerViewController alloc] initWithNibName:@"MFMapViewEditEventControllerViewController" bundle:nil passedData:currentUserMadeAnnot currentMapView:mapView];
+    
+    
+    [self.navigationController pushViewController:mapEditEventVC animated:YES];
+    
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)sender viewForAnnotation:(id < MKAnnotation >)annotation
+{
+    static NSString *reuseId = @"StandardPin";
+    
+    MKPinAnnotationView *aView = (MKPinAnnotationView *)[sender
+                                                         dequeueReusableAnnotationViewWithIdentifier:reuseId];
+    if (aView == nil)
+    {
+        aView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation
+                                                 reuseIdentifier:reuseId];
+        aView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        aView.canShowCallout = YES;
+    }
+    
+    aView.annotation = annotation;			
+    
+    return aView;   
+}
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+{
+    //NSLog(@"accessory button tapped for annotation %@", view.annotation);
+    
+    MFMapViewEditEventControllerViewController * mapEditEventVC = [[MFMapViewEditEventControllerViewController alloc] initWithNibName:@"MFMapViewEditEventControllerViewController" bundle:nil passedData:view.annotation currentMapView:self.mapView];
     
     
     [self.navigationController pushViewController:mapEditEventVC animated:YES];
