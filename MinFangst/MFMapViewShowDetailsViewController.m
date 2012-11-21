@@ -70,7 +70,7 @@
 }
 
 - (IBAction)editButtonClick:(id)sender {
-    MFMapViewEditEventControllerViewController* mapEditVC = [[MFMapViewEditEventControllerViewController alloc] initWithNibName:@"MFMapViewEditEventControllerViewController" bundle:nil passedData:currentUserMadeAnnot];
+    MFMapViewEditEventControllerViewController* mapEditVC = [[MFMapViewEditEventControllerViewController alloc] initWithNibName:@"MFMapViewEditEventControllerViewController" bundle:nil passedData:currentUserMadeAnnot isNew:NO];
     
     [self.navigationController pushViewController:mapEditVC animated:NO];
 }

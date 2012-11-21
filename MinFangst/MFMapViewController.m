@@ -142,7 +142,7 @@
     [self.mapView addAnnotation:currentUserMadeAnnot];
     [fishEvents addObject:currentUserMadeAnnot];
     
-    MFMapViewEditEventControllerViewController * mapEditEventVC = [[MFMapViewEditEventControllerViewController alloc] initWithNibName:@"MFMapViewEditEventControllerViewController" bundle:nil passedData:currentUserMadeAnnot currentMapView:mapView];
+    MFMapViewEditEventControllerViewController * mapEditEventVC = [[MFMapViewEditEventControllerViewController alloc] initWithNibName:@"MFMapViewEditEventControllerViewController" bundle:nil passedData:currentUserMadeAnnot currentMapView:mapView isNew:YES];
     
     
     [self.navigationController pushViewController:mapEditEventVC animated:YES];

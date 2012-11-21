@@ -20,6 +20,7 @@
 
 @interface MFMapViewEditEventControllerViewController () {
     BOOL isSaved;
+    BOOL isNew;
 }
 
 - (IBAction)saveButtonClick:(id)sender;
@@ -37,7 +38,7 @@
 @synthesize viewDelegate;
 @synthesize mapView;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed currentMapView:(MKMapView *)mapView
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed currentMapView:(MKMapView *)mapView isNew:(BOOL)isNew
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
@@ -45,17 +46,19 @@
         self.currentUserMadeAnnot = objectToBePassed;
         self->isSaved = NO;
         self.mapView = mapView;
+        self->isNew = isNew;
     }
     return self;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed isNew:(BOOL)isNew
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         //NSLog(@"objectToBePassed %@", objectToBePassed.Location);
         self.currentUserMadeAnnot = objectToBePassed;
         self->isSaved = NO;
+        self->isNew = isNew;
     }
     return self;
 }
@@ -101,7 +104,7 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
     if (!isSaved) {
-        if (mapView) {
+        if (mapView && !isNew) {
             [self.mapView removeAnnotation:currentUserMadeAnnot];
         }
         
@@ -139,7 +142,7 @@
     
     //TODO: pop back to showDetails with updated data instead of popping to map
     NSArray* array = [self.navigationController viewControllers];
-    [self.navigationController popToViewController:[array objectAtIndex:array.count - 3] animated:YES];
+    [self.navigationController popToViewController:[array objectAtIndex:array.count - (isNew ? 2 : 3)] animated:YES];
     
 }
 
