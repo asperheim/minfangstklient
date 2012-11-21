@@ -12,6 +12,6 @@
 
 @property (weak, nonatomic) UIImage* image;
 
-- (id)initWithFrame:(CGRect)frame url:(NSString*)urlString;
-
+- (id)initWithFrame:(CGRect)frame;
+- (void)setImageUrl:(NSString*)urlString;
 @end

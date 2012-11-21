@@ -19,6 +19,8 @@
 @property (strong, nonatomic) NSString* Title;
 @property (strong, nonatomic) NSString* FileName;
 @property (strong, nonatomic) NSString* OriginalFileName;
+@property (strong, nonatomic) NSString* FileNameSuffix;
+
 + (RKObjectMapping*)objectMapping;
 
 @end

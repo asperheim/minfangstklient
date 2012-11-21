@@ -33,6 +33,7 @@
     [imageMapping mapKeyPath:@"Title" toAttribute:@"Title"];
     [imageMapping mapKeyPath:@"FileName" toAttribute:@"FileName"];
     [imageMapping mapKeyPath:@"OriginalFileName" toAttribute:@"OriginalFileName"];
+    [imageMapping mapKeyPath:@"FileNameSuffix" toAttribute:@"FileNameSuffix"];
     
     imageMapping.setDefaultValueForMissingAttributes = YES;
     imageMapping.setNilForMissingRelationships = YES;

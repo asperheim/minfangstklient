@@ -15,6 +15,7 @@
 #import "MFLocation.h"
 #import "MFSharedInstances.h"
 #import "MFImage.h"
+#import "MFMapViewShowDetailsViewController.h"
 
 @interface MFMapViewController ()
 
@@ -171,10 +172,9 @@
 {
     //NSLog(@"accessory button tapped for annotation %@", view.annotation);
     
-    MFMapViewEditEventControllerViewController * mapEditEventVC = [[MFMapViewEditEventControllerViewController alloc] initWithNibName:@"MFMapViewEditEventControllerViewController" bundle:nil passedData:view.annotation currentMapView:self.mapView];
+     MFMapViewShowDetailsViewController* mapShowDetailsVC = [[MFMapViewShowDetailsViewController alloc] initWithNibName:@"MFMapViewShowDetailsViewController" bundle:nil passedData:view.annotation];
     
-    
-    [self.navigationController pushViewController:mapEditEventVC animated:YES];
+    [self.navigationController pushViewController:mapShowDetailsVC animated:YES];
     
 }
 @end

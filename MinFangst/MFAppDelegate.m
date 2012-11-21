@@ -27,9 +27,9 @@
 
 - (void)setupRestKit {
     
-    //instantiate RKClient(not sure if needed) and RKObjectManager
-    //NSString* path = @"http://fishback.azurewebsites.net/api";
-    NSString* path = @"http://192.168.20.194/fishback/api";
+    //instantiate RKClient and RKObjectManager
+    NSString* path = @"http://fishback.azurewebsites.net/api";
+    //NSString* path = @"http://192.168.20.194/fishback/api";
     [RKClient clientWithBaseURLString:path];
     RKObjectManager* manager = [RKObjectManager objectManagerWithBaseURLString:path];
     

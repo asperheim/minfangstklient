@@ -13,6 +13,18 @@
 		843F54D0165B71C60056EA1A /* MFSharedInstances.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54CF165B71C60056EA1A /* MFSharedInstances.m */; };
 		843F54D2165BA6FF0056EA1A /* backgroundFish.png in Resources */ = {isa = PBXBuildFile; fileRef = 843F54D1165BA6FF0056EA1A /* backgroundFish.png */; };
 		843F54D5165BCB7F0056EA1A /* MFImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54D4165BCB7F0056EA1A /* MFImageCell.m */; };
+		8455DDC2165CCA88008E5F74 /* blogIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDB9165CCA88008E5F74 /* blogIcon.png */; };
+		8455DDC3165CCA88008E5F74 /* blogIconLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDBA165CCA88008E5F74 /* blogIconLarge.png */; };
+		8455DDC4165CCA88008E5F74 /* fishFactsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDBB165CCA88008E5F74 /* fishFactsIcon.png */; };
+		8455DDC5165CCA88008E5F74 /* fishFactsIconLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDBC165CCA88008E5F74 /* fishFactsIconLarge.png */; };
+		8455DDC6165CCA88008E5F74 /* mapIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDBD165CCA88008E5F74 /* mapIcon.png */; };
+		8455DDC7165CCA88008E5F74 /* scanFishIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDBE165CCA88008E5F74 /* scanFishIcon.png */; };
+		8455DDC8165CCA88008E5F74 /* scanFishIconLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDBF165CCA88008E5F74 /* scanFishIconLarge.png */; };
+		8455DDC9165CCA88008E5F74 /* settingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDC0165CCA88008E5F74 /* settingsIcon.png */; };
+		8455DDCA165CCA88008E5F74 /* settingsIconLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDC1165CCA88008E5F74 /* settingsIconLarge.png */; };
+		8455DDCE165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8455DDCC165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.m */; };
+		8455DDCF165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDCD165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.xib */; };
+		8455DDD2165CCFDE008E5F74 /* MFCollectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8455DDD1165CCFDE008E5F74 /* MFCollectionDelegate.m */; };
 		84A56D8E165271AA00B64D66 /* MFUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A56D8D165271AA00B64D66 /* MFUtils.m */; };
 		84A6433716528DCA0082F3AF /* minFangstLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A6433616528DCA0082F3AF /* minFangstLogo.png */; };
 		84A6434C165293370082F3AF /* MFDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6434A165293370082F3AF /* MFDashboardViewController.m */; };
@@ -140,6 +152,20 @@
 		843F54D1165BA6FF0056EA1A /* backgroundFish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundFish.png; sourceTree = "<group>"; };
 		843F54D3165BCB7F0056EA1A /* MFImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFImageCell.h; sourceTree = "<group>"; };
 		843F54D4165BCB7F0056EA1A /* MFImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFImageCell.m; sourceTree = "<group>"; };
+		8455DDB9165CCA88008E5F74 /* blogIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blogIcon.png; sourceTree = "<group>"; };
+		8455DDBA165CCA88008E5F74 /* blogIconLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blogIconLarge.png; sourceTree = "<group>"; };
+		8455DDBB165CCA88008E5F74 /* fishFactsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fishFactsIcon.png; sourceTree = "<group>"; };
+		8455DDBC165CCA88008E5F74 /* fishFactsIconLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fishFactsIconLarge.png; sourceTree = "<group>"; };
+		8455DDBD165CCA88008E5F74 /* mapIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapIcon.png; sourceTree = "<group>"; };
+		8455DDBE165CCA88008E5F74 /* scanFishIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scanFishIcon.png; sourceTree = "<group>"; };
+		8455DDBF165CCA88008E5F74 /* scanFishIconLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scanFishIconLarge.png; sourceTree = "<group>"; };
+		8455DDC0165CCA88008E5F74 /* settingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingsIcon.png; sourceTree = "<group>"; };
+		8455DDC1165CCA88008E5F74 /* settingsIconLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingsIconLarge.png; sourceTree = "<group>"; };
+		8455DDCB165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMapViewShowDetailsViewController.h; sourceTree = "<group>"; };
+		8455DDCC165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMapViewShowDetailsViewController.m; sourceTree = "<group>"; };
+		8455DDCD165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFMapViewShowDetailsViewController.xib; sourceTree = "<group>"; };
+		8455DDD0165CCFDE008E5F74 /* MFCollectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFCollectionDelegate.h; sourceTree = "<group>"; };
+		8455DDD1165CCFDE008E5F74 /* MFCollectionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFCollectionDelegate.m; sourceTree = "<group>"; };
 		84A56D8C165271AA00B64D66 /* MFUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUtils.h; sourceTree = "<group>"; };
 		84A56D8D165271AA00B64D66 /* MFUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUtils.m; sourceTree = "<group>"; };
 		84A6433616528DCA0082F3AF /* minFangstLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minFangstLogo.png; sourceTree = "<group>"; };
@@ -377,6 +403,15 @@
 		84B2BB0616537F8100CC9F6F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8455DDB9165CCA88008E5F74 /* blogIcon.png */,
+				8455DDBA165CCA88008E5F74 /* blogIconLarge.png */,
+				8455DDBB165CCA88008E5F74 /* fishFactsIcon.png */,
+				8455DDBC165CCA88008E5F74 /* fishFactsIconLarge.png */,
+				8455DDBD165CCA88008E5F74 /* mapIcon.png */,
+				8455DDBE165CCA88008E5F74 /* scanFishIcon.png */,
+				8455DDBF165CCA88008E5F74 /* scanFishIconLarge.png */,
+				8455DDC0165CCA88008E5F74 /* settingsIcon.png */,
+				8455DDC1165CCA88008E5F74 /* settingsIconLarge.png */,
 				843F54D1165BA6FF0056EA1A /* backgroundFish.png */,
 				84B2BB6116539DD000CC9F6F /* fishFacts.png */,
 				84B2BB5816539C1900CC9F6F /* blog.png */,
@@ -464,6 +499,11 @@
 				9AED2497165684B400350CF9 /* MFMapViewEditEventControllerViewController.xib */,
 				843F54D3165BCB7F0056EA1A /* MFImageCell.h */,
 				843F54D4165BCB7F0056EA1A /* MFImageCell.m */,
+				8455DDCB165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.h */,
+				8455DDCC165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.m */,
+				8455DDCD165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.xib */,
+				8455DDD0165CCFDE008E5F74 /* MFCollectionDelegate.h */,
+				8455DDD1165CCFDE008E5F74 /* MFCollectionDelegate.m */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -713,6 +753,16 @@
 				84B2BB9D1653C10B00CC9F6F /* MFBlogViewController.xib in Resources */,
 				9AED2499165684B400350CF9 /* MFMapViewEditEventControllerViewController.xib in Resources */,
 				843F54D2165BA6FF0056EA1A /* backgroundFish.png in Resources */,
+				8455DDC2165CCA88008E5F74 /* blogIcon.png in Resources */,
+				8455DDC3165CCA88008E5F74 /* blogIconLarge.png in Resources */,
+				8455DDC4165CCA88008E5F74 /* fishFactsIcon.png in Resources */,
+				8455DDC5165CCA88008E5F74 /* fishFactsIconLarge.png in Resources */,
+				8455DDC6165CCA88008E5F74 /* mapIcon.png in Resources */,
+				8455DDC7165CCA88008E5F74 /* scanFishIcon.png in Resources */,
+				8455DDC8165CCA88008E5F74 /* scanFishIconLarge.png in Resources */,
+				8455DDC9165CCA88008E5F74 /* settingsIcon.png in Resources */,
+				8455DDCA165CCA88008E5F74 /* settingsIconLarge.png in Resources */,
+				8455DDCF165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -771,6 +821,8 @@
 				9AED2498165684B400350CF9 /* MFMapViewEditEventControllerViewController.m in Sources */,
 				843F54D0165B71C60056EA1A /* MFSharedInstances.m in Sources */,
 				843F54D5165BCB7F0056EA1A /* MFImageCell.m in Sources */,
+				8455DDCE165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.m in Sources */,
+				8455DDD2165CCFDE008E5F74 /* MFCollectionDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,9 @@
 #import <QuartzCore/QuartzCore.h>
 #import <RestKit/RestKit.h>
 #import "MFImageCell.h"
+#import "MFImage.h"
+#import "MFCollectionDelegate.h"
+#import "MFMapViewShowDetailsViewController.h"
 
 
 @interface MFMapViewEditEventControllerViewController () {
@@ -20,6 +23,7 @@
 }
 
 - (IBAction)saveButtonClick:(id)sender;
+- (IBAction)cancelButtonClick:(id)sender;
 
 @end
 
@@ -29,6 +33,9 @@
 @synthesize txtName;
 @synthesize txtCommentField;
 @synthesize lblCoords;
+@synthesize cellViewImages;
+@synthesize viewDelegate;
+@synthesize mapView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed currentMapView:(MKMapView *)mapView
 {
@@ -42,16 +49,33 @@
     return self;
 }
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        //NSLog(@"objectToBePassed %@", objectToBePassed.Location);
+        self.currentUserMadeAnnot = objectToBePassed;
+        self->isSaved = NO;
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Set up nav bar
     UIBarButtonItem *saveButton = [[UIBarButtonItem alloc]
-                                   initWithBarButtonSystemItem:UIBarButtonSystemItemSave
+                                   initWithBarButtonSystemItem:UIBarButtonSystemItemDone
                                                                                 target:self
                                                                                 action:@selector(saveButtonClick:)];
+    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc]
+                                   initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
+                                   target:self
+                                   action:@selector(cancelButtonClick:)];
     
     self.navigationItem.rightBarButtonItem = saveButton;
+    self.navigationItem.leftBarButtonItem = cancelButton;
+    [self.navigationItem setHidesBackButton:YES];
     
     self.title = currentUserMadeAnnot.title;
     
@@ -68,11 +92,19 @@
     
     self.txtCommentField.layer.cornerRadius = 9.0;
     self.txtCommentField.layer.masksToBounds = YES;
+    
+    self.viewDelegate = [[MFCollectionDelegate alloc] initWithImageArray:currentUserMadeAnnot.Images];
+    cellViewImages.delegate = viewDelegate;
+    cellViewImages.dataSource = viewDelegate;
+    [self.cellViewImages registerClass:[MFImageCell class] forCellWithReuseIdentifier:@"imgCell"];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     if (!isSaved) {
-        [self.mapView removeAnnotation:currentUserMadeAnnot];
+        if (mapView) {
+            [self.mapView removeAnnotation:currentUserMadeAnnot];
+        }
+        
     }
 }
 
@@ -99,9 +131,21 @@
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    [self.navigationController popViewControllerAnimated:YES];
+    /*MFMapViewShowDetailsViewController* presentingVC =  ((MFMapViewShowDetailsViewController*)self.presentingViewController);
+    [self.navigationController popViewControllerAnimated:NO];
+    
+    presentingVC.currentUserMadeAnnot = currentUserMadeAnnot;
+    [presentingVC loadData];*/
+    
+    //TODO: pop back to showDetails with updated data instead of popping to map
+    NSArray* array = [self.navigationController viewControllers];
+    [self.navigationController popToViewController:[array objectAtIndex:array.count - 3] animated:YES];
+    
 }
 
+- (void)cancelButtonClick:(id)sender {
+    [self.navigationController popViewControllerAnimated:NO];
+}
 
 //RKRequestDelegate method
 
@@ -137,21 +181,5 @@
 - (void)objectLoaderDidLoadUnexpectedResponse:(RKObjectLoader *)objectLoader {
     NSLog(@"objectLoaderDidLoadUnexpectedResponse!");
 }
-
-//UICollectionViewDelegate methods
-
--(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 4;
-}
-
-- (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"inside collectionView:cellForItemAtIndexPath:");
-    MFImageCell* cell = [cv dequeueReusableCellWithReuseIdentifier:@"MY_CELL" forIndexPath:indexPath];
-    
-    //cell.label.text = [NSString stringWithFormat:@"%d",indexPath.item];
-    
-    return cell;
-}
-
 
 @end

@@ -10,16 +10,19 @@
 #import "MFMapViewEditEventControllerViewController.h"
 #import "MFMapViewController.h"
 #import <MapKit/MapKit.h>
+@class MFCollectionDelegate;
 
-@interface MFMapViewEditEventControllerViewController : UIViewController <UICollectionViewDelegate, UIAlertViewDelegate, RKRequestDelegate, RKObjectLoaderDelegate>
+@interface MFMapViewEditEventControllerViewController : UIViewController <UIAlertViewDelegate, RKRequestDelegate, RKObjectLoaderDelegate>
 @property (strong, nonatomic) MFFishEvent * currentUserMadeAnnot;
 @property (strong, nonatomic) IBOutlet UITextField *txtName;
 @property (weak, nonatomic) IBOutlet UILabel *lblCoords;
-@property (weak, nonatomic) IBOutlet UICollectionView *cellViewBilder;
+@property (weak, nonatomic) IBOutlet UICollectionView *cellViewImages;
 
 @property (strong, nonatomic) IBOutlet UITextView *txtCommentField;
 @property (strong, nonatomic) MKMapView* mapView;
+@property (strong, nonatomic) MFCollectionDelegate* viewDelegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed currentMapView: (MKMapView*)mapView;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed;
 
 @end

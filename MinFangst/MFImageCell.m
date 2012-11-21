@@ -10,17 +10,23 @@
 
 @implementation MFImageCell
 
-- (id)initWithFrame:(CGRect)frame url:(NSString *)urlString
+@synthesize image;
+
+- (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        NSURL *url = [NSURL URLWithString:urlString];
-        self.image = [UIImage imageWithData: [NSData dataWithContentsOfURL:url]];
         
-        UIImageView* view = [[UIImageView alloc] initWithImage:self.image];
-        [self.contentView addSubview:view];
     }
     return self;
+}
+
+- (void)setImageUrl:(NSString *)urlString {
+    NSURL *url = [NSURL URLWithString:urlString];
+    self.image = [UIImage imageWithData: [NSData dataWithContentsOfURL:url]];
+    
+    UIImageView* view = [[UIImageView alloc] initWithImage:self.image];
+    [self.contentView addSubview:view];
 }
 
 @end
