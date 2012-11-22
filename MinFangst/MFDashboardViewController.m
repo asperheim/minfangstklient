@@ -10,6 +10,7 @@
 #import "MFFishRecognitionViewController.h"
 #import "MFMapViewController.h"
 #import "MFBlogViewController.h"
+#import "MFFishInfoViewController.h"
 
 @interface MFDashboardViewController ()
 
@@ -57,6 +58,9 @@
 }
 
 - (IBAction)btnFishFactsClick:(id)sender {
+    MFFishInfoViewController *fishInfoVC = [[MFFishInfoViewController alloc] initWithNibName:@"MFFishInfoViewController" bundle:nil];
+    
+    [self.navigationController pushViewController:fishInfoVC animated:YES];
 }
 
 - (IBAction)btnSettingsClick:(id)sender {

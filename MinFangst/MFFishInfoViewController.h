@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MFFishInfoViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIWebView *mainWebView;
 
 @end
