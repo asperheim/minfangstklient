@@ -37,7 +37,6 @@
     NSString * completeUrl = [NSString stringWithFormat:@"http://fishback.azurewebsites.net/Media/Images/%@_thumbnail.%@", image.FileName, image.FileNameSuffix];
     
     MFImageCell* cell = [cv dequeueReusableCellWithReuseIdentifier:@"imgCell" forIndexPath:indexPath];
-    
     [cell setImageUrl:completeUrl];
     
     return cell;
