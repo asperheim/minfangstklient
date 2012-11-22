@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840DE786165E4DE6000B0F47 /* MFBlogEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840DE785165E4DE6000B0F47 /* MFBlogEntryCell.xib */; };
+		840DE789165E4FF5000B0F47 /* MFBlogEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 840DE788165E4FF5000B0F47 /* MFBlogEntryCell.m */; };
 		841BB3D51650EE27006B59C8 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC26921650EB26008B1F02 /* libRestKit.a */; };
 		841BB3D91650F999006B59C8 /* MFLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BB3D81650F999006B59C8 /* MFLogin.m */; };
 		841BB3DC165117E9006B59C8 /* MFSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BB3DB165117E9006B59C8 /* MFSession.m */; };
@@ -143,6 +145,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		840DE785165E4DE6000B0F47 /* MFBlogEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFBlogEntryCell.xib; sourceTree = "<group>"; };
+		840DE787165E4FF5000B0F47 /* MFBlogEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFBlogEntryCell.h; sourceTree = "<group>"; };
+		840DE788165E4FF5000B0F47 /* MFBlogEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFBlogEntryCell.m; sourceTree = "<group>"; };
 		841BB3D71650F999006B59C8 /* MFLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFLogin.h; sourceTree = "<group>"; };
 		841BB3D81650F999006B59C8 /* MFLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFLogin.m; sourceTree = "<group>"; };
 		841BB3DA165117E9006B59C8 /* MFSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSession.h; sourceTree = "<group>"; };
@@ -314,6 +319,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		846010AB165E0BDE00377FE8 /* LIbraries */ = {
+			isa = PBXGroup;
+			children = (
+				9A126DD6164D1DFB0037538A /* libxml2.dylib */,
+				84B2BB6316539EDC00CC9F6F /* ZBarSDK */,
+				84B2BB8C16539F3100CC9F6F /* libiconv.dylib */,
+				84AC26861650EB25008B1F02 /* RestKit.xcodeproj */,
+			);
+			name = LIbraries;
+			sourceTree = "<group>";
+		};
 		84A56D891652713600B64D66 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -514,6 +530,9 @@
 				84B2BB991653C10B00CC9F6F /* MFBlogViewController.h */,
 				84B2BB9A1653C10B00CC9F6F /* MFBlogViewController.m */,
 				84B2BB9B1653C10B00CC9F6F /* MFBlogViewController.xib */,
+				840DE785165E4DE6000B0F47 /* MFBlogEntryCell.xib */,
+				840DE787165E4FF5000B0F47 /* MFBlogEntryCell.h */,
+				840DE788165E4FF5000B0F47 /* MFBlogEntryCell.m */,
 			);
 			name = Blog;
 			sourceTree = "<group>";
@@ -521,21 +540,7 @@
 		9A126D6C164D1BC10037538A = {
 			isa = PBXGroup;
 			children = (
-				84B2BB961653B1A600CC9F6F /* CoreLocation.framework */,
-				84B2BB941653AD5000CC9F6F /* MapKit.framework */,
-				84B2BB8C16539F3100CC9F6F /* libiconv.dylib */,
-				84B2BB8A16539F1B00CC9F6F /* CoreVideo.framework */,
-				84B2BB8816539F1400CC9F6F /* CoreMedia.framework */,
-				84B2BB8616539F0D00CC9F6F /* AVFoundation.framework */,
-				84B2BB6316539EDC00CC9F6F /* ZBarSDK */,
-				84AC26861650EB25008B1F02 /* RestKit.xcodeproj */,
-				9A126DD6164D1DFB0037538A /* libxml2.dylib */,
-				9A126DD4164D1DF20037538A /* QuartzCore.framework */,
-				9A126DD2164D1DEB0037538A /* SystemConfiguration.framework */,
-				9A126DD0164D1DE50037538A /* Security.framework */,
-				9A126DCE164D1DDD0037538A /* MobileCoreServices.framework */,
-				9A126DCC164D1DD70037538A /* CoreData.framework */,
-				9A126DCA164D1DCF0037538A /* CFNetwork.framework */,
+				846010AB165E0BDE00377FE8 /* LIbraries */,
 				9A126D81164D1BC20037538A /* MinFangst */,
 				9A126D9F164D1BC20037538A /* MinFangstTests */,
 				9A126D7A164D1BC20037538A /* Frameworks */,
@@ -555,6 +560,17 @@
 		9A126D7A164D1BC20037538A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84B2BB961653B1A600CC9F6F /* CoreLocation.framework */,
+				84B2BB941653AD5000CC9F6F /* MapKit.framework */,
+				84B2BB8A16539F1B00CC9F6F /* CoreVideo.framework */,
+				84B2BB8816539F1400CC9F6F /* CoreMedia.framework */,
+				84B2BB8616539F0D00CC9F6F /* AVFoundation.framework */,
+				9A126DD4164D1DF20037538A /* QuartzCore.framework */,
+				9A126DD2164D1DEB0037538A /* SystemConfiguration.framework */,
+				9A126DD0164D1DE50037538A /* Security.framework */,
+				9A126DCE164D1DDD0037538A /* MobileCoreServices.framework */,
+				9A126DCC164D1DD70037538A /* CoreData.framework */,
+				9A126DCA164D1DCF0037538A /* CFNetwork.framework */,
 				9A126D7B164D1BC20037538A /* UIKit.framework */,
 				9A126D7D164D1BC20037538A /* Foundation.framework */,
 				9A126D7F164D1BC20037538A /* CoreGraphics.framework */,
@@ -763,6 +779,7 @@
 				8455DDC9165CCA88008E5F74 /* settingsIcon.png in Resources */,
 				8455DDCA165CCA88008E5F74 /* settingsIconLarge.png in Resources */,
 				8455DDCF165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.xib in Resources */,
+				840DE786165E4DE6000B0F47 /* MFBlogEntryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -823,6 +840,7 @@
 				843F54D5165BCB7F0056EA1A /* MFImageCell.m in Sources */,
 				8455DDCE165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.m in Sources */,
 				8455DDD2165CCFDE008E5F74 /* MFCollectionDelegate.m in Sources */,
+				840DE789165E4FF5000B0F47 /* MFBlogEntryCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

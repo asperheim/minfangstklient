@@ -7,6 +7,7 @@
 //
 
 #import "MFBlogViewController.h"
+#import "MFBlogEntryCell.h"
 
 @interface MFBlogViewController ()
 - (IBAction)addButtonClick:(id)sender;
@@ -17,6 +18,7 @@
 
 @synthesize blogEntryTable;
 @synthesize blogEntries;
+@synthesize blogEntryCell;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -102,22 +104,23 @@
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (MFBlogEntryCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *MyIdentifier = @"CellId";
     
     MFBlogEntry* blogEntry = [blogEntries objectAtIndex:indexPath.item];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+    MFBlogEntryCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault  reuseIdentifier:MyIdentifier];
+        //cell = [[MFBlogEntryCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MyIdentifier];
+        [[NSBundle mainBundle] loadNibNamed:@"MFBlogEntryCell" owner:self options:nil];
+        cell = blogEntryCell;
+        self.blogEntryCell = nil;
     }
     
-    cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+    //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+
+    cell.lblTitle.text = blogEntry.Title;
     
-    
-    
-    cell.textLabel.text = blogEntry.Title;
-    cell
     return cell;
 }
 //RKRequestDelegate method
