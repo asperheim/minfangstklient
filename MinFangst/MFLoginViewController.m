@@ -43,7 +43,7 @@
 }
 
 - (IBAction)btnLoggInnClick:(id)sender {
-    
+    self.btnLoggInn.enabled = NO;
     NSString * pass = [MFUtils md5HexDigest:self.txtPassord.text];
     //NSLog(@"Brukernavn: %@,Password: %@, hash: %@", self.txtBrukernavn.text, self.txtPassord.text, pass);
     
@@ -98,15 +98,19 @@
     [MFSharedInstances sharedInstance].login = [objects objectAtIndex:0];
     
     [self launchDashboard];
+
     //NSLog(@"Got %d objects from server! First object is: %@", objects.count, userLogin);
 }
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error {
     NSLog(@"Encountered an error: %@", error);
+    
+    self.btnLoggInn.enabled = YES;
 }
 
 - (void)objectLoaderDidLoadUnexpectedResponse:(RKObjectLoader *)objectLoader {
     NSLog(@"objectLoaderDidLoadUnexpectedResponse!");
+    self.btnLoggInn.enabled = YES;
 }
 
 -(void)launchDashboard {

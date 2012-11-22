@@ -22,7 +22,7 @@
 @property (strong, nonatomic) MKMapView* mapView;
 @property (strong, nonatomic) MFCollectionDelegate* viewDelegate;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed currentMapView: (MKMapView*)mapView isNew: (BOOL)isNew;
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed isNew: (BOOL)isNew;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed currentMapView: (MKMapView*)curMapView isNew: (BOOL)isNewAnnotation;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed isNew: (BOOL)isNewAnnotation;
 
 @end

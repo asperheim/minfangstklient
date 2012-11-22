@@ -4,7 +4,7 @@
    version = "1.0">
    <FileBreakpoints>
       <FileBreakpoint
-         shouldBeEnabled = "No"
+         shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MinFangst/MFClientLogin.h"
@@ -13,7 +13,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "14"
          endingLineNumber = "14"
-         landmarkName = "Id"
+         landmarkName = "Username"
          landmarkType = "19">
       </FileBreakpoint>
       <FileBreakpoint
@@ -50,19 +50,19 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "22"
          endingLineNumber = "22"
-         landmarkName = "@interface MFLoginViewController"
-         landmarkType = "2">
+         landmarkName = "-md5HexDigest:"
+         landmarkType = "4">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MinFangst/MFBlogEntry.m"
-         timestampString = "374594817.057816"
+         timestampString = "375270576.018622"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "23"
-         endingLineNumber = "23"
+         startingLineNumber = "24"
+         endingLineNumber = "24"
          landmarkName = "+objectMapping"
          landmarkType = "5">
       </FileBreakpoint>
@@ -90,6 +90,32 @@
          startingLineNumber = "39"
          endingLineNumber = "39"
          landmarkName = "+objectMapping"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MinFangst/MFBlogViewController.h"
+         timestampString = "375273724.733268"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "19"
+         endingLineNumber = "19"
+         landmarkName = "@interface MFBlogViewController"
+         landmarkType = "2">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MinFangst/MFFishEvent.m"
+         timestampString = "375020876.444223"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "34"
+         endingLineNumber = "34"
+         landmarkName = "-setCoordinate:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

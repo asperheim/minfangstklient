@@ -38,27 +38,27 @@
 @synthesize viewDelegate;
 @synthesize mapView;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed currentMapView:(MKMapView *)mapView isNew:(BOOL)isNew
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed currentMapView:(MKMapView *)curMapView isNew:(BOOL)isNewAnnotation
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         //NSLog(@"objectToBePassed %@", objectToBePassed.Location);
         self.currentUserMadeAnnot = objectToBePassed;
         self->isSaved = NO;
-        self.mapView = mapView;
-        self->isNew = isNew;
+        self.mapView = curMapView;
+        self->isNew = isNewAnnotation;
     }
     return self;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed isNew:(BOOL)isNew
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil passedData:(MFFishEvent *) objectToBePassed isNew:(BOOL)isNewAnnotation
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         //NSLog(@"objectToBePassed %@", objectToBePassed.Location);
         self.currentUserMadeAnnot = objectToBePassed;
         self->isSaved = NO;
-        self->isNew = isNew;
+        self->isNew = isNewAnnotation;
     }
     return self;
 }
@@ -134,11 +134,6 @@
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    /*MFMapViewShowDetailsViewController* presentingVC =  ((MFMapViewShowDetailsViewController*)self.presentingViewController);
-    [self.navigationController popViewControllerAnimated:NO];
-    
-    presentingVC.currentUserMadeAnnot = currentUserMadeAnnot;
-    [presentingVC loadData];*/
     
     //TODO: pop back to showDetails with updated data instead of popping to map
     NSArray* array = [self.navigationController viewControllers];

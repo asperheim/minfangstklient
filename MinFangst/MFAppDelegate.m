@@ -16,6 +16,7 @@
 #import "MFLocation.h"
 #import "MFUser.h"
 #import "MFImage.h"
+#import "MFBlogEntry.h"
 
 @interface MFAppDelegate()
 
@@ -30,6 +31,7 @@
     //instantiate RKClient and RKObjectManager
     NSString* path = @"http://fishback.azurewebsites.net/api";
     //NSString* path = @"http://192.168.20.194/fishback/api";
+    
     [RKClient clientWithBaseURLString:path];
     RKObjectManager* manager = [RKObjectManager objectManagerWithBaseURLString:path];
     
@@ -43,31 +45,31 @@
     
     //creates mapping for ClientInfo
     RKObjectMapping* clientInfoMapping = [MFClientInfo objectMapping];
-    
+    [manager.mappingProvider setMapping:clientInfoMapping forKeyPath:@"ClientInfo"];
+    [manager.mappingProvider setSerializationMapping:clientInfoMapping.inverseMapping forClass:[MFClientInfo class]];
+
     //creates mapping for ClientLogin
     RKObjectMapping* clientLoginMapping = [MFClientLogin objectMapping];
-    
-    //adds the object mappings to the mappingProvider
-    [manager.mappingProvider setMapping:clientInfoMapping forKeyPath:@"ClientInfo"];
     [manager.mappingProvider setMapping:clientLoginMapping forKeyPath:@"ClientLogin"];
-    
-    //adds serialization mapping for ClientLogin and ClientInfo
-    [manager.mappingProvider setSerializationMapping:clientInfoMapping.inverseMapping forClass:[MFClientInfo class]];
     [manager.mappingProvider setSerializationMapping:clientLoginMapping.inverseMapping forClass:[MFClientLogin class]];
-    
+  
+
     //creates mapping for Session
     RKObjectMapping* sessionMapping = [MFSession objectMapping];
+    [manager.mappingProvider setMapping:sessionMapping forKeyPath:@"Session"];
+    [manager.mappingProvider setSerializationMapping:sessionMapping.inverseMapping forClass:[MFSession class]];
+
     
     //creates mapping for Login
     RKObjectMapping* loginMapping = [MFLogin objectMapping];
-    
-    //adds object mapping for Login and Session
     [manager.mappingProvider setMapping:loginMapping forKeyPath:@"Login"];
-    [manager.mappingProvider setMapping:sessionMapping forKeyPath:@"Session"];
-    
-    //adds serialization mapping for Login and Session
-    [manager.mappingProvider setSerializationMapping:sessionMapping.inverseMapping forClass:[MFSession class]];
     [manager.mappingProvider setSerializationMapping:loginMapping.inverseMapping forClass:[MFLogin class]];
+
+    //MFBlogEntry
+    RKObjectMapping* blogEntryMapping = [MFBlogEntry objectMapping];
+    [manager.mappingProvider setMapping:blogEntryMapping forKeyPath:@"BlogEntry"];
+    [manager.mappingProvider setSerializationMapping:blogEntryMapping.inverseMapping forClass:[MFBlogEntry class]];
+    
     
     //MFFishEvent
     RKObjectMapping* fishEventMapping = [MFFishEvent objectMapping];
@@ -91,13 +93,17 @@
     
     //creates a route for POST to /login
     //when we have this, then RKObjectManager knows that it's supposed to route
-    //MFClientLogin objects to /login when we do a POST
     RKObjectRouter* router = [manager router];
+    
+    
+    //MFClientLogin objects to /login when we do a POST
     [router routeClass:[MFClientLogin class] toResourcePath:@"/login" forMethod:RKRequestMethodPOST];
     
     // Route for posting fishevents
     [router routeClass:[MFFishEvent class] toResourcePath:@"/fishevent" forMethod:RKRequestMethodPOST];
     
+    // Route for posting blogevents
+    [router routeClass:[MFBlogEntry class] toResourcePath:@"/blogentry" forMethod:RKRequestMethodPOST];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

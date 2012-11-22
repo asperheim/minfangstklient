@@ -7,6 +7,7 @@
 //
 
 #import "MFBlogEntry.h"
+#import "MFUser.h"
 
 @implementation MFBlogEntry
 
@@ -21,7 +22,7 @@
 + (RKObjectMapping*)objectMapping {
     RKObjectMapping* blogEntryMapping = [RKObjectMapping mappingForClass:[MFBlogEntry class]];
     [blogEntryMapping mapKeyPath:@"Id" toAttribute:@"Id"];
-    [blogEntryMapping mapKeyPath:@"User" toAttribute:@"User"];
+    [blogEntryMapping mapKeyPath:@"User" toRelationship:@"User" withMapping:[MFUser objectMapping]];
     [blogEntryMapping mapKeyPath:@"Title" toAttribute:@"Title"];
     [blogEntryMapping mapKeyPath:@"Content" toAttribute:@"Content"];
     [blogEntryMapping mapKeyPath:@"Tags" toAttribute:@"Tags"];
