@@ -8,6 +8,7 @@
 
 #import "MFBlogViewController.h"
 #import "MFBlogEntryCell.h"
+#import <RestKit/RestKit.h>
 
 @interface MFBlogViewController ()
 - (IBAction)addButtonClick:(id)sender;
@@ -79,12 +80,13 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
     return 1;
+    //return blogEntries.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     return blogEntries.count;
-    //return 2;
+    //return 1;
 }
 
 
@@ -117,9 +119,25 @@
         self.blogEntryCell = nil;
     }
     
-    //cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+    cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 
     cell.lblTitle.text = blogEntry.Title;
+    cell.lblDate.text = [NSString stringWithFormat:@"%@", blogEntry.CreateDate];
+    cell.lblUserName = [NSString stringWithFormat:@"%@ %@", blogEntry.User.Firstname, blogEntry.User.Lastname];
+    cell.txtViewPreview.text = blogEntry.Content;
+    
+    NSMutableString* tags = [[NSMutableString alloc] init];
+    
+    int dictCounter = 0;
+    for(NSDictionary *tag in blogEntry.Tags) {
+        dictCounter++;
+        [tags appendString:[tag valueForKey:@"Text"]];
+        
+        if(dictCounter < blogEntry.Tags.count)[tags appendString:@", "];
+    }
+    cell.lblTags.text = tags;
+    
+    
     
     return cell;
 }

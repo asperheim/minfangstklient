@@ -90,6 +90,9 @@
 		9A126DE2164D20950037538A /* MFClientInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126DE1164D20950037538A /* MFClientInfo.m */; };
 		9AED2498165684B400350CF9 /* MFMapViewEditEventControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AED2496165684B400350CF9 /* MFMapViewEditEventControllerViewController.m */; };
 		9AED2499165684B400350CF9 /* MFMapViewEditEventControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AED2497165684B400350CF9 /* MFMapViewEditEventControllerViewController.xib */; };
+		9AED24A6165E68C800350CF9 /* BlogEntry_missingImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AED24A5165E68C800350CF9 /* BlogEntry_missingImage.png */; };
+		9AED24AC165E6A7300350CF9 /* MFFishInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AED24AA165E6A7300350CF9 /* MFFishInfoViewController.m */; };
+		9AED24AD165E6A7300350CF9 /* MFFishInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AED24AB165E6A7300350CF9 /* MFFishInfoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -278,6 +281,10 @@
 		9AED2495165684B400350CF9 /* MFMapViewEditEventControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMapViewEditEventControllerViewController.h; sourceTree = "<group>"; };
 		9AED2496165684B400350CF9 /* MFMapViewEditEventControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMapViewEditEventControllerViewController.m; sourceTree = "<group>"; };
 		9AED2497165684B400350CF9 /* MFMapViewEditEventControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFMapViewEditEventControllerViewController.xib; sourceTree = "<group>"; };
+		9AED24A5165E68C800350CF9 /* BlogEntry_missingImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlogEntry_missingImage.png; sourceTree = "<group>"; };
+		9AED24A9165E6A7300350CF9 /* MFFishInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFFishInfoViewController.h; sourceTree = "<group>"; };
+		9AED24AA165E6A7300350CF9 /* MFFishInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFFishInfoViewController.m; sourceTree = "<group>"; };
+		9AED24AB165E6A7300350CF9 /* MFFishInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFFishInfoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,6 +426,7 @@
 		84B2BB0616537F8100CC9F6F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9AED24A5165E68C800350CF9 /* BlogEntry_missingImage.png */,
 				8455DDB9165CCA88008E5F74 /* blogIcon.png */,
 				8455DDBA165CCA88008E5F74 /* blogIconLarge.png */,
 				8455DDBB165CCA88008E5F74 /* fishFactsIcon.png */,
@@ -582,6 +590,7 @@
 		9A126D81164D1BC20037538A /* MinFangst */ = {
 			isa = PBXGroup;
 			children = (
+				9AED24A8165E6A5700350CF9 /* FishInfo */,
 				84B2BB981653C0E200CC9F6F /* Blog */,
 				84B2BB8E1653AB1200CC9F6F /* Map */,
 				84A6434E165296F00082F3AF /* FishRecognition */,
@@ -628,6 +637,16 @@
 				9A126DA2164D1BC20037538A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AED24A8165E6A5700350CF9 /* FishInfo */ = {
+			isa = PBXGroup;
+			children = (
+				9AED24A9165E6A7300350CF9 /* MFFishInfoViewController.h */,
+				9AED24AA165E6A7300350CF9 /* MFFishInfoViewController.m */,
+				9AED24AB165E6A7300350CF9 /* MFFishInfoViewController.xib */,
+			);
+			name = FishInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -780,6 +799,8 @@
 				8455DDCA165CCA88008E5F74 /* settingsIconLarge.png in Resources */,
 				8455DDCF165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.xib in Resources */,
 				840DE786165E4DE6000B0F47 /* MFBlogEntryCell.xib in Resources */,
+				9AED24A6165E68C800350CF9 /* BlogEntry_missingImage.png in Resources */,
+				9AED24AD165E6A7300350CF9 /* MFFishInfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -841,6 +862,7 @@
 				8455DDCE165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.m in Sources */,
 				8455DDD2165CCFDE008E5F74 /* MFCollectionDelegate.m in Sources */,
 				840DE789165E4FF5000B0F47 /* MFBlogEntryCell.m in Sources */,
+				9AED24AC165E6A7300350CF9 /* MFFishInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

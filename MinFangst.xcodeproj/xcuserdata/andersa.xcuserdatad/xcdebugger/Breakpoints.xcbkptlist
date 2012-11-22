@@ -102,8 +102,8 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "19"
          endingLineNumber = "19"
-         landmarkName = "@interface MFBlogViewController"
-         landmarkType = "2">
+         landmarkName = "-getBlogEntries"
+         landmarkType = "4">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -116,6 +116,19 @@
          startingLineNumber = "34"
          endingLineNumber = "34"
          landmarkName = "-setCoordinate:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MinFangst/MFBlogViewController.m"
+         timestampString = "375285834.82142"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "134"
+         endingLineNumber = "134"
+         landmarkName = "-tableView:cellForRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
