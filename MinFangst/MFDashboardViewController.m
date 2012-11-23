@@ -65,7 +65,4 @@
 
 - (IBAction)btnSettingsClick:(id)sender {
 }
-
-- (IBAction)btnLogoutClick:(id)sender {
-}
 @end

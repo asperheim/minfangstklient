@@ -28,6 +28,8 @@
 		8455DDCE165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8455DDCC165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.m */; };
 		8455DDCF165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDCD165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.xib */; };
 		8455DDD2165CCFDE008E5F74 /* MFCollectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8455DDD1165CCFDE008E5F74 /* MFCollectionDelegate.m */; };
+		8473C623165F96B9001CC575 /* MFDashboardVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473C622165F96B9001CC575 /* MFDashboardVCTests.m */; };
+		8473C630165FA579001CC575 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8473C628165FA579001CC575 /* libOCMock.a */; };
 		84A56D8E165271AA00B64D66 /* MFUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A56D8D165271AA00B64D66 /* MFUtils.m */; };
 		84A6433716528DCA0082F3AF /* minFangstLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A6433616528DCA0082F3AF /* minFangstLogo.png */; };
 		84A6434C165293370082F3AF /* MFDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6434A165293370082F3AF /* MFDashboardViewController.m */; };
@@ -177,6 +179,15 @@
 		8455DDCD165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFMapViewShowDetailsViewController.xib; sourceTree = "<group>"; };
 		8455DDD0165CCFDE008E5F74 /* MFCollectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFCollectionDelegate.h; sourceTree = "<group>"; };
 		8455DDD1165CCFDE008E5F74 /* MFCollectionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFCollectionDelegate.m; sourceTree = "<group>"; };
+		8473C621165F96B9001CC575 /* MFDashboardVCTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFDashboardVCTests.h; sourceTree = "<group>"; };
+		8473C622165F96B9001CC575 /* MFDashboardVCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFDashboardVCTests.m; sourceTree = "<group>"; };
+		8473C628165FA579001CC575 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		8473C62A165FA579001CC575 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		8473C62B165FA579001CC575 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		8473C62C165FA579001CC575 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		8473C62D165FA579001CC575 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		8473C62E165FA579001CC575 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		8473C62F165FA579001CC575 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
 		84A56D8C165271AA00B64D66 /* MFUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUtils.h; sourceTree = "<group>"; };
 		84A56D8D165271AA00B64D66 /* MFUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUtils.m; sourceTree = "<group>"; };
 		84A6433616528DCA0082F3AF /* minFangstLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minFangstLogo.png; sourceTree = "<group>"; };
@@ -323,6 +334,7 @@
 				9A126D9A164D1BC20037538A /* SenTestingKit.framework in Frameworks */,
 				9A126D9B164D1BC20037538A /* UIKit.framework in Frameworks */,
 				9A126D9C164D1BC20037538A /* Foundation.framework in Frameworks */,
+				8473C630165FA579001CC575 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +364,8 @@
 		840DE799165E72AD000B0F47 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				8473C621165F96B9001CC575 /* MFDashboardVCTests.h */,
+				8473C622165F96B9001CC575 /* MFDashboardVCTests.m */,
 			);
 			name = Dashboard;
 			sourceTree = "<group>";
@@ -410,12 +424,35 @@
 		846010AB165E0BDE00377FE8 /* LIbraries */ = {
 			isa = PBXGroup;
 			children = (
+				8473C627165FA579001CC575 /* OCMock */,
 				9A126DD6164D1DFB0037538A /* libxml2.dylib */,
 				84B2BB6316539EDC00CC9F6F /* ZBarSDK */,
 				84B2BB8C16539F3100CC9F6F /* libiconv.dylib */,
 				84AC26861650EB25008B1F02 /* RestKit.xcodeproj */,
 			);
 			name = LIbraries;
+			sourceTree = "<group>";
+		};
+		8473C627165FA579001CC575 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				8473C628165FA579001CC575 /* libOCMock.a */,
+				8473C629165FA579001CC575 /* OCMock */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		8473C629165FA579001CC575 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				8473C62A165FA579001CC575 /* NSNotificationCenter+OCMAdditions.h */,
+				8473C62B165FA579001CC575 /* OCMArg.h */,
+				8473C62C165FA579001CC575 /* OCMConstraint.h */,
+				8473C62D165FA579001CC575 /* OCMock.h */,
+				8473C62E165FA579001CC575 /* OCMockObject.h */,
+				8473C62F165FA579001CC575 /* OCMockRecorder.h */,
+			);
+			path = OCMock;
 			sourceTree = "<group>";
 		};
 		84A56D891652713600B64D66 /* Models */ = {
@@ -941,6 +978,7 @@
 			files = (
 				9A126DA7164D1BC20037538A /* MinFangstTests.m in Sources */,
 				840A647F165F6136004D4DB9 /* MFUtilsTests.m in Sources */,
+				8473C623165F96B9001CC575 /* MFDashboardVCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1076,10 +1114,21 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"“$(SRCROOT)”",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MinFangst/MinFangst-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/OCMock\"",
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
 				INFOPLIST_FILE = "MinFangstTests/MinFangstTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iOS\"",
+					"\"$(SRCROOT)/OCMock\"",
+				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -1093,10 +1142,21 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"“$(SRCROOT)”",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MinFangst/MinFangst-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/OCMock\"",
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
 				INFOPLIST_FILE = "MinFangstTests/MinFangstTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iOS\"",
+					"\"$(SRCROOT)/OCMock\"",
+				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
