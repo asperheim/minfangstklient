@@ -10,5 +10,5 @@
 
 @interface MFUtils : NSObject
 + (NSString *) md5HexDigest: (NSString * ) input;
-+(NSString*)GetUUID;
++(NSString*)getUUID;
 @end
