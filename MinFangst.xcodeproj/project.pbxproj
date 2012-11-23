@@ -326,6 +326,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		840DE797165E7204000B0F47 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9A126DDA164D1E6F0037538A /* MFLoginViewController.xib */,
+				9A126DD8164D1E6F0037538A /* MFLoginViewController.h */,
+				9A126DD9164D1E6F0037538A /* MFLoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		840DE798165E7232000B0F47 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				84A6434B165293370082F3AF /* MFDashboardViewController.xib */,
+				84A64349165293370082F3AF /* MFDashboardViewController.h */,
+				84A6434A165293370082F3AF /* MFDashboardViewController.m */,
+			);
+			name = Dashboard;
+			sourceTree = "<group>";
+		};
+		840DE799165E72AD000B0F47 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Dashboard;
+			sourceTree = "<group>";
+		};
+		840DE79A165E72B2000B0F47 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		840DE79B165E72B9000B0F47 /* FishInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FishInfo;
+			sourceTree = "<group>";
+		};
+		840DE79C165E72C6000B0F47 /* Blog */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Blog;
+			sourceTree = "<group>";
+		};
+		840DE79D165E72CB000B0F47 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		840DE79E165E72D1000B0F47 /* FishRecognition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FishRecognition;
+			sourceTree = "<group>";
+		};
+		840DE79F165E72DB000B0F47 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		840DE7A0165E72E7000B0F47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		846010AB165E0BDE00377FE8 /* LIbraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,15 +448,6 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		84A56D8A1652714F00B64D66 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				84A6434B165293370082F3AF /* MFDashboardViewController.xib */,
-				9A126DDA164D1E6F0037538A /* MFLoginViewController.xib */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
 		84A56D8B1652718B00B64D66 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,17 +455,6 @@
 				84A56D8D165271AA00B64D66 /* MFUtils.m */,
 			);
 			name = Helpers;
-			sourceTree = "<group>";
-		};
-		84A56D97165285CD00B64D66 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				84A64349165293370082F3AF /* MFDashboardViewController.h */,
-				84A6434A165293370082F3AF /* MFDashboardViewController.m */,
-				9A126DD8164D1E6F0037538A /* MFLoginViewController.h */,
-				9A126DD9164D1E6F0037538A /* MFLoginViewController.m */,
-			);
-			name = Controllers;
 			sourceTree = "<group>";
 		};
 		84A6434E165296F00082F3AF /* FishRecognition */ = {
@@ -590,13 +646,13 @@
 		9A126D81164D1BC20037538A /* MinFangst */ = {
 			isa = PBXGroup;
 			children = (
+				840DE798165E7232000B0F47 /* Dashboard */,
+				840DE797165E7204000B0F47 /* Login */,
 				9AED24A8165E6A5700350CF9 /* FishInfo */,
 				84B2BB981653C0E200CC9F6F /* Blog */,
 				84B2BB8E1653AB1200CC9F6F /* Map */,
 				84A6434E165296F00082F3AF /* FishRecognition */,
-				84A56D97165285CD00B64D66 /* Controllers */,
 				84A56D8B1652718B00B64D66 /* Helpers */,
-				84A56D8A1652714F00B64D66 /* Views */,
 				84A56D891652713600B64D66 /* Models */,
 				9A126D8A164D1BC20037538A /* MFAppDelegate.h */,
 				9A126D8B164D1BC20037538A /* MFAppDelegate.m */,
@@ -623,6 +679,14 @@
 		9A126D9F164D1BC20037538A /* MinFangstTests */ = {
 			isa = PBXGroup;
 			children = (
+				840DE7A0165E72E7000B0F47 /* Models */,
+				840DE79F165E72DB000B0F47 /* Helpers */,
+				840DE79E165E72D1000B0F47 /* FishRecognition */,
+				840DE79D165E72CB000B0F47 /* Map */,
+				840DE79C165E72C6000B0F47 /* Blog */,
+				840DE79B165E72B9000B0F47 /* FishInfo */,
+				840DE79A165E72B2000B0F47 /* Login */,
+				840DE799165E72AD000B0F47 /* Dashboard */,
 				9A126DA5164D1BC20037538A /* MinFangstTests.h */,
 				9A126DA6164D1BC20037538A /* MinFangstTests.m */,
 				9A126DA0164D1BC20037538A /* Supporting Files */,
