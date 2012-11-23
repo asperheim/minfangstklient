@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840A647F165F6136004D4DB9 /* MFUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A647E165F6136004D4DB9 /* MFUtilsTests.m */; };
 		840DE786165E4DE6000B0F47 /* MFBlogEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840DE785165E4DE6000B0F47 /* MFBlogEntryCell.xib */; };
 		840DE789165E4FF5000B0F47 /* MFBlogEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 840DE788165E4FF5000B0F47 /* MFBlogEntryCell.m */; };
 		841BB3D51650EE27006B59C8 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC26921650EB26008B1F02 /* libRestKit.a */; };
@@ -148,6 +149,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		840A647D165F6136004D4DB9 /* MFUtilsTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFUtilsTests.h; sourceTree = "<group>"; };
+		840A647E165F6136004D4DB9 /* MFUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFUtilsTests.m; sourceTree = "<group>"; };
 		840DE785165E4DE6000B0F47 /* MFBlogEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFBlogEntryCell.xib; sourceTree = "<group>"; };
 		840DE787165E4FF5000B0F47 /* MFBlogEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFBlogEntryCell.h; sourceTree = "<group>"; };
 		840DE788165E4FF5000B0F47 /* MFBlogEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFBlogEntryCell.m; sourceTree = "<group>"; };
@@ -391,6 +394,8 @@
 		840DE79F165E72DB000B0F47 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				840A647D165F6136004D4DB9 /* MFUtilsTests.h */,
+				840A647E165F6136004D4DB9 /* MFUtilsTests.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -935,6 +940,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A126DA7164D1BC20037538A /* MinFangstTests.m in Sources */,
+				840A647F165F6136004D4DB9 /* MFUtilsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
