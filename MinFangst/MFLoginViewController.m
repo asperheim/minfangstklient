@@ -17,9 +17,11 @@
 
 @interface MFLoginViewController ()
 - (void)launchDashboard;
+- (void)showCustomLoginMessage:(NSString*) errorContent;
 @end
 
 @implementation MFLoginViewController
+@synthesize loginActivityMonitor;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,6 +36,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self.loginActivityMonitor setHidesWhenStopped:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,6 +47,7 @@
 }
 
 - (IBAction)btnLoggInnClick:(id)sender {
+    [self.loginActivityMonitor startAnimating];
     self.btnLoggInn.enabled = NO;
     NSString * pass = [MFUtils md5HexDigest:self.txtPassord.text];
     //NSLog(@"Brukernavn: %@,Password: %@, hash: %@", self.txtBrukernavn.text, self.txtPassord.text, pass);
@@ -97,6 +102,8 @@
     
     [MFSharedInstances sharedInstance].login = [objects objectAtIndex:0];
     
+    [self.loginActivityMonitor stopAnimating];
+    
     [self launchDashboard];
 
     //NSLog(@"Got %d objects from server! First object is: %@", objects.count, userLogin);
@@ -104,13 +111,25 @@
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error {
     NSLog(@"Encountered an error: %@", error);
-    
+    [self.loginActivityMonitor stopAnimating];
     self.btnLoggInn.enabled = YES;
+    [self showCustomLoginMessage:@"Got an error from the server."];
 }
 
 - (void)objectLoaderDidLoadUnexpectedResponse:(RKObjectLoader *)objectLoader {
     NSLog(@"objectLoaderDidLoadUnexpectedResponse!");
+    [self.loginActivityMonitor stopAnimating];
     self.btnLoggInn.enabled = YES;
+    [self showCustomLoginMessage:@"Got a malformed response from the server."];
+    
+}
+
+-(void)showCustomLoginMessage:(NSString *)errorContent {
+    UIAlertView *messageAlert = [[UIAlertView alloc]
+                                 initWithTitle:@"Login Error" message:errorContent delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    
+    // Display Alert Message
+    [messageAlert show];
 }
 
 -(void)launchDashboard {

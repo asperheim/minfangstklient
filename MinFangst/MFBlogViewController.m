@@ -120,9 +120,16 @@
     }
     
     cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
-
+    
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"yyyy-MM-dd"];
+    
+    NSString* correctDateFormat = [NSString stringWithFormat:@"%@", [df stringFromDate:[NSDate date]]];
+    
+    
+    
     cell.lblTitle.text = blogEntry.Title;
-    cell.lblDate.text = [NSString stringWithFormat:@"%@", blogEntry.CreateDate];
+    cell.lblDate.text = correctDateFormat;
     cell.lblUserName = [NSString stringWithFormat:@"%@ %@", blogEntry.User.Firstname, blogEntry.User.Lastname];
     cell.txtViewPreview.text = blogEntry.Content;
     

@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtBrukernavn;
 @property (weak, nonatomic) IBOutlet UITextField *txtPassord;
 @property (weak, nonatomic) IBOutlet UIButton *btnLoggInn;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *loginActivityMonitor;
 
 
 - (IBAction)btnLoggInnClick:(id)sender;

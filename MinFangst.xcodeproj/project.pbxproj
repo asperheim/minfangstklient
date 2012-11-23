@@ -96,6 +96,7 @@
 		9AED24A6165E68C800350CF9 /* BlogEntry_missingImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AED24A5165E68C800350CF9 /* BlogEntry_missingImage.png */; };
 		9AED24AC165E6A7300350CF9 /* MFFishInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AED24AA165E6A7300350CF9 /* MFFishInfoViewController.m */; };
 		9AED24AD165E6A7300350CF9 /* MFFishInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AED24AB165E6A7300350CF9 /* MFFishInfoViewController.xib */; };
+		9AED24B1165E796900350CF9 /* backgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AED24B0165E796900350CF9 /* backgroundImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -299,6 +300,7 @@
 		9AED24A9165E6A7300350CF9 /* MFFishInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFFishInfoViewController.h; sourceTree = "<group>"; };
 		9AED24AA165E6A7300350CF9 /* MFFishInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFFishInfoViewController.m; sourceTree = "<group>"; };
 		9AED24AB165E6A7300350CF9 /* MFFishInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFFishInfoViewController.xib; sourceTree = "<group>"; };
+		9AED24B0165E796900350CF9 /* backgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -524,6 +526,7 @@
 		84B2BB0616537F8100CC9F6F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9AED24B0165E796900350CF9 /* backgroundImage.png */,
 				9AED24A5165E68C800350CF9 /* BlogEntry_missingImage.png */,
 				8455DDB9165CCA88008E5F74 /* blogIcon.png */,
 				8455DDBA165CCA88008E5F74 /* blogIconLarge.png */,
@@ -907,6 +910,7 @@
 				840DE786165E4DE6000B0F47 /* MFBlogEntryCell.xib in Resources */,
 				9AED24A6165E68C800350CF9 /* BlogEntry_missingImage.png in Resources */,
 				9AED24AD165E6A7300350CF9 /* MFFishInfoViewController.xib in Resources */,
+				9AED24B1165E796900350CF9 /* backgroundImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
