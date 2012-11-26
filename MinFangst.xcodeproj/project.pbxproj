@@ -13,6 +13,89 @@
 		841BB3D51650EE27006B59C8 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC26921650EB26008B1F02 /* libRestKit.a */; };
 		841BB3D91650F999006B59C8 /* MFLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BB3D81650F999006B59C8 /* MFLogin.m */; };
 		841BB3DC165117E9006B59C8 /* MFSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BB3DB165117E9006B59C8 /* MFSession.m */; };
+		843139D416635E9E0006311A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126D87164D1BC20037538A /* main.m */; };
+		843139D516635E9E0006311A /* MFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126D8B164D1BC20037538A /* MFAppDelegate.m */; };
+		843139D616635E9E0006311A /* MFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126DD9164D1E6F0037538A /* MFLoginViewController.m */; };
+		843139D716635E9E0006311A /* MFClientLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126DDE164D20340037538A /* MFClientLogin.m */; };
+		843139D816635E9E0006311A /* MFClientInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126DE1164D20950037538A /* MFClientInfo.m */; };
+		843139D916635E9E0006311A /* MFLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BB3D81650F999006B59C8 /* MFLogin.m */; };
+		843139DA16635E9E0006311A /* MFSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BB3DB165117E9006B59C8 /* MFSession.m */; };
+		843139DB16635E9E0006311A /* MFUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A56D8D165271AA00B64D66 /* MFUtils.m */; };
+		843139DC16635E9E0006311A /* MFDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6434A165293370082F3AF /* MFDashboardViewController.m */; };
+		843139DD16635E9E0006311A /* MFFishRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B2BB5D16539CAF00CC9F6F /* MFFishRecognitionViewController.m */; };
+		843139DE16635E9E0006311A /* MFMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B2BB901653AB2700CC9F6F /* MFMapViewController.m */; };
+		843139DF16635E9E0006311A /* MFBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B2BB9A1653C10B00CC9F6F /* MFBlogViewController.m */; };
+		843139E016635E9E0006311A /* MFBlogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B2BBA71653CD8200CC9F6F /* MFBlogEntry.m */; };
+		843139E116635E9E0006311A /* MFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B2BBAA1653CFBE00CC9F6F /* MFUser.m */; };
+		843139E216635E9E0006311A /* MFPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B2BBAD1653D25400CC9F6F /* MFPassword.m */; };
+		843139E316635E9E0006311A /* MFEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B2BBB01653D31F00CC9F6F /* MFEmail.m */; };
+		843139E416635E9E0006311A /* MFAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B2BBB31653D3B100CC9F6F /* MFAddress.m */; };
+		843139E516635E9E0006311A /* MFPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B2BBB61653D44000CC9F6F /* MFPhone.m */; };
+		843139E616635E9E0006311A /* MFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B2BBC61653E12300CC9F6F /* MFImage.m */; };
+		843139E716635E9E0006311A /* MFLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B2BBC91653E56E00CC9F6F /* MFLocation.m */; };
+		843139E816635E9E0006311A /* MFFishEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B2BBCC1653E60B00CC9F6F /* MFFishEvent.m */; };
+		843139E916635E9E0006311A /* MFMapViewEditEventControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AED2496165684B400350CF9 /* MFMapViewEditEventControllerViewController.m */; };
+		843139EA16635E9E0006311A /* MFSharedInstances.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54CF165B71C60056EA1A /* MFSharedInstances.m */; };
+		843139EB16635E9E0006311A /* MFImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54D4165BCB7F0056EA1A /* MFImageCell.m */; };
+		843139EC16635E9E0006311A /* MFMapViewShowDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8455DDCC165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.m */; };
+		843139ED16635E9E0006311A /* MFCollectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8455DDD1165CCFDE008E5F74 /* MFCollectionDelegate.m */; };
+		843139EE16635E9E0006311A /* MFBlogEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 840DE788165E4FF5000B0F47 /* MFBlogEntryCell.m */; };
+		843139EF16635E9E0006311A /* MFFishInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AED24AA165E6A7300350CF9 /* MFFishInfoViewController.m */; };
+		843139F116635E9E0006311A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B2BB961653B1A600CC9F6F /* CoreLocation.framework */; };
+		843139F216635E9E0006311A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B2BB941653AD5000CC9F6F /* MapKit.framework */; };
+		843139F316635E9E0006311A /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B2BB8C16539F3100CC9F6F /* libiconv.dylib */; };
+		843139F416635E9E0006311A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126DD4164D1DF20037538A /* QuartzCore.framework */; };
+		843139F516635E9E0006311A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B2BB8A16539F1B00CC9F6F /* CoreVideo.framework */; };
+		843139F616635E9E0006311A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B2BB8816539F1400CC9F6F /* CoreMedia.framework */; };
+		843139F716635E9E0006311A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B2BB8616539F0D00CC9F6F /* AVFoundation.framework */; };
+		843139F816635E9E0006311A /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC26921650EB26008B1F02 /* libRestKit.a */; };
+		843139F916635E9E0006311A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126DD6164D1DFB0037538A /* libxml2.dylib */; };
+		843139FA16635E9E0006311A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126DD2164D1DEB0037538A /* SystemConfiguration.framework */; };
+		843139FB16635E9E0006311A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126DD0164D1DE50037538A /* Security.framework */; };
+		843139FC16635E9E0006311A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126DCE164D1DDD0037538A /* MobileCoreServices.framework */; };
+		843139FD16635E9E0006311A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126DCC164D1DD70037538A /* CoreData.framework */; };
+		843139FE16635E9E0006311A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126DCA164D1DCF0037538A /* CFNetwork.framework */; };
+		843139FF16635E9E0006311A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126D7B164D1BC20037538A /* UIKit.framework */; };
+		84313A0016635E9E0006311A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126D7D164D1BC20037538A /* Foundation.framework */; };
+		84313A0116635E9E0006311A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126D7F164D1BC20037538A /* CoreGraphics.framework */; };
+		84313A0216635E9E0006311A /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B2BB7B16539EDC00CC9F6F /* libzbar.a */; };
+		84313A0416635E9E0006311A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A126D84164D1BC20037538A /* InfoPlist.strings */; };
+		84313A0516635E9E0006311A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A126D8D164D1BC20037538A /* Default.png */; };
+		84313A0616635E9E0006311A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A126D8F164D1BC20037538A /* Default@2x.png */; };
+		84313A0716635E9E0006311A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A126D91164D1BC20037538A /* Default-568h@2x.png */; };
+		84313A0816635E9E0006311A /* MFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A126DDA164D1E6F0037538A /* MFLoginViewController.xib */; };
+		84313A0916635E9E0006311A /* minFangstLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A6433616528DCA0082F3AF /* minFangstLogo.png */; };
+		84313A0A16635E9E0006311A /* MFDashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A6434B165293370082F3AF /* MFDashboardViewController.xib */; };
+		84313A0B16635E9E0006311A /* fishRecognition.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A6434F1652982B0082F3AF /* fishRecognition.png */; };
+		84313A0C16635E9E0006311A /* mapImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B2BB0416537F7200CC9F6F /* mapImage.png */; };
+		84313A0D16635E9E0006311A /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B2BB56165397C300CC9F6F /* settings.png */; };
+		84313A0E16635E9E0006311A /* blog.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B2BB5816539C1900CC9F6F /* blog.png */; };
+		84313A0F16635E9E0006311A /* logOut.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B2BB5916539C1900CC9F6F /* logOut.png */; };
+		84313A1016635E9E0006311A /* MFFishRecognitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B2BB5E16539CAF00CC9F6F /* MFFishRecognitionViewController.xib */; };
+		84313A1116635E9E0006311A /* fishFacts.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B2BB6116539DD000CC9F6F /* fishFacts.png */; };
+		84313A1216635E9E0006311A /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B2BB7D16539EDC00CC9F6F /* zbar-back.png */; };
+		84313A1316635E9E0006311A /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 84B2BB7E16539EDC00CC9F6F /* zbar-help.html */; };
+		84313A1416635E9E0006311A /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B2BB7F16539EDC00CC9F6F /* zbar-helpicons.png */; };
+		84313A1516635E9E0006311A /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B2BB8016539EDC00CC9F6F /* zbar-samples.png */; };
+		84313A1616635E9E0006311A /* MFMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B2BB911653AB2700CC9F6F /* MFMapViewController.xib */; };
+		84313A1716635E9E0006311A /* MFBlogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B2BB9B1653C10B00CC9F6F /* MFBlogViewController.xib */; };
+		84313A1816635E9E0006311A /* MFMapViewEditEventControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AED2497165684B400350CF9 /* MFMapViewEditEventControllerViewController.xib */; };
+		84313A1916635E9E0006311A /* backgroundFish.png in Resources */ = {isa = PBXBuildFile; fileRef = 843F54D1165BA6FF0056EA1A /* backgroundFish.png */; };
+		84313A1A16635E9E0006311A /* blogIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDB9165CCA88008E5F74 /* blogIcon.png */; };
+		84313A1B16635E9E0006311A /* blogIconLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDBA165CCA88008E5F74 /* blogIconLarge.png */; };
+		84313A1C16635E9E0006311A /* fishFactsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDBB165CCA88008E5F74 /* fishFactsIcon.png */; };
+		84313A1D16635E9E0006311A /* fishFactsIconLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDBC165CCA88008E5F74 /* fishFactsIconLarge.png */; };
+		84313A1E16635E9E0006311A /* mapIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDBD165CCA88008E5F74 /* mapIcon.png */; };
+		84313A1F16635E9E0006311A /* scanFishIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDBE165CCA88008E5F74 /* scanFishIcon.png */; };
+		84313A2016635E9E0006311A /* scanFishIconLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDBF165CCA88008E5F74 /* scanFishIconLarge.png */; };
+		84313A2116635E9E0006311A /* settingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDC0165CCA88008E5F74 /* settingsIcon.png */; };
+		84313A2216635E9E0006311A /* settingsIconLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDC1165CCA88008E5F74 /* settingsIconLarge.png */; };
+		84313A2316635E9E0006311A /* MFMapViewShowDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDCD165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.xib */; };
+		84313A2416635E9E0006311A /* MFBlogEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840DE785165E4DE6000B0F47 /* MFBlogEntryCell.xib */; };
+		84313A2516635E9E0006311A /* BlogEntry_missingImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AED24A5165E68C800350CF9 /* BlogEntry_missingImage.png */; };
+		84313A2616635E9E0006311A /* MFFishInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AED24AB165E6A7300350CF9 /* MFFishInfoViewController.xib */; };
+		84313A2716635E9E0006311A /* backgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AED24B0165E796900350CF9 /* backgroundImage.png */; };
+		84313A2F16635FF90006311A /* calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84313A2E16635FF90006311A /* calabash.framework */; };
 		843F54D0165B71C60056EA1A /* MFSharedInstances.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54CF165B71C60056EA1A /* MFSharedInstances.m */; };
 		843F54D2165BA6FF0056EA1A /* backgroundFish.png in Resources */ = {isa = PBXBuildFile; fileRef = 843F54D1165BA6FF0056EA1A /* backgroundFish.png */; };
 		843F54D5165BCB7F0056EA1A /* MFImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54D4165BCB7F0056EA1A /* MFImageCell.m */; };
@@ -107,6 +190,13 @@
 			remoteGlobalIDString = 25160D1514564E810060A5C5;
 			remoteInfo = RestKit;
 		};
+		843139D216635E9E0006311A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AC26861650EB25008B1F02 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
 		84AC26911650EB26008B1F02 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84AC26861650EB25008B1F02 /* RestKit.xcodeproj */;
@@ -161,6 +251,15 @@
 		841BB3D81650F999006B59C8 /* MFLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFLogin.m; sourceTree = "<group>"; };
 		841BB3DA165117E9006B59C8 /* MFSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSession.h; sourceTree = "<group>"; };
 		841BB3DB165117E9006B59C8 /* MFSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSession.m; sourceTree = "<group>"; };
+		84313A2B16635E9E0006311A /* MinFangst-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MinFangst-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84313A2D16635E9E0006311A /* MinFangst-cal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MinFangst-cal-Info.plist"; path = "/Users/toreb/Projects/minfangstklient/MinFangst-cal-Info.plist"; sourceTree = "<absolute>"; };
+		84313A2E16635FF90006311A /* calabash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
+		84313A3A16636AC70006311A /* login.feature */ = {isa = PBXFileReference; lastKnownFileType = text; path = login.feature; sourceTree = "<group>"; };
+		84313A3C16636AC70006311A /* calabash_steps.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = calabash_steps.rb; sourceTree = "<group>"; };
+		84313A3D16636AC70006311A /* my_first_steps.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = my_first_steps.rb; sourceTree = "<group>"; };
+		84313A3F16636AC70006311A /* env.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = env.rb; sourceTree = "<group>"; };
+		84313A4016636AC70006311A /* hooks.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = hooks.rb; sourceTree = "<group>"; };
+		84313A4116636AC70006311A /* launch.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = launch.rb; sourceTree = "<group>"; };
 		843F54CE165B71C60056EA1A /* MFSharedInstances.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSharedInstances.h; sourceTree = "<group>"; };
 		843F54CF165B71C60056EA1A /* MFSharedInstances.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSharedInstances.m; sourceTree = "<group>"; };
 		843F54D1165BA6FF0056EA1A /* backgroundFish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundFish.png; sourceTree = "<group>"; };
@@ -304,6 +403,32 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		843139F016635E9E0006311A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843139F116635E9E0006311A /* CoreLocation.framework in Frameworks */,
+				843139F216635E9E0006311A /* MapKit.framework in Frameworks */,
+				843139F316635E9E0006311A /* libiconv.dylib in Frameworks */,
+				843139F416635E9E0006311A /* QuartzCore.framework in Frameworks */,
+				843139F516635E9E0006311A /* CoreVideo.framework in Frameworks */,
+				843139F616635E9E0006311A /* CoreMedia.framework in Frameworks */,
+				843139F716635E9E0006311A /* AVFoundation.framework in Frameworks */,
+				843139F816635E9E0006311A /* libRestKit.a in Frameworks */,
+				843139F916635E9E0006311A /* libxml2.dylib in Frameworks */,
+				843139FA16635E9E0006311A /* SystemConfiguration.framework in Frameworks */,
+				843139FB16635E9E0006311A /* Security.framework in Frameworks */,
+				843139FC16635E9E0006311A /* MobileCoreServices.framework in Frameworks */,
+				843139FD16635E9E0006311A /* CoreData.framework in Frameworks */,
+				843139FE16635E9E0006311A /* CFNetwork.framework in Frameworks */,
+				843139FF16635E9E0006311A /* UIKit.framework in Frameworks */,
+				84313A0016635E9E0006311A /* Foundation.framework in Frameworks */,
+				84313A0116635E9E0006311A /* CoreGraphics.framework in Frameworks */,
+				84313A0216635E9E0006311A /* libzbar.a in Frameworks */,
+				84313A2F16635FF90006311A /* calabash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9A126D74164D1BC20037538A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -421,6 +546,35 @@
 			children = (
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		84313A3916636AC70006311A /* features */ = {
+			isa = PBXGroup;
+			children = (
+				84313A3A16636AC70006311A /* login.feature */,
+				84313A3B16636AC70006311A /* step_definitions */,
+				84313A3E16636AC70006311A /* support */,
+			);
+			path = features;
+			sourceTree = SOURCE_ROOT;
+		};
+		84313A3B16636AC70006311A /* step_definitions */ = {
+			isa = PBXGroup;
+			children = (
+				84313A3C16636AC70006311A /* calabash_steps.rb */,
+				84313A3D16636AC70006311A /* my_first_steps.rb */,
+			);
+			path = step_definitions;
+			sourceTree = "<group>";
+		};
+		84313A3E16636AC70006311A /* support */ = {
+			isa = PBXGroup;
+			children = (
+				84313A3F16636AC70006311A /* env.rb */,
+				84313A4016636AC70006311A /* hooks.rb */,
+				84313A4116636AC70006311A /* launch.rb */,
+			);
+			path = support;
 			sourceTree = "<group>";
 		};
 		846010AB165E0BDE00377FE8 /* LIbraries */ = {
@@ -662,6 +816,7 @@
 			children = (
 				9A126D77164D1BC20037538A /* MinFangst.app */,
 				9A126D98164D1BC20037538A /* MinFangstTests.octest */,
+				84313A2B16635E9E0006311A /* MinFangst-cal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -669,6 +824,7 @@
 		9A126D7A164D1BC20037538A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84313A2E16635FF90006311A /* calabash.framework */,
 				84B2BB961653B1A600CC9F6F /* CoreLocation.framework */,
 				84B2BB941653AD5000CC9F6F /* MapKit.framework */,
 				84B2BB8A16539F1B00CC9F6F /* CoreVideo.framework */,
@@ -709,6 +865,7 @@
 		9A126D82164D1BC20037538A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84313A2D16635E9E0006311A /* MinFangst-cal-Info.plist */,
 				84B2BB0616537F8100CC9F6F /* Images */,
 				9A126D83164D1BC20037538A /* MinFangst-Info.plist */,
 				9A126D84164D1BC20037538A /* InfoPlist.strings */,
@@ -724,6 +881,7 @@
 		9A126D9F164D1BC20037538A /* MinFangstTests */ = {
 			isa = PBXGroup;
 			children = (
+				84313A3916636AC70006311A /* features */,
 				840DE7A0165E72E7000B0F47 /* Models */,
 				840DE79F165E72DB000B0F47 /* Helpers */,
 				840DE79E165E72D1000B0F47 /* FishRecognition */,
@@ -761,6 +919,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		843139D016635E9E0006311A /* MinFangst-cal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84313A2816635E9E0006311A /* Build configuration list for PBXNativeTarget "MinFangst-cal" */;
+			buildPhases = (
+				843139D316635E9E0006311A /* Sources */,
+				843139F016635E9E0006311A /* Frameworks */,
+				84313A0316635E9E0006311A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				843139D116635E9E0006311A /* PBXTargetDependency */,
+			);
+			name = "MinFangst-cal";
+			productName = MinFangst;
+			productReference = 84313A2B16635E9E0006311A /* MinFangst-cal.app */;
+			productType = "com.apple.product-type.application";
+		};
 		9A126D76164D1BC20037538A /* MinFangst */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A126DAA164D1BC20037538A /* Build configuration list for PBXNativeTarget "MinFangst" */;
@@ -828,6 +1004,7 @@
 			targets = (
 				9A126D76164D1BC20037538A /* MinFangst */,
 				9A126D97164D1BC20037538A /* MinFangstTests */,
+				843139D016635E9E0006311A /* MinFangst-cal */,
 			);
 		};
 /* End PBXProject section */
@@ -871,6 +1048,49 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		84313A0316635E9E0006311A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84313A0416635E9E0006311A /* InfoPlist.strings in Resources */,
+				84313A0516635E9E0006311A /* Default.png in Resources */,
+				84313A0616635E9E0006311A /* Default@2x.png in Resources */,
+				84313A0716635E9E0006311A /* Default-568h@2x.png in Resources */,
+				84313A0816635E9E0006311A /* MFLoginViewController.xib in Resources */,
+				84313A0916635E9E0006311A /* minFangstLogo.png in Resources */,
+				84313A0A16635E9E0006311A /* MFDashboardViewController.xib in Resources */,
+				84313A0B16635E9E0006311A /* fishRecognition.png in Resources */,
+				84313A0C16635E9E0006311A /* mapImage.png in Resources */,
+				84313A0D16635E9E0006311A /* settings.png in Resources */,
+				84313A0E16635E9E0006311A /* blog.png in Resources */,
+				84313A0F16635E9E0006311A /* logOut.png in Resources */,
+				84313A1016635E9E0006311A /* MFFishRecognitionViewController.xib in Resources */,
+				84313A1116635E9E0006311A /* fishFacts.png in Resources */,
+				84313A1216635E9E0006311A /* zbar-back.png in Resources */,
+				84313A1316635E9E0006311A /* zbar-help.html in Resources */,
+				84313A1416635E9E0006311A /* zbar-helpicons.png in Resources */,
+				84313A1516635E9E0006311A /* zbar-samples.png in Resources */,
+				84313A1616635E9E0006311A /* MFMapViewController.xib in Resources */,
+				84313A1716635E9E0006311A /* MFBlogViewController.xib in Resources */,
+				84313A1816635E9E0006311A /* MFMapViewEditEventControllerViewController.xib in Resources */,
+				84313A1916635E9E0006311A /* backgroundFish.png in Resources */,
+				84313A1A16635E9E0006311A /* blogIcon.png in Resources */,
+				84313A1B16635E9E0006311A /* blogIconLarge.png in Resources */,
+				84313A1C16635E9E0006311A /* fishFactsIcon.png in Resources */,
+				84313A1D16635E9E0006311A /* fishFactsIconLarge.png in Resources */,
+				84313A1E16635E9E0006311A /* mapIcon.png in Resources */,
+				84313A1F16635E9E0006311A /* scanFishIcon.png in Resources */,
+				84313A2016635E9E0006311A /* scanFishIconLarge.png in Resources */,
+				84313A2116635E9E0006311A /* settingsIcon.png in Resources */,
+				84313A2216635E9E0006311A /* settingsIconLarge.png in Resources */,
+				84313A2316635E9E0006311A /* MFMapViewShowDetailsViewController.xib in Resources */,
+				84313A2416635E9E0006311A /* MFBlogEntryCell.xib in Resources */,
+				84313A2516635E9E0006311A /* BlogEntry_missingImage.png in Resources */,
+				84313A2616635E9E0006311A /* MFFishInfoViewController.xib in Resources */,
+				84313A2716635E9E0006311A /* backgroundImage.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9A126D75164D1BC20037538A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -941,6 +1161,41 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		843139D316635E9E0006311A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843139D416635E9E0006311A /* main.m in Sources */,
+				843139D516635E9E0006311A /* MFAppDelegate.m in Sources */,
+				843139D616635E9E0006311A /* MFLoginViewController.m in Sources */,
+				843139D716635E9E0006311A /* MFClientLogin.m in Sources */,
+				843139D816635E9E0006311A /* MFClientInfo.m in Sources */,
+				843139D916635E9E0006311A /* MFLogin.m in Sources */,
+				843139DA16635E9E0006311A /* MFSession.m in Sources */,
+				843139DB16635E9E0006311A /* MFUtils.m in Sources */,
+				843139DC16635E9E0006311A /* MFDashboardViewController.m in Sources */,
+				843139DD16635E9E0006311A /* MFFishRecognitionViewController.m in Sources */,
+				843139DE16635E9E0006311A /* MFMapViewController.m in Sources */,
+				843139DF16635E9E0006311A /* MFBlogViewController.m in Sources */,
+				843139E016635E9E0006311A /* MFBlogEntry.m in Sources */,
+				843139E116635E9E0006311A /* MFUser.m in Sources */,
+				843139E216635E9E0006311A /* MFPassword.m in Sources */,
+				843139E316635E9E0006311A /* MFEmail.m in Sources */,
+				843139E416635E9E0006311A /* MFAddress.m in Sources */,
+				843139E516635E9E0006311A /* MFPhone.m in Sources */,
+				843139E616635E9E0006311A /* MFImage.m in Sources */,
+				843139E716635E9E0006311A /* MFLocation.m in Sources */,
+				843139E816635E9E0006311A /* MFFishEvent.m in Sources */,
+				843139E916635E9E0006311A /* MFMapViewEditEventControllerViewController.m in Sources */,
+				843139EA16635E9E0006311A /* MFSharedInstances.m in Sources */,
+				843139EB16635E9E0006311A /* MFImageCell.m in Sources */,
+				843139EC16635E9E0006311A /* MFMapViewShowDetailsViewController.m in Sources */,
+				843139ED16635E9E0006311A /* MFCollectionDelegate.m in Sources */,
+				843139EE16635E9E0006311A /* MFBlogEntryCell.m in Sources */,
+				843139EF16635E9E0006311A /* MFFishInfoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9A126D73164D1BC20037538A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -994,6 +1249,11 @@
 			name = RestKit;
 			targetProxy = 841BB3D31650EE11006B59C8 /* PBXContainerItemProxy */;
 		};
+		843139D116635E9E0006311A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = 843139D216635E9E0006311A /* PBXContainerItemProxy */;
+		};
 		9A126D9E164D1BC20037538A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9A126D76164D1BC20037538A /* MinFangst */;
@@ -1021,6 +1281,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		84313A2916635E9E0006311A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MinFangst/MinFangst-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				INFOPLIST_FILE = "MinFangst-cal-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ZBarSDK\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-force_load",
+					"\"$(SRCROOT)/calabash.framework/calabash\"",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "MinFangst-cal";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84313A2A16635E9E0006311A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MinFangst/MinFangst-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				INFOPLIST_FILE = "MinFangst-cal-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ZBarSDK\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-force_load",
+					"\"$(SRCROOT)/calabash.framework/calabash\"",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "MinFangst-cal";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		9A126DA8164D1BC20037538A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1170,6 +1484,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		84313A2816635E9E0006311A /* Build configuration list for PBXNativeTarget "MinFangst-cal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84313A2916635E9E0006311A /* Debug */,
+				84313A2A16635E9E0006311A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9A126D71164D1BC10037538A /* Build configuration list for PBXProject "MinFangst" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
