@@ -128,6 +128,9 @@
     UIAlertView *messageAlert = [[UIAlertView alloc]
                                  initWithTitle:@"Login Error" message:errorContent delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     
+    messageAlert.isAccessibilityElement = YES;
+    messageAlert.accessibilityLabel = @"Login Error Message";
+    
     // Display Alert Message
     [messageAlert show];
 }

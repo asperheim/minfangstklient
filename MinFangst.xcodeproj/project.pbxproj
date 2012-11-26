@@ -316,6 +316,7 @@
 		84313A3F16636AC70006311A /* env.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = env.rb; sourceTree = "<group>"; };
 		84313A4016636AC70006311A /* hooks.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = hooks.rb; sourceTree = "<group>"; };
 		84313A4116636AC70006311A /* launch.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = launch.rb; sourceTree = "<group>"; };
+		84313A4F16638A5C0006311A /* dashboard.feature */ = {isa = PBXFileReference; lastKnownFileType = text; path = dashboard.feature; sourceTree = "<group>"; };
 		843F54CE165B71C60056EA1A /* MFSharedInstances.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSharedInstances.h; sourceTree = "<group>"; };
 		843F54CF165B71C60056EA1A /* MFSharedInstances.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSharedInstances.m; sourceTree = "<group>"; };
 		843F54D1165BA6FF0056EA1A /* backgroundFish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundFish.png; sourceTree = "<group>"; };
@@ -1242,6 +1243,7 @@
 				84313A3A16636AC70006311A /* login.feature */,
 				84313A3B16636AC70006311A /* step_definitions */,
 				84313A3E16636AC70006311A /* support */,
+				84313A4F16638A5C0006311A /* dashboard.feature */,
 			);
 			path = features;
 			sourceTree = SOURCE_ROOT;

@@ -30,6 +30,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.title = @"Fish Info";
     
     NSString *urlAddress = @"http://en.wikipedia.org/wiki/Salmon";
     
