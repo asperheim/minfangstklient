@@ -10,7 +10,6 @@
 		840A647F165F6136004D4DB9 /* MFUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A647E165F6136004D4DB9 /* MFUtilsTests.m */; };
 		840DE786165E4DE6000B0F47 /* MFBlogEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840DE785165E4DE6000B0F47 /* MFBlogEntryCell.xib */; };
 		840DE789165E4FF5000B0F47 /* MFBlogEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 840DE788165E4FF5000B0F47 /* MFBlogEntryCell.m */; };
-		841BB3D51650EE27006B59C8 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC26921650EB26008B1F02 /* libRestKit.a */; };
 		841BB3D91650F999006B59C8 /* MFLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BB3D81650F999006B59C8 /* MFLogin.m */; };
 		841BB3DC165117E9006B59C8 /* MFSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 841BB3DB165117E9006B59C8 /* MFSession.m */; };
 		843139D416635E9E0006311A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126D87164D1BC20037538A /* main.m */; };
@@ -48,7 +47,6 @@
 		843139F516635E9E0006311A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B2BB8A16539F1B00CC9F6F /* CoreVideo.framework */; };
 		843139F616635E9E0006311A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B2BB8816539F1400CC9F6F /* CoreMedia.framework */; };
 		843139F716635E9E0006311A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B2BB8616539F0D00CC9F6F /* AVFoundation.framework */; };
-		843139F816635E9E0006311A /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC26921650EB26008B1F02 /* libRestKit.a */; };
 		843139F916635E9E0006311A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126DD6164D1DFB0037538A /* libxml2.dylib */; };
 		843139FA16635E9E0006311A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126DD2164D1DEB0037538A /* SystemConfiguration.framework */; };
 		843139FB16635E9E0006311A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A126DD0164D1DE50037538A /* Security.framework */; };
@@ -174,6 +172,8 @@
 		9A126DDC164D1E6F0037538A /* MFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A126DDA164D1E6F0037538A /* MFLoginViewController.xib */; };
 		9A126DDF164D20340037538A /* MFClientLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126DDE164D20340037538A /* MFClientLogin.m */; };
 		9A126DE2164D20950037538A /* MFClientInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126DE1164D20950037538A /* MFClientInfo.m */; };
+		9ADA480316638651002084FF /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADA47DA16638643002084FF /* libRestKit.a */; };
+		9ADA480416638687002084FF /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADA47DA16638643002084FF /* libRestKit.a */; };
 		9AED2498165684B400350CF9 /* MFMapViewEditEventControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AED2496165684B400350CF9 /* MFMapViewEditEventControllerViewController.m */; };
 		9AED2499165684B400350CF9 /* MFMapViewEditEventControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AED2497165684B400350CF9 /* MFMapViewEditEventControllerViewController.xib */; };
 		9AED24A6165E68C800350CF9 /* BlogEntry_missingImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AED24A5165E68C800350CF9 /* BlogEntry_missingImage.png */; };
@@ -183,61 +183,117 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		841BB3D31650EE11006B59C8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84AC26861650EB25008B1F02 /* RestKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 25160D1514564E810060A5C5;
-			remoteInfo = RestKit;
-		};
-		843139D216635E9E0006311A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84AC26861650EB25008B1F02 /* RestKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 25160D1514564E810060A5C5;
-			remoteInfo = RestKit;
-		};
-		84AC26911650EB26008B1F02 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84AC26861650EB25008B1F02 /* RestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 25160D1614564E810060A5C5;
-			remoteInfo = RestKit;
-		};
-		84AC26931650EB26008B1F02 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84AC26861650EB25008B1F02 /* RestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 25160D2614564E820060A5C5;
-			remoteInfo = RestKitTests;
-		};
-		84AC26951650EB26008B1F02 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84AC26861650EB25008B1F02 /* RestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 25160E62145651060060A5C5;
-			remoteInfo = RestKitFramework;
-		};
-		84AC26971650EB26008B1F02 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84AC26861650EB25008B1F02 /* RestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 25160E78145651060060A5C5;
-			remoteInfo = RestKitFrameworkTests;
-		};
-		84AC26991650EB26008B1F02 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84AC26861650EB25008B1F02 /* RestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 259C301615128079003066A2;
-			remoteInfo = RestKitResources;
-		};
 		9A126D9D164D1BC20037538A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9A126D6E164D1BC10037538A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9A126D76164D1BC20037538A;
 			remoteInfo = MinFangst;
+		};
+		9ADA47D216638643002084FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADA45D116638642002084FF /* RestKit CLI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2516F0F7144A8577004631A1;
+			remoteInfo = "RestKit CLI";
+		};
+		9ADA47D916638643002084FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADA466E16638642002084FF /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		9ADA47DB16638643002084FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADA466E16638642002084FF /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		9ADA47DD16638643002084FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADA466E16638642002084FF /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		9ADA47DF16638643002084FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADA466E16638642002084FF /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		9ADA47E116638643002084FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADA466E16638642002084FF /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 259C301615128079003066A2;
+			remoteInfo = RestKitResources;
+		};
+		9ADA47E516638643002084FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADA468316638642002084FF /* RKApplicationTests.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 253B485F14E3415800B0483F;
+			remoteInfo = RKApplicationTests;
+		};
+		9ADA47E716638643002084FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADA468316638642002084FF /* RKApplicationTests.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 253B487F14E3415800B0483F;
+			remoteInfo = "Application Tests";
+		};
+		9ADA47EA16638643002084FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADA461016638642002084FF /* RKCatalog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2501DE5813607B67003DE9E4;
+			remoteInfo = RKCatalog;
+		};
+		9ADA47ED16638643002084FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADA462116638642002084FF /* RKMacOSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25D63914135184CE000879B1;
+			remoteInfo = RKMacOSX;
+		};
+		9ADA47F016638643002084FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADA463816638642002084FF /* RKTwitter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = RKTwitter;
+		};
+		9ADA47F416638643002084FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADA465116638642002084FF /* RKTwitterCoreData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = RKTwitterCoreData;
+		};
+		9ADA47F616638643002084FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADA465116638642002084FF /* RKTwitterCoreData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25F2A1961322D59400A33DE4;
+			remoteInfo = "Generate Seed Database";
+		};
+		9ADA47FA16638643002084FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADA479F16638642002084FF /* SOCKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 660B688D14088B4A00EAAFDC;
+			remoteInfo = SOCKit;
+		};
+		9ADA47FC16638643002084FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ADA479F16638642002084FF /* SOCKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 660B689D14088B4A00EAAFDC;
+			remoteInfo = SOCKitTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -295,7 +351,6 @@
 		84A6434A165293370082F3AF /* MFDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFDashboardViewController.m; sourceTree = "<group>"; };
 		84A6434B165293370082F3AF /* MFDashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFDashboardViewController.xib; sourceTree = "<group>"; };
 		84A6434F1652982B0082F3AF /* fishRecognition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fishRecognition.png; sourceTree = "<group>"; };
-		84AC26861650EB25008B1F02 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = "../../Downloads/RestKit-RestKit-d3cad8d/RestKit.xcodeproj"; sourceTree = "<group>"; };
 		84B2BB0416537F7200CC9F6F /* mapImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapImage.png; sourceTree = "<group>"; };
 		84B2BB56165397C300CC9F6F /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		84B2BB5816539C1900CC9F6F /* blog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blog.png; sourceTree = "<group>"; };
@@ -392,6 +447,639 @@
 		9A126DDE164D20340037538A /* MFClientLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFClientLogin.m; sourceTree = "<group>"; };
 		9A126DE0164D20950037538A /* MFClientInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFClientInfo.h; sourceTree = "<group>"; };
 		9A126DE1164D20950037538A /* MFClientInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFClientInfo.m; sourceTree = "<group>"; };
+		9ADA44B416638641002084FF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9ADA44B516638641002084FF /* .gitmodules */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
+		9ADA44B616638641002084FF /* .rvmrc */ = {isa = PBXFileReference; lastKnownFileType = text; path = .rvmrc; sourceTree = "<group>"; };
+		9ADA44B916638641002084FF /* CoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreData.h; sourceTree = "<group>"; };
+		9ADA44BA16638641002084FF /* NSEntityDescription+RKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSEntityDescription+RKAdditions.h"; sourceTree = "<group>"; };
+		9ADA44BB16638641002084FF /* NSEntityDescription+RKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSEntityDescription+RKAdditions.m"; sourceTree = "<group>"; };
+		9ADA44BC16638641002084FF /* NSManagedObject+ActiveRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+ActiveRecord.h"; sourceTree = "<group>"; };
+		9ADA44BD16638641002084FF /* NSManagedObject+ActiveRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+ActiveRecord.m"; sourceTree = "<group>"; };
+		9ADA44BE16638641002084FF /* NSManagedObject+RKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+RKAdditions.h"; sourceTree = "<group>"; };
+		9ADA44BF16638641002084FF /* NSManagedObject+RKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+RKAdditions.m"; sourceTree = "<group>"; };
+		9ADA44C016638641002084FF /* NSManagedObjectContext+RKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+RKAdditions.h"; sourceTree = "<group>"; };
+		9ADA44C116638641002084FF /* NSManagedObjectContext+RKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+RKAdditions.m"; sourceTree = "<group>"; };
+		9ADA44C216638641002084FF /* RKEntityByAttributeCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKEntityByAttributeCache.h; sourceTree = "<group>"; };
+		9ADA44C316638641002084FF /* RKEntityByAttributeCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKEntityByAttributeCache.m; sourceTree = "<group>"; };
+		9ADA44C416638641002084FF /* RKEntityCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKEntityCache.h; sourceTree = "<group>"; };
+		9ADA44C516638641002084FF /* RKEntityCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKEntityCache.m; sourceTree = "<group>"; };
+		9ADA44C616638641002084FF /* RKFetchRequestManagedObjectCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKFetchRequestManagedObjectCache.h; sourceTree = "<group>"; };
+		9ADA44C716638641002084FF /* RKFetchRequestManagedObjectCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKFetchRequestManagedObjectCache.m; sourceTree = "<group>"; };
+		9ADA44C816638641002084FF /* RKInMemoryManagedObjectCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKInMemoryManagedObjectCache.h; sourceTree = "<group>"; };
+		9ADA44C916638641002084FF /* RKInMemoryManagedObjectCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKInMemoryManagedObjectCache.m; sourceTree = "<group>"; };
+		9ADA44CA16638641002084FF /* RKManagedObjectCaching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKManagedObjectCaching.h; sourceTree = "<group>"; };
+		9ADA44CB16638641002084FF /* RKManagedObjectLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKManagedObjectLoader.h; sourceTree = "<group>"; };
+		9ADA44CC16638641002084FF /* RKManagedObjectLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKManagedObjectLoader.m; sourceTree = "<group>"; };
+		9ADA44CD16638641002084FF /* RKManagedObjectMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKManagedObjectMapping.h; sourceTree = "<group>"; };
+		9ADA44CE16638641002084FF /* RKManagedObjectMapping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKManagedObjectMapping.m; sourceTree = "<group>"; };
+		9ADA44CF16638641002084FF /* RKManagedObjectMappingOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKManagedObjectMappingOperation.h; sourceTree = "<group>"; };
+		9ADA44D016638641002084FF /* RKManagedObjectMappingOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKManagedObjectMappingOperation.m; sourceTree = "<group>"; };
+		9ADA44D116638641002084FF /* RKManagedObjectSearchEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKManagedObjectSearchEngine.h; sourceTree = "<group>"; };
+		9ADA44D216638641002084FF /* RKManagedObjectSearchEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKManagedObjectSearchEngine.m; sourceTree = "<group>"; };
+		9ADA44D316638641002084FF /* RKManagedObjectSeeder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKManagedObjectSeeder.h; sourceTree = "<group>"; };
+		9ADA44D416638641002084FF /* RKManagedObjectSeeder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKManagedObjectSeeder.m; sourceTree = "<group>"; };
+		9ADA44D516638641002084FF /* RKManagedObjectStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKManagedObjectStore.h; sourceTree = "<group>"; };
+		9ADA44D616638641002084FF /* RKManagedObjectStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKManagedObjectStore.m; sourceTree = "<group>"; };
+		9ADA44D716638641002084FF /* RKManagedObjectThreadSafeInvocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKManagedObjectThreadSafeInvocation.h; sourceTree = "<group>"; };
+		9ADA44D816638641002084FF /* RKManagedObjectThreadSafeInvocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKManagedObjectThreadSafeInvocation.m; sourceTree = "<group>"; };
+		9ADA44D916638641002084FF /* RKObjectMappingProvider+CoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RKObjectMappingProvider+CoreData.h"; sourceTree = "<group>"; };
+		9ADA44DA16638641002084FF /* RKObjectMappingProvider+CoreData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RKObjectMappingProvider+CoreData.m"; sourceTree = "<group>"; };
+		9ADA44DB16638641002084FF /* RKObjectPropertyInspector+CoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RKObjectPropertyInspector+CoreData.h"; sourceTree = "<group>"; };
+		9ADA44DC16638641002084FF /* RKObjectPropertyInspector+CoreData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RKObjectPropertyInspector+CoreData.m"; sourceTree = "<group>"; };
+		9ADA44DD16638641002084FF /* RKSearchableManagedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKSearchableManagedObject.h; sourceTree = "<group>"; };
+		9ADA44DE16638641002084FF /* RKSearchableManagedObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKSearchableManagedObject.m; sourceTree = "<group>"; };
+		9ADA44DF16638641002084FF /* RKSearchWord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKSearchWord.h; sourceTree = "<group>"; };
+		9ADA44E016638641002084FF /* RKSearchWord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKSearchWord.m; sourceTree = "<group>"; };
+		9ADA44E116638641002084FF /* RKSearchWordObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKSearchWordObserver.h; sourceTree = "<group>"; };
+		9ADA44E216638641002084FF /* RKSearchWordObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKSearchWordObserver.m; sourceTree = "<group>"; };
+		9ADA44E416638641002084FF /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		9ADA44E516638641002084FF /* NSData+RKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+RKAdditions.h"; sourceTree = "<group>"; };
+		9ADA44E616638641002084FF /* NSData+RKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+RKAdditions.m"; sourceTree = "<group>"; };
+		9ADA44E716638641002084FF /* NSDictionary+RKRequestSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RKRequestSerialization.h"; sourceTree = "<group>"; };
+		9ADA44E816638641002084FF /* NSDictionary+RKRequestSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RKRequestSerialization.m"; sourceTree = "<group>"; };
+		9ADA44E916638641002084FF /* NSObject+URLEncoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+URLEncoding.h"; sourceTree = "<group>"; };
+		9ADA44EA16638641002084FF /* NSObject+URLEncoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+URLEncoding.m"; sourceTree = "<group>"; };
+		9ADA44EB16638641002084FF /* RKClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKClient.h; sourceTree = "<group>"; };
+		9ADA44EC16638641002084FF /* RKClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKClient.m; sourceTree = "<group>"; };
+		9ADA44ED16638641002084FF /* RKNotifications.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKNotifications.h; sourceTree = "<group>"; };
+		9ADA44EE16638641002084FF /* RKNotifications.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKNotifications.m; sourceTree = "<group>"; };
+		9ADA44EF16638641002084FF /* RKOAuthClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKOAuthClient.h; sourceTree = "<group>"; };
+		9ADA44F016638641002084FF /* RKOAuthClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKOAuthClient.m; sourceTree = "<group>"; };
+		9ADA44F116638641002084FF /* RKParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKParams.h; sourceTree = "<group>"; };
+		9ADA44F216638641002084FF /* RKParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKParams.m; sourceTree = "<group>"; };
+		9ADA44F316638641002084FF /* RKParamsAttachment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKParamsAttachment.h; sourceTree = "<group>"; };
+		9ADA44F416638641002084FF /* RKParamsAttachment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKParamsAttachment.m; sourceTree = "<group>"; };
+		9ADA44F516638641002084FF /* RKReachabilityObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKReachabilityObserver.h; sourceTree = "<group>"; };
+		9ADA44F616638641002084FF /* RKReachabilityObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKReachabilityObserver.m; sourceTree = "<group>"; };
+		9ADA44F716638641002084FF /* RKRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKRequest.h; sourceTree = "<group>"; };
+		9ADA44F816638641002084FF /* RKRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKRequest.m; sourceTree = "<group>"; };
+		9ADA44F916638641002084FF /* RKRequest_Internals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKRequest_Internals.h; sourceTree = "<group>"; };
+		9ADA44FA16638641002084FF /* RKRequestCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKRequestCache.h; sourceTree = "<group>"; };
+		9ADA44FB16638641002084FF /* RKRequestCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKRequestCache.m; sourceTree = "<group>"; };
+		9ADA44FC16638641002084FF /* RKRequestQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKRequestQueue.h; sourceTree = "<group>"; };
+		9ADA44FD16638641002084FF /* RKRequestQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKRequestQueue.m; sourceTree = "<group>"; };
+		9ADA44FE16638641002084FF /* RKRequestSerializable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKRequestSerializable.h; sourceTree = "<group>"; };
+		9ADA44FF16638641002084FF /* RKRequestSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKRequestSerialization.h; sourceTree = "<group>"; };
+		9ADA450016638641002084FF /* RKRequestSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKRequestSerialization.m; sourceTree = "<group>"; };
+		9ADA450116638641002084FF /* RKResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKResponse.h; sourceTree = "<group>"; };
+		9ADA450216638641002084FF /* RKResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKResponse.m; sourceTree = "<group>"; };
+		9ADA450316638641002084FF /* RKURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKURL.h; sourceTree = "<group>"; };
+		9ADA450416638641002084FF /* RKURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKURL.m; sourceTree = "<group>"; };
+		9ADA450616638641002084FF /* ObjectMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectMapping.h; sourceTree = "<group>"; };
+		9ADA450716638641002084FF /* RKConfigurationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKConfigurationDelegate.h; sourceTree = "<group>"; };
+		9ADA450816638641002084FF /* RKDynamicObjectMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKDynamicObjectMapping.h; sourceTree = "<group>"; };
+		9ADA450916638641002084FF /* RKDynamicObjectMapping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKDynamicObjectMapping.m; sourceTree = "<group>"; };
+		9ADA450A16638641002084FF /* RKDynamicObjectMappingMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKDynamicObjectMappingMatcher.h; sourceTree = "<group>"; };
+		9ADA450B16638641002084FF /* RKDynamicObjectMappingMatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKDynamicObjectMappingMatcher.m; sourceTree = "<group>"; };
+		9ADA450C16638641002084FF /* RKErrorMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKErrorMessage.h; sourceTree = "<group>"; };
+		9ADA450D16638641002084FF /* RKErrorMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKErrorMessage.m; sourceTree = "<group>"; };
+		9ADA450E16638641002084FF /* RKMappingOperationQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKMappingOperationQueue.h; sourceTree = "<group>"; };
+		9ADA450F16638641002084FF /* RKMappingOperationQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKMappingOperationQueue.m; sourceTree = "<group>"; };
+		9ADA451016638641002084FF /* RKObjectAttributeMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectAttributeMapping.h; sourceTree = "<group>"; };
+		9ADA451116638641002084FF /* RKObjectAttributeMapping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectAttributeMapping.m; sourceTree = "<group>"; };
+		9ADA451216638641002084FF /* RKObjectLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectLoader.h; sourceTree = "<group>"; };
+		9ADA451316638641002084FF /* RKObjectLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectLoader.m; sourceTree = "<group>"; };
+		9ADA451416638641002084FF /* RKObjectLoader_Internals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectLoader_Internals.h; sourceTree = "<group>"; };
+		9ADA451516638641002084FF /* RKObjectManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectManager.h; sourceTree = "<group>"; };
+		9ADA451616638641002084FF /* RKObjectManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectManager.m; sourceTree = "<group>"; };
+		9ADA451716638641002084FF /* RKObjectMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectMapper.h; sourceTree = "<group>"; };
+		9ADA451816638641002084FF /* RKObjectMapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectMapper.m; sourceTree = "<group>"; };
+		9ADA451916638641002084FF /* RKObjectMapper_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectMapper_Private.h; sourceTree = "<group>"; };
+		9ADA451A16638641002084FF /* RKObjectMapperError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectMapperError.h; sourceTree = "<group>"; };
+		9ADA451B16638641002084FF /* RKObjectMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectMapping.h; sourceTree = "<group>"; };
+		9ADA451C16638641002084FF /* RKObjectMapping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectMapping.m; sourceTree = "<group>"; };
+		9ADA451D16638641002084FF /* RKObjectMappingDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectMappingDefinition.h; sourceTree = "<group>"; };
+		9ADA451E16638641002084FF /* RKObjectMappingDefinition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectMappingDefinition.m; sourceTree = "<group>"; };
+		9ADA451F16638641002084FF /* RKObjectMappingOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectMappingOperation.h; sourceTree = "<group>"; };
+		9ADA452016638641002084FF /* RKObjectMappingOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectMappingOperation.m; sourceTree = "<group>"; };
+		9ADA452116638641002084FF /* RKObjectMappingProvider+Contexts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RKObjectMappingProvider+Contexts.h"; sourceTree = "<group>"; };
+		9ADA452216638641002084FF /* RKObjectMappingProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectMappingProvider.h; sourceTree = "<group>"; };
+		9ADA452316638641002084FF /* RKObjectMappingProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectMappingProvider.m; sourceTree = "<group>"; };
+		9ADA452416638641002084FF /* RKObjectMappingProviderContextEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectMappingProviderContextEntry.h; sourceTree = "<group>"; };
+		9ADA452516638641002084FF /* RKObjectMappingProviderContextEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectMappingProviderContextEntry.m; sourceTree = "<group>"; };
+		9ADA452616638641002084FF /* RKObjectMappingResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectMappingResult.h; sourceTree = "<group>"; };
+		9ADA452716638641002084FF /* RKObjectMappingResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectMappingResult.m; sourceTree = "<group>"; };
+		9ADA452816638641002084FF /* RKObjectPaginator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectPaginator.h; sourceTree = "<group>"; };
+		9ADA452916638641002084FF /* RKObjectPaginator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectPaginator.m; sourceTree = "<group>"; };
+		9ADA452A16638641002084FF /* RKObjectPropertyInspector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectPropertyInspector.h; sourceTree = "<group>"; };
+		9ADA452B16638641002084FF /* RKObjectPropertyInspector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectPropertyInspector.m; sourceTree = "<group>"; };
+		9ADA452C16638641002084FF /* RKObjectRelationshipMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectRelationshipMapping.h; sourceTree = "<group>"; };
+		9ADA452D16638641002084FF /* RKObjectRelationshipMapping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectRelationshipMapping.m; sourceTree = "<group>"; };
+		9ADA452E16638641002084FF /* RKObjectRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectRouter.h; sourceTree = "<group>"; };
+		9ADA452F16638641002084FF /* RKObjectRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectRouter.m; sourceTree = "<group>"; };
+		9ADA453016638641002084FF /* RKObjectSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectSerializer.h; sourceTree = "<group>"; };
+		9ADA453116638641002084FF /* RKObjectSerializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectSerializer.m; sourceTree = "<group>"; };
+		9ADA453216638641002084FF /* RKParserRegistry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKParserRegistry.h; sourceTree = "<group>"; };
+		9ADA453316638641002084FF /* RKParserRegistry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKParserRegistry.m; sourceTree = "<group>"; };
+		9ADA453416638641002084FF /* RKRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKRouter.h; sourceTree = "<group>"; };
+		9ADA453516638641002084FF /* RestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestKit.h; sourceTree = "<group>"; };
+		9ADA453716638641002084FF /* lcl_config_components.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lcl_config_components.h; sourceTree = "<group>"; };
+		9ADA453816638641002084FF /* lcl_config_extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lcl_config_extensions.h; sourceTree = "<group>"; };
+		9ADA453916638641002084FF /* lcl_config_logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lcl_config_logger.h; sourceTree = "<group>"; };
+		9ADA453A16638641002084FF /* NSArray+RKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+RKAdditions.h"; sourceTree = "<group>"; };
+		9ADA453B16638641002084FF /* NSArray+RKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RKAdditions.m"; sourceTree = "<group>"; };
+		9ADA453C16638641002084FF /* NSBundle+RKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+RKAdditions.h"; sourceTree = "<group>"; };
+		9ADA453D16638641002084FF /* NSBundle+RKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+RKAdditions.m"; sourceTree = "<group>"; };
+		9ADA453E16638641002084FF /* NSDictionary+RKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RKAdditions.h"; sourceTree = "<group>"; };
+		9ADA453F16638641002084FF /* NSDictionary+RKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RKAdditions.m"; sourceTree = "<group>"; };
+		9ADA454016638641002084FF /* NSString+RKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+RKAdditions.h"; sourceTree = "<group>"; };
+		9ADA454116638641002084FF /* NSString+RKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+RKAdditions.m"; sourceTree = "<group>"; };
+		9ADA454216638641002084FF /* NSURL+RKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+RKAdditions.h"; sourceTree = "<group>"; };
+		9ADA454316638641002084FF /* NSURL+RKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+RKAdditions.m"; sourceTree = "<group>"; };
+		9ADA454616638641002084FF /* RKJSONParserJSONKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKJSONParserJSONKit.h; sourceTree = "<group>"; };
+		9ADA454716638641002084FF /* RKJSONParserJSONKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKJSONParserJSONKit.m; sourceTree = "<group>"; };
+		9ADA454916638641002084FF /* RKXMLParserXMLReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKXMLParserXMLReader.h; sourceTree = "<group>"; };
+		9ADA454A16638641002084FF /* RKXMLParserXMLReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKXMLParserXMLReader.m; sourceTree = "<group>"; };
+		9ADA454B16638641002084FF /* RestKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RestKit-Prefix.pch"; sourceTree = "<group>"; };
+		9ADA454C16638641002084FF /* RKAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKAlert.h; sourceTree = "<group>"; };
+		9ADA454D16638641002084FF /* RKAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKAlert.m; sourceTree = "<group>"; };
+		9ADA454E16638641002084FF /* RKBenchmark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKBenchmark.h; sourceTree = "<group>"; };
+		9ADA454F16638641002084FF /* RKBenchmark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKBenchmark.m; sourceTree = "<group>"; };
+		9ADA455016638641002084FF /* RKCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKCache.h; sourceTree = "<group>"; };
+		9ADA455116638641002084FF /* RKCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKCache.m; sourceTree = "<group>"; };
+		9ADA455216638641002084FF /* RKDirectory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKDirectory.h; sourceTree = "<group>"; };
+		9ADA455316638641002084FF /* RKDirectory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKDirectory.m; sourceTree = "<group>"; };
+		9ADA455416638641002084FF /* RKDotNetDateFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKDotNetDateFormatter.h; sourceTree = "<group>"; };
+		9ADA455516638641002084FF /* RKDotNetDateFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKDotNetDateFormatter.m; sourceTree = "<group>"; };
+		9ADA455616638641002084FF /* RKErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKErrors.h; sourceTree = "<group>"; };
+		9ADA455716638641002084FF /* RKErrors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKErrors.m; sourceTree = "<group>"; };
+		9ADA455816638641002084FF /* RKFixCategoryBug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKFixCategoryBug.h; sourceTree = "<group>"; };
+		9ADA455916638641002084FF /* RKISO8601DateFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKISO8601DateFormatter.h; sourceTree = "<group>"; };
+		9ADA455A16638641002084FF /* RKISO8601DateFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKISO8601DateFormatter.m; sourceTree = "<group>"; };
+		9ADA455B16638641002084FF /* RKLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKLog.h; sourceTree = "<group>"; };
+		9ADA455C16638641002084FF /* RKLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKLog.m; sourceTree = "<group>"; };
+		9ADA455D16638641002084FF /* RKMIMETypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKMIMETypes.h; sourceTree = "<group>"; };
+		9ADA455E16638641002084FF /* RKMIMETypes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKMIMETypes.m; sourceTree = "<group>"; };
+		9ADA455F16638641002084FF /* RKMutableBlockDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKMutableBlockDictionary.h; sourceTree = "<group>"; };
+		9ADA456016638641002084FF /* RKMutableBlockDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKMutableBlockDictionary.m; sourceTree = "<group>"; };
+		9ADA456116638641002084FF /* RKOrderedDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKOrderedDictionary.h; sourceTree = "<group>"; };
+		9ADA456216638641002084FF /* RKOrderedDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKOrderedDictionary.m; sourceTree = "<group>"; };
+		9ADA456316638641002084FF /* RKParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKParser.h; sourceTree = "<group>"; };
+		9ADA456416638641002084FF /* RKPathMatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKPathMatcher.h; sourceTree = "<group>"; };
+		9ADA456516638641002084FF /* RKPathMatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKPathMatcher.m; sourceTree = "<group>"; };
+		9ADA456616638641002084FF /* RKPortCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKPortCheck.h; sourceTree = "<group>"; };
+		9ADA456716638641002084FF /* RKPortCheck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKPortCheck.m; sourceTree = "<group>"; };
+		9ADA456816638641002084FF /* RKSearchEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKSearchEngine.h; sourceTree = "<group>"; };
+		9ADA456916638641002084FF /* RKSearchEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKSearchEngine.m; sourceTree = "<group>"; };
+		9ADA456A16638641002084FF /* Support.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Support.h; sourceTree = "<group>"; };
+		9ADA456C16638641002084FF /* RKMappingTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKMappingTest.h; sourceTree = "<group>"; };
+		9ADA456D16638641002084FF /* RKMappingTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKMappingTest.m; sourceTree = "<group>"; };
+		9ADA456E16638641002084FF /* RKMappingTestExpectation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKMappingTestExpectation.h; sourceTree = "<group>"; };
+		9ADA456F16638641002084FF /* RKMappingTestExpectation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKMappingTestExpectation.m; sourceTree = "<group>"; };
+		9ADA457016638641002084FF /* RKTableControllerTestDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTableControllerTestDelegate.h; sourceTree = "<group>"; };
+		9ADA457116638641002084FF /* RKTableControllerTestDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTableControllerTestDelegate.m; sourceTree = "<group>"; };
+		9ADA457216638641002084FF /* RKTestConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTestConstants.m; sourceTree = "<group>"; };
+		9ADA457316638641002084FF /* RKTestFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTestFactory.h; sourceTree = "<group>"; };
+		9ADA457416638641002084FF /* RKTestFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTestFactory.m; sourceTree = "<group>"; };
+		9ADA457516638641002084FF /* RKTestFixture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTestFixture.h; sourceTree = "<group>"; };
+		9ADA457616638641002084FF /* RKTestFixture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTestFixture.m; sourceTree = "<group>"; };
+		9ADA457716638641002084FF /* RKTestNotificationObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTestNotificationObserver.h; sourceTree = "<group>"; };
+		9ADA457816638641002084FF /* RKTestNotificationObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTestNotificationObserver.m; sourceTree = "<group>"; };
+		9ADA457916638641002084FF /* RKTestResponseLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTestResponseLoader.h; sourceTree = "<group>"; };
+		9ADA457A16638641002084FF /* RKTestResponseLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTestResponseLoader.m; sourceTree = "<group>"; };
+		9ADA457B16638641002084FF /* Testing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Testing.h; sourceTree = "<group>"; };
+		9ADA457D16638641002084FF /* RKAbstractTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKAbstractTableController.h; sourceTree = "<group>"; };
+		9ADA457E16638641002084FF /* RKAbstractTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKAbstractTableController.m; sourceTree = "<group>"; };
+		9ADA457F16638641002084FF /* RKAbstractTableController_Internals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKAbstractTableController_Internals.h; sourceTree = "<group>"; };
+		9ADA458016638641002084FF /* RKControlTableItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKControlTableItem.h; sourceTree = "<group>"; };
+		9ADA458116638641002084FF /* RKControlTableItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKControlTableItem.m; sourceTree = "<group>"; };
+		9ADA458216638641002084FF /* RKControlTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKControlTableViewCell.h; sourceTree = "<group>"; };
+		9ADA458316638641002084FF /* RKControlTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKControlTableViewCell.m; sourceTree = "<group>"; };
+		9ADA458416638641002084FF /* RKFetchedResultsTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKFetchedResultsTableController.h; sourceTree = "<group>"; };
+		9ADA458516638641002084FF /* RKFetchedResultsTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKFetchedResultsTableController.m; sourceTree = "<group>"; };
+		9ADA458616638641002084FF /* RKForm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKForm.h; sourceTree = "<group>"; };
+		9ADA458716638641002084FF /* RKForm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKForm.m; sourceTree = "<group>"; };
+		9ADA458816638641002084FF /* RKFormSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKFormSection.h; sourceTree = "<group>"; };
+		9ADA458916638641002084FF /* RKFormSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKFormSection.m; sourceTree = "<group>"; };
+		9ADA458A16638641002084FF /* RKObjectManager+RKTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RKObjectManager+RKTableController.h"; sourceTree = "<group>"; };
+		9ADA458B16638641002084FF /* RKObjectManager+RKTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RKObjectManager+RKTableController.m"; sourceTree = "<group>"; };
+		9ADA458C16638641002084FF /* RKRefreshGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKRefreshGestureRecognizer.h; sourceTree = "<group>"; };
+		9ADA458D16638641002084FF /* RKRefreshGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKRefreshGestureRecognizer.m; sourceTree = "<group>"; };
+		9ADA458E16638641002084FF /* RKRefreshTriggerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKRefreshTriggerView.h; sourceTree = "<group>"; };
+		9ADA458F16638641002084FF /* RKRefreshTriggerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKRefreshTriggerView.m; sourceTree = "<group>"; };
+		9ADA459016638641002084FF /* RKTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTableController.h; sourceTree = "<group>"; };
+		9ADA459116638641002084FF /* RKTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTableController.m; sourceTree = "<group>"; };
+		9ADA459216638641002084FF /* RKTableItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTableItem.h; sourceTree = "<group>"; };
+		9ADA459316638641002084FF /* RKTableItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTableItem.m; sourceTree = "<group>"; };
+		9ADA459416638641002084FF /* RKTableSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTableSection.h; sourceTree = "<group>"; };
+		9ADA459516638641002084FF /* RKTableSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTableSection.m; sourceTree = "<group>"; };
+		9ADA459616638641002084FF /* RKTableViewCellMapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTableViewCellMapping.h; sourceTree = "<group>"; };
+		9ADA459716638641002084FF /* RKTableViewCellMapping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTableViewCellMapping.m; sourceTree = "<group>"; };
+		9ADA459816638641002084FF /* RKTableViewCellMappings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTableViewCellMappings.h; sourceTree = "<group>"; };
+		9ADA459916638641002084FF /* RKTableViewCellMappings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTableViewCellMappings.m; sourceTree = "<group>"; };
+		9ADA459A16638641002084FF /* UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UI.h; sourceTree = "<group>"; };
+		9ADA459B16638641002084FF /* UIImage+RKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+RKAdditions.h"; sourceTree = "<group>"; };
+		9ADA459C16638641002084FF /* UIImage+RKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RKAdditions.m"; sourceTree = "<group>"; };
+		9ADA459D16638641002084FF /* UIView+FindFirstResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FindFirstResponder.h"; sourceTree = "<group>"; };
+		9ADA459E16638641002084FF /* UIView+FindFirstResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FindFirstResponder.m"; sourceTree = "<group>"; };
+		9ADA459F16638641002084FF /* CREDITS.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = CREDITS.md; sourceTree = "<group>"; };
+		9ADA45A216638641002084FF /* RKCache.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = RKCache.txt; sourceTree = "<group>"; };
+		9ADA45A316638641002084FF /* RKRequestQueue.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = RKRequestQueue.txt; sourceTree = "<group>"; };
+		9ADA45A616638641002084FF /* 01_Select_Project_Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01_Select_Project_Settings.png; sourceTree = "<group>"; };
+		9ADA45A716638641002084FF /* 02_Advanced_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_Advanced_Button.png; sourceTree = "<group>"; };
+		9ADA45A816638641002084FF /* 03_Select_Build_Location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03_Select_Build_Location.png; sourceTree = "<group>"; };
+		9ADA45AA16638641002084FF /* 01_Add_Submodule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01_Add_Submodule.png; sourceTree = "<group>"; };
+		9ADA45AB16638641002084FF /* 02_Add_Project_Dependency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02_Add_Project_Dependency.png; sourceTree = "<group>"; };
+		9ADA45AC16638641002084FF /* 03_Add_Header_Search_Path.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03_Add_Header_Search_Path.png; sourceTree = "<group>"; };
+		9ADA45AD16638641002084FF /* 03_Add_Linker_Flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03_Add_Linker_Flag.png; sourceTree = "<group>"; };
+		9ADA45AE16638641002084FF /* 04_Add_Target_Dependency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 04_Add_Target_Dependency.png; sourceTree = "<group>"; };
+		9ADA45AF16638641002084FF /* 05_Select_RestKit_Target.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 05_Select_RestKit_Target.png; sourceTree = "<group>"; };
+		9ADA45B016638641002084FF /* 06_Add_Libraries.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 06_Add_Libraries.png; sourceTree = "<group>"; };
+		9ADA45B116638641002084FF /* 07_Add_RestKit_Static_Libraries.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 07_Add_RestKit_Static_Libraries.png; sourceTree = "<group>"; };
+		9ADA45B216638641002084FF /* 08_Add_Required_Frameworks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 08_Add_Required_Frameworks.png; sourceTree = "<group>"; };
+		9ADA45B316638641002084FF /* 09_Add_To_AppDelegate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 09_Add_To_AppDelegate.png; sourceTree = "<group>"; };
+		9ADA45B416638641002084FF /* 10_Verify_Build.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10_Verify_Build.png; sourceTree = "<group>"; };
+		9ADA45B616638641002084FF /* Clean_Build_Folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Clean_Build_Folder.png; sourceTree = "<group>"; };
+		9ADA45B716638641002084FF /* Delete_Derived_Data.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Delete_Derived_Data.png; sourceTree = "<group>"; };
+		9ADA45B916638641002084FF /* Advanced_RestKit_Tutorial.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = Advanced_RestKit_Tutorial.md; sourceTree = "<group>"; };
+		9ADA45BC16638641002084FF /* add_to_project.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_to_project.png; sourceTree = "<group>"; };
+		9ADA45BD16638641002084FF /* all_configurations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = all_configurations.png; sourceTree = "<group>"; };
+		9ADA45BE16638641002084FF /* build_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = build_settings.png; sourceTree = "<group>"; };
+		9ADA45BF16638641002084FF /* depedency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = depedency.png; sourceTree = "<group>"; };
+		9ADA45C016638641002084FF /* frameworks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frameworks.png; sourceTree = "<group>"; };
+		9ADA45C116638641002084FF /* get_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = get_info.png; sourceTree = "<group>"; };
+		9ADA45C216638641002084FF /* linking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linking.png; sourceTree = "<group>"; };
+		9ADA45C316638641002084FF /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		9ADA45C416638641002084FF /* Object Mapping.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Object Mapping.md"; sourceTree = "<group>"; };
+		9ADA45C716638641002084FF /* Introduction to RestKit.key */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Introduction to RestKit.key"; sourceTree = "<group>"; };
+		9ADA45C816638641002084FF /* Introduction to RestKit.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Introduction to RestKit.pdf"; sourceTree = "<group>"; };
+		9ADA45C916638641002084FF /* TESTING.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = TESTING.md; sourceTree = "<group>"; };
+		9ADA45CA16638641002084FF /* WRITING_DOCS.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = WRITING_DOCS.md; sourceTree = "<group>"; };
+		9ADA45CE16638641002084FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9ADA45CF16638642002084FF /* RestKit CLI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RestKit CLI-Prefix.pch"; sourceTree = "<group>"; };
+		9ADA45D016638642002084FF /* RestKit_CLI.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = RestKit_CLI.1; sourceTree = "<group>"; };
+		9ADA45D116638642002084FF /* RestKit CLI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "RestKit CLI.xcodeproj"; sourceTree = "<group>"; };
+		9ADA45D716638642002084FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9ADA45D916638642002084FF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		9ADA45DB16638642002084FF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		9ADA45DC16638642002084FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9ADA45DD16638642002084FF /* RKCatalog-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RKCatalog-Info.plist"; sourceTree = "<group>"; };
+		9ADA45DE16638642002084FF /* RKCatalog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RKCatalog-Prefix.pch"; sourceTree = "<group>"; };
+		9ADA45DF16638642002084FF /* RKCatalog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKCatalog.h; sourceTree = "<group>"; };
+		9ADA45E016638642002084FF /* RKCatalogAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKCatalogAppDelegate.h; sourceTree = "<group>"; };
+		9ADA45E116638642002084FF /* RKCatalogAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKCatalogAppDelegate.m; sourceTree = "<group>"; };
+		9ADA45E216638642002084FF /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		9ADA45E316638642002084FF /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		9ADA45E616638642002084FF /* RKAuthenticationExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKAuthenticationExample.h; sourceTree = "<group>"; };
+		9ADA45E716638642002084FF /* RKAuthenticationExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKAuthenticationExample.m; sourceTree = "<group>"; };
+		9ADA45E816638642002084FF /* RKAuthenticationExample.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RKAuthenticationExample.xib; sourceTree = "<group>"; };
+		9ADA45EA16638642002084FF /* RKBackgroundRequestExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKBackgroundRequestExample.h; sourceTree = "<group>"; };
+		9ADA45EB16638642002084FF /* RKBackgroundRequestExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKBackgroundRequestExample.m; sourceTree = "<group>"; };
+		9ADA45EC16638642002084FF /* RKBackgroundRequestExample.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RKBackgroundRequestExample.xib; sourceTree = "<group>"; };
+		9ADA45EE16638642002084FF /* RKCoreDataExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKCoreDataExample.h; sourceTree = "<group>"; };
+		9ADA45EF16638642002084FF /* RKCoreDataExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKCoreDataExample.m; sourceTree = "<group>"; };
+		9ADA45F116638642002084FF /* RKCoreDataExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RKCoreDataExample.xcdatamodel; sourceTree = "<group>"; };
+		9ADA45F216638642002084FF /* RKCoreDataExample.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RKCoreDataExample.xib; sourceTree = "<group>"; };
+		9ADA45F416638642002084FF /* RKKeyValueMappingExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKKeyValueMappingExample.h; sourceTree = "<group>"; };
+		9ADA45F516638642002084FF /* RKKeyValueMappingExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKKeyValueMappingExample.m; sourceTree = "<group>"; };
+		9ADA45F616638642002084FF /* RKKeyValueMappingExample.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RKKeyValueMappingExample.xib; sourceTree = "<group>"; };
+		9ADA45F816638642002084FF /* RestKit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RestKit.png; sourceTree = "<group>"; };
+		9ADA45F916638642002084FF /* RKParamsExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKParamsExample.h; sourceTree = "<group>"; };
+		9ADA45FA16638642002084FF /* RKParamsExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKParamsExample.m; sourceTree = "<group>"; };
+		9ADA45FB16638642002084FF /* RKParamsExample.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RKParamsExample.xib; sourceTree = "<group>"; };
+		9ADA45FD16638642002084FF /* RKReachabilityExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKReachabilityExample.h; sourceTree = "<group>"; };
+		9ADA45FE16638642002084FF /* RKReachabilityExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKReachabilityExample.m; sourceTree = "<group>"; };
+		9ADA45FF16638642002084FF /* RKReachabilityExample.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RKReachabilityExample.xib; sourceTree = "<group>"; };
+		9ADA460116638642002084FF /* Project.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		9ADA460216638642002084FF /* Project.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
+		9ADA460316638642002084FF /* RKRelationshipMappingExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKRelationshipMappingExample.h; sourceTree = "<group>"; };
+		9ADA460416638642002084FF /* RKRelationshipMappingExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKRelationshipMappingExample.m; sourceTree = "<group>"; };
+		9ADA460616638642002084FF /* RKRelationshipMappingExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RKRelationshipMappingExample.xcdatamodel; sourceTree = "<group>"; };
+		9ADA460716638642002084FF /* RKRelationshipMappingExample.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RKRelationshipMappingExample.xib; sourceTree = "<group>"; };
+		9ADA460816638642002084FF /* Task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		9ADA460916638642002084FF /* Task.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		9ADA460A16638642002084FF /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		9ADA460B16638642002084FF /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		9ADA460D16638642002084FF /* RKRequestQueueExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKRequestQueueExample.h; sourceTree = "<group>"; };
+		9ADA460E16638642002084FF /* RKRequestQueueExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKRequestQueueExample.m; sourceTree = "<group>"; };
+		9ADA460F16638642002084FF /* RKRequestQueueExample.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RKRequestQueueExample.xib; sourceTree = "<group>"; };
+		9ADA461016638642002084FF /* RKCatalog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RKCatalog.xcodeproj; sourceTree = "<group>"; };
+		9ADA461716638642002084FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9ADA461916638642002084FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9ADA461B16638642002084FF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9ADA461C16638642002084FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9ADA461D16638642002084FF /* RKMacOSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RKMacOSX-Info.plist"; sourceTree = "<group>"; };
+		9ADA461E16638642002084FF /* RKMacOSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RKMacOSX-Prefix.pch"; sourceTree = "<group>"; };
+		9ADA461F16638642002084FF /* RKMacOSXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKMacOSXAppDelegate.h; sourceTree = "<group>"; };
+		9ADA462016638642002084FF /* RKMacOSXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKMacOSXAppDelegate.m; sourceTree = "<group>"; };
+		9ADA462116638642002084FF /* RKMacOSX.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RKMacOSX.xcodeproj; sourceTree = "<group>"; };
+		9ADA462616638642002084FF /* RKTStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTStatus.h; sourceTree = "<group>"; };
+		9ADA462716638642002084FF /* RKTStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTStatus.m; sourceTree = "<group>"; };
+		9ADA462816638642002084FF /* RKTUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTUser.h; sourceTree = "<group>"; };
+		9ADA462916638642002084FF /* RKTUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTUser.m; sourceTree = "<group>"; };
+		9ADA462A16638642002084FF /* RKTwitterAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTwitterAppDelegate.h; sourceTree = "<group>"; };
+		9ADA462B16638642002084FF /* RKTwitterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTwitterAppDelegate.m; sourceTree = "<group>"; };
+		9ADA462C16638642002084FF /* RKTwitterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTwitterViewController.h; sourceTree = "<group>"; };
+		9ADA462D16638642002084FF /* RKTwitterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTwitterViewController.m; sourceTree = "<group>"; };
+		9ADA462E16638642002084FF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9ADA462F16638642002084FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9ADA463116638642002084FF /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
+		9ADA463216638642002084FF /* BG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BG@2x.png"; sourceTree = "<group>"; };
+		9ADA463316638642002084FF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9ADA463416638642002084FF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9ADA463516638642002084FF /* listbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listbg.png; sourceTree = "<group>"; };
+		9ADA463616638642002084FF /* listbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "listbg@2x.png"; sourceTree = "<group>"; };
+		9ADA463716638642002084FF /* RKTwitter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RKTwitter-Info.plist"; sourceTree = "<group>"; };
+		9ADA463816638642002084FF /* RKTwitter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RKTwitter.xcodeproj; sourceTree = "<group>"; };
+		9ADA463B16638642002084FF /* RKTwitter_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTwitter_Prefix.pch; sourceTree = "<group>"; };
+		9ADA463E16638642002084FF /* RKTStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTStatus.h; sourceTree = "<group>"; };
+		9ADA463F16638642002084FF /* RKTStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTStatus.m; sourceTree = "<group>"; };
+		9ADA464016638642002084FF /* RKTwitterAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTwitterAppDelegate.h; sourceTree = "<group>"; };
+		9ADA464116638642002084FF /* RKTwitterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTwitterAppDelegate.m; sourceTree = "<group>"; };
+		9ADA464216638642002084FF /* RKTwitterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTwitterViewController.h; sourceTree = "<group>"; };
+		9ADA464316638642002084FF /* RKTwitterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTwitterViewController.m; sourceTree = "<group>"; };
+		9ADA464416638642002084FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9ADA464616638642002084FF /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
+		9ADA464716638642002084FF /* BG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BG@2x.png"; sourceTree = "<group>"; };
+		9ADA464816638642002084FF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9ADA464916638642002084FF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9ADA464A16638642002084FF /* listbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listbg.png; sourceTree = "<group>"; };
+		9ADA464B16638642002084FF /* listbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "listbg@2x.png"; sourceTree = "<group>"; };
+		9ADA464C16638642002084FF /* RKTwitter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RKTwitter-Info.plist"; sourceTree = "<group>"; };
+		9ADA464D16638642002084FF /* RKTwitterCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RKTwitterCoreData.xcdatamodel; sourceTree = "<group>"; };
+		9ADA464E16638642002084FF /* restkit.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = restkit.json; sourceTree = "<group>"; };
+		9ADA464F16638642002084FF /* RKSeedDatabase.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = RKSeedDatabase.sqlite; sourceTree = "<group>"; };
+		9ADA465016638642002084FF /* RKTwitter_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTwitter_Prefix.pch; sourceTree = "<group>"; };
+		9ADA465116638642002084FF /* RKTwitterCoreData.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RKTwitterCoreData.xcodeproj; sourceTree = "<group>"; };
+		9ADA465416638642002084FF /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		9ADA465516638642002084FF /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		9ADA465616638642002084FF /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
+		9ADA465716638642002084FF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9ADA465816638642002084FF /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		9ADA465916638642002084FF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		9ADA465C16638642002084FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9ADA465E16638642002084FF /* RestKitFramework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RestKitFramework-Info.plist"; sourceTree = "<group>"; };
+		9ADA465F16638642002084FF /* RestKitFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RestKitFrameworkTests-Info.plist"; sourceTree = "<group>"; };
+		9ADA466016638642002084FF /* RestKitResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RestKitResources-Info.plist"; sourceTree = "<group>"; };
+		9ADA466116638642002084FF /* RestKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RestKitTests-Info.plist"; sourceTree = "<group>"; };
+		9ADA466316638642002084FF /* RestKitCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RestKitCoreData.xcdatamodel; sourceTree = "<group>"; };
+		9ADA466416638642002084FF /* RestKitResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RestKitResources-Prefix.pch"; sourceTree = "<group>"; };
+		9ADA466616638642002084FF /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		9ADA466716638642002084FF /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
+		9ADA466816638642002084FF /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		9ADA466916638642002084FF /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
+		9ADA466A16638642002084FF /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
+		9ADA466B16638642002084FF /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
+		9ADA466C16638642002084FF /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
+		9ADA466D16638642002084FF /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
+		9ADA466E16638642002084FF /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RestKit.xcodeproj; sourceTree = "<group>"; };
+		9ADA467116638642002084FF /* RestKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RestKitResources.bundle; sourceTree = "<group>"; };
+		9ADA467716638642002084FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9ADA467816638642002084FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9ADA467916638642002084FF /* RKApplicationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RKApplicationTests-Info.plist"; sourceTree = "<group>"; };
+		9ADA467A16638642002084FF /* RKApplicationTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RKApplicationTests-Prefix.pch"; sourceTree = "<group>"; };
+		9ADA467B16638642002084FF /* RKATAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKATAppDelegate.h; sourceTree = "<group>"; };
+		9ADA467C16638642002084FF /* RKATAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKATAppDelegate.m; sourceTree = "<group>"; };
+		9ADA467E16638642002084FF /* RKUITests.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RKUITests.xcdatamodel; sourceTree = "<group>"; };
+		9ADA468116638642002084FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9ADA468216638642002084FF /* RKApplicationTestsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RKApplicationTestsTests-Info.plist"; sourceTree = "<group>"; };
+		9ADA468316638642002084FF /* RKApplicationTests.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RKApplicationTests.xcodeproj; sourceTree = "<group>"; };
+		9ADA468716638642002084FF /* RKFetchedResultsTableControllerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKFetchedResultsTableControllerTest.m; sourceTree = "<group>"; };
+		9ADA468816638642002084FF /* RKFormTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKFormTest.m; sourceTree = "<group>"; };
+		9ADA468916638642002084FF /* RKTableControllerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTableControllerTest.m; sourceTree = "<group>"; };
+		9ADA468A16638642002084FF /* RKTableViewCellMappingsTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTableViewCellMappingsTest.m; sourceTree = "<group>"; };
+		9ADA468B16638642002084FF /* RKTableViewCellMappingTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTableViewCellMappingTest.m; sourceTree = "<group>"; };
+		9ADA468C16638642002084FF /* RKTableViewSectionTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTableViewSectionTest.m; sourceTree = "<group>"; };
+		9ADA468D16638642002084FF /* cibuild */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = cibuild; sourceTree = "<group>"; };
+		9ADA469016638642002084FF /* blake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blake.png; sourceTree = "<group>"; };
+		9ADA469216638642002084FF /* ArrayOfHumans.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ArrayOfHumans.json; sourceTree = "<group>"; };
+		9ADA469316638642002084FF /* ArrayOfNestedDictionaries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ArrayOfNestedDictionaries.json; sourceTree = "<group>"; };
+		9ADA469416638642002084FF /* ArrayOfResults.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ArrayOfResults.json; sourceTree = "<group>"; };
+		9ADA469516638642002084FF /* benchmark_parents_and_children.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = benchmark_parents_and_children.json; sourceTree = "<group>"; };
+		9ADA469616638642002084FF /* ComplexNestedUser.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ComplexNestedUser.json; sourceTree = "<group>"; };
+		9ADA469716638642002084FF /* ConnectingParents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ConnectingParents.json; sourceTree = "<group>"; };
+		9ADA469916638642002084FF /* boy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = boy.json; sourceTree = "<group>"; };
+		9ADA469A16638642002084FF /* child.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = child.json; sourceTree = "<group>"; };
+		9ADA469B16638642002084FF /* friends.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = friends.json; sourceTree = "<group>"; };
+		9ADA469C16638642002084FF /* girl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = girl.json; sourceTree = "<group>"; };
+		9ADA469D16638642002084FF /* mixed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mixed.json; sourceTree = "<group>"; };
+		9ADA469E16638642002084FF /* parent.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parent.json; sourceTree = "<group>"; };
+		9ADA469F16638642002084FF /* DynamicKeys.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DynamicKeys.json; sourceTree = "<group>"; };
+		9ADA46A016638642002084FF /* DynamicKeysWithNestedRelationship.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DynamicKeysWithNestedRelationship.json; sourceTree = "<group>"; };
+		9ADA46A116638642002084FF /* DynamicKeysWithRelationship.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DynamicKeysWithRelationship.json; sourceTree = "<group>"; };
+		9ADA46A216638642002084FF /* error.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = error.json; sourceTree = "<group>"; };
+		9ADA46A316638642002084FF /* errors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = errors.json; sourceTree = "<group>"; };
+		9ADA46A416638642002084FF /* Foursquare.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Foursquare.json; sourceTree = "<group>"; };
+		9ADA46A616638642002084FF /* 1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
+		9ADA46A716638642002084FF /* all.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = all.json; sourceTree = "<group>"; };
+		9ADA46A816638642002084FF /* with_to_one_relationship.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = with_to_one_relationship.json; sourceTree = "<group>"; };
+		9ADA46A916638642002084FF /* NakedEvents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NakedEvents.json; sourceTree = "<group>"; };
+		9ADA46AA16638642002084FF /* nested_user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = nested_user.json; sourceTree = "<group>"; };
+		9ADA46AB16638642002084FF /* parents_and_children.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parents_and_children.json; sourceTree = "<group>"; };
+		9ADA46AC16638642002084FF /* RailsUser.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RailsUser.json; sourceTree = "<group>"; };
+		9ADA46AD16638642002084FF /* SameKeyDifferentTargetClasses.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SameKeyDifferentTargetClasses.json; sourceTree = "<group>"; };
+		9ADA46AE16638642002084FF /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		9ADA46AF16638642002084FF /* users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		9ADA46B116638642002084FF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9ADA46B316638642002084FF /* attributes_without_text_content.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = attributes_without_text_content.xml; sourceTree = "<group>"; };
+		9ADA46B416638642002084FF /* channels.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = channels.xml; sourceTree = "<group>"; };
+		9ADA46B516638642002084FF /* container_attributes.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = container_attributes.xml; sourceTree = "<group>"; };
+		9ADA46B616638642002084FF /* national_weather_service.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = national_weather_service.xml; sourceTree = "<group>"; };
+		9ADA46B716638642002084FF /* orders.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = orders.xml; sourceTree = "<group>"; };
+		9ADA46B816638642002084FF /* tab_data.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = tab_data.xml; sourceTree = "<group>"; };
+		9ADA46B916638642002084FF /* zend.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = zend.xml; sourceTree = "<group>"; };
+		9ADA46BC16638642002084FF /* NSEntityDescription+RKAdditionsTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSEntityDescription+RKAdditionsTest.m"; sourceTree = "<group>"; };
+		9ADA46BD16638642002084FF /* NSManagedObject+ActiveRecordTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+ActiveRecordTest.m"; sourceTree = "<group>"; };
+		9ADA46BE16638642002084FF /* RKEntityByAttributeCacheTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKEntityByAttributeCacheTest.m; sourceTree = "<group>"; };
+		9ADA46BF16638642002084FF /* RKEntityCacheTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKEntityCacheTest.m; sourceTree = "<group>"; };
+		9ADA46C016638642002084FF /* RKFetchRequestMappingCacheTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKFetchRequestMappingCacheTest.m; sourceTree = "<group>"; };
+		9ADA46C116638642002084FF /* RKManagedObjectLoaderTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKManagedObjectLoaderTest.m; sourceTree = "<group>"; };
+		9ADA46C216638642002084FF /* RKManagedObjectMappingOperationTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKManagedObjectMappingOperationTest.m; sourceTree = "<group>"; };
+		9ADA46C316638642002084FF /* RKManagedObjectMappingTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKManagedObjectMappingTest.m; sourceTree = "<group>"; };
+		9ADA46C416638642002084FF /* RKManagedObjectStoreTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKManagedObjectStoreTest.m; sourceTree = "<group>"; };
+		9ADA46C516638642002084FF /* RKManagedObjectThreadSafeInvocationTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKManagedObjectThreadSafeInvocationTest.m; sourceTree = "<group>"; };
+		9ADA46C616638642002084FF /* RKSearchableManagedObjectTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKSearchableManagedObjectTest.m; sourceTree = "<group>"; };
+		9ADA46C716638642002084FF /* RKSearchWordObserverTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKSearchWordObserverTest.m; sourceTree = "<group>"; };
+		9ADA46C916638642002084FF /* RKAuthenticationTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKAuthenticationTest.m; sourceTree = "<group>"; };
+		9ADA46CA16638642002084FF /* RKClientTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKClientTest.m; sourceTree = "<group>"; };
+		9ADA46CB16638642002084FF /* RKOAuthClientTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKOAuthClientTest.m; sourceTree = "<group>"; };
+		9ADA46CC16638642002084FF /* RKParamsAttachmentTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKParamsAttachmentTest.m; sourceTree = "<group>"; };
+		9ADA46CD16638642002084FF /* RKParamsTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKParamsTest.m; sourceTree = "<group>"; };
+		9ADA46CE16638642002084FF /* RKRequestQueueTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKRequestQueueTest.m; sourceTree = "<group>"; };
+		9ADA46CF16638642002084FF /* RKRequestTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKRequestTest.m; sourceTree = "<group>"; };
+		9ADA46D016638642002084FF /* RKResponseTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKResponseTest.m; sourceTree = "<group>"; };
+		9ADA46D116638642002084FF /* RKURLTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKURLTest.m; sourceTree = "<group>"; };
+		9ADA46D316638642002084FF /* RKDynamicObjectMappingTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKDynamicObjectMappingTest.m; sourceTree = "<group>"; };
+		9ADA46D416638642002084FF /* RKObjectLoaderTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectLoaderTest.m; sourceTree = "<group>"; };
+		9ADA46D516638642002084FF /* RKObjectManagerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectManagerTest.m; sourceTree = "<group>"; };
+		9ADA46D616638642002084FF /* RKObjectMappingNextGenTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectMappingNextGenTest.m; sourceTree = "<group>"; };
+		9ADA46D716638642002084FF /* RKObjectMappingOperationTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectMappingOperationTest.m; sourceTree = "<group>"; };
+		9ADA46D816638642002084FF /* RKObjectMappingProviderTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectMappingProviderTest.m; sourceTree = "<group>"; };
+		9ADA46D916638642002084FF /* RKObjectMappingResultTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectMappingResultTest.m; sourceTree = "<group>"; };
+		9ADA46DA16638642002084FF /* RKObjectPaginatorTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectPaginatorTest.m; sourceTree = "<group>"; };
+		9ADA46DB16638642002084FF /* RKObjectRouterTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectRouterTest.m; sourceTree = "<group>"; };
+		9ADA46DC16638642002084FF /* RKObjectSerializerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectSerializerTest.m; sourceTree = "<group>"; };
+		9ADA46DD16638642002084FF /* RKParserRegistryTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKParserRegistryTest.m; sourceTree = "<group>"; };
+		9ADA46DF16638642002084FF /* NSArray+RKAdditionsTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RKAdditionsTest.m"; sourceTree = "<group>"; };
+		9ADA46E016638642002084FF /* NSDictionary+RKRequestSerializationTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RKRequestSerializationTest.m"; sourceTree = "<group>"; };
+		9ADA46E116638642002084FF /* NSStringRestKitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringRestKitTest.m; sourceTree = "<group>"; };
+		9ADA46E216638642002084FF /* RKCacheTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKCacheTest.m; sourceTree = "<group>"; };
+		9ADA46E316638642002084FF /* RKDotNetDateFormatterTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKDotNetDateFormatterTest.m; sourceTree = "<group>"; };
+		9ADA46E416638642002084FF /* RKJSONParserJSONKitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKJSONParserJSONKitTest.m; sourceTree = "<group>"; };
+		9ADA46E516638642002084FF /* RKMutableBlockDictionaryTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKMutableBlockDictionaryTest.m; sourceTree = "<group>"; };
+		9ADA46E616638642002084FF /* RKObjectiveCppTest.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RKObjectiveCppTest.mm; sourceTree = "<group>"; };
+		9ADA46E716638642002084FF /* RKPathMatcherTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKPathMatcherTest.m; sourceTree = "<group>"; };
+		9ADA46E816638642002084FF /* RKXMLParserTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKXMLParserTest.m; sourceTree = "<group>"; };
+		9ADA46EA16638642002084FF /* Data Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Data Model.xcdatamodel"; sourceTree = "<group>"; };
+		9ADA46EB16638642002084FF /* RKCat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKCat.h; sourceTree = "<group>"; };
+		9ADA46EC16638642002084FF /* RKCat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKCat.m; sourceTree = "<group>"; };
+		9ADA46ED16638642002084FF /* RKChild.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKChild.h; sourceTree = "<group>"; };
+		9ADA46EE16638642002084FF /* RKChild.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKChild.m; sourceTree = "<group>"; };
+		9ADA46EF16638642002084FF /* RKDynamicMappingModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKDynamicMappingModels.h; sourceTree = "<group>"; };
+		9ADA46F016638642002084FF /* RKDynamicMappingModels.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKDynamicMappingModels.m; sourceTree = "<group>"; };
+		9ADA46F116638642002084FF /* RKEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKEvent.h; sourceTree = "<group>"; };
+		9ADA46F216638642002084FF /* RKEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKEvent.m; sourceTree = "<group>"; };
+		9ADA46F316638642002084FF /* RKHouse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKHouse.h; sourceTree = "<group>"; };
+		9ADA46F416638642002084FF /* RKHouse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKHouse.m; sourceTree = "<group>"; };
+		9ADA46F516638642002084FF /* RKHuman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKHuman.h; sourceTree = "<group>"; };
+		9ADA46F616638642002084FF /* RKHuman.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKHuman.m; sourceTree = "<group>"; };
+		9ADA46F716638642002084FF /* RKMappableAssociation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKMappableAssociation.h; sourceTree = "<group>"; };
+		9ADA46F816638642002084FF /* RKMappableAssociation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKMappableAssociation.m; sourceTree = "<group>"; };
+		9ADA46F916638642002084FF /* RKMappableObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKMappableObject.h; sourceTree = "<group>"; };
+		9ADA46FA16638642002084FF /* RKMappableObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKMappableObject.m; sourceTree = "<group>"; };
+		9ADA46FB16638642002084FF /* RKObjectLoaderTestResultModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectLoaderTestResultModel.h; sourceTree = "<group>"; };
+		9ADA46FC16638642002084FF /* RKObjectLoaderTestResultModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectLoaderTestResultModel.m; sourceTree = "<group>"; };
+		9ADA46FD16638642002084FF /* RKObjectMapperTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKObjectMapperTestModel.h; sourceTree = "<group>"; };
+		9ADA46FE16638642002084FF /* RKObjectMapperTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKObjectMapperTestModel.m; sourceTree = "<group>"; };
+		9ADA46FF16638642002084FF /* RKParent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKParent.h; sourceTree = "<group>"; };
+		9ADA470016638642002084FF /* RKParent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKParent.m; sourceTree = "<group>"; };
+		9ADA470116638642002084FF /* RKResident.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKResident.h; sourceTree = "<group>"; };
+		9ADA470216638642002084FF /* RKResident.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKResident.m; sourceTree = "<group>"; };
+		9ADA470316638642002084FF /* RKSearchable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKSearchable.h; sourceTree = "<group>"; };
+		9ADA470416638642002084FF /* RKSearchable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKSearchable.m; sourceTree = "<group>"; };
+		9ADA470516638642002084FF /* RKTestAddress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTestAddress.h; sourceTree = "<group>"; };
+		9ADA470616638642002084FF /* RKTestAddress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTestAddress.m; sourceTree = "<group>"; };
+		9ADA470716638642002084FF /* RKTestUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTestUser.h; sourceTree = "<group>"; };
+		9ADA470816638642002084FF /* RKTestUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTestUser.m; sourceTree = "<group>"; };
+		9ADA470916638642002084FF /* RKTestEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKTestEnvironment.h; sourceTree = "<group>"; };
+		9ADA470A16638642002084FF /* RKTestEnvironment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKTestEnvironment.m; sourceTree = "<group>"; };
+		9ADA470B16638642002084FF /* RunPlatformUnitTests */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = RunPlatformUnitTests; sourceTree = "<group>"; };
+		9ADA470D16638642002084FF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9ADA470E16638642002084FF /* fixtures.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = fixtures.rb; sourceTree = "<group>"; };
+		9ADA471216638642002084FF /* authentication.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = authentication.rb; sourceTree = "<group>"; };
+		9ADA471316638642002084FF /* etags.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = etags.rb; sourceTree = "<group>"; };
+		9ADA471416638642002084FF /* oauth1.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = oauth1.rb; sourceTree = "<group>"; };
+		9ADA471516638642002084FF /* oauth2.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = oauth2.rb; sourceTree = "<group>"; };
+		9ADA471616638642002084FF /* redirection.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = redirection.rb; sourceTree = "<group>"; };
+		9ADA471716638642002084FF /* timeout.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = timeout.rb; sourceTree = "<group>"; };
+		9ADA471816638642002084FF /* restkit.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = restkit.rb; sourceTree = "<group>"; };
+		9ADA471916638642002084FF /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		9ADA471A16638642002084FF /* server.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = server.rb; sourceTree = "<group>"; };
+		9ADA471B16638642002084FF /* server.ru */ = {isa = PBXFileReference; lastKnownFileType = text; path = server.ru; sourceTree = "<group>"; };
+		9ADA471D16638642002084FF /* oauth1_spec.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = oauth1_spec.rb; sourceTree = "<group>"; };
+		9ADA471E16638642002084FF /* oauth2_spec.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = oauth2_spec.rb; sourceTree = "<group>"; };
+		9ADA471F16638642002084FF /* spec_helper.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = spec_helper.rb; sourceTree = "<group>"; };
+		9ADA472016638642002084FF /* thin.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = thin.yml; sourceTree = "<group>"; };
+		9ADA472316638642002084FF /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrest.framework; sourceTree = "<group>"; };
+		9ADA472416638642002084FF /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCHamcrestIOS.framework; sourceTree = "<group>"; };
+		9ADA472816638642002084FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9ADA472916638642002084FF /* NSInvocation+OCMAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+OCMAdditions.h"; sourceTree = "<group>"; };
+		9ADA472A16638642002084FF /* NSInvocation+OCMAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+OCMAdditions.m"; sourceTree = "<group>"; };
+		9ADA472B16638642002084FF /* NSMethodSignature+OCMAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMethodSignature+OCMAdditions.h"; sourceTree = "<group>"; };
+		9ADA472C16638642002084FF /* NSMethodSignature+OCMAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMethodSignature+OCMAdditions.m"; sourceTree = "<group>"; };
+		9ADA472D16638642002084FF /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		9ADA472E16638642002084FF /* NSNotificationCenter+OCMAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+OCMAdditions.m"; sourceTree = "<group>"; };
+		9ADA472F16638642002084FF /* OCClassMockObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCClassMockObject.h; sourceTree = "<group>"; };
+		9ADA473016638642002084FF /* OCClassMockObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCClassMockObject.m; sourceTree = "<group>"; };
+		9ADA473116638642002084FF /* OCMArg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		9ADA473216638642002084FF /* OCMArg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMArg.m; sourceTree = "<group>"; };
+		9ADA473316638642002084FF /* OCMBlockCaller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMBlockCaller.h; sourceTree = "<group>"; };
+		9ADA473416638642002084FF /* OCMBlockCaller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMBlockCaller.m; sourceTree = "<group>"; };
+		9ADA473516638642002084FF /* OCMBoxedReturnValueProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMBoxedReturnValueProvider.h; sourceTree = "<group>"; };
+		9ADA473616638642002084FF /* OCMBoxedReturnValueProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMBoxedReturnValueProvider.m; sourceTree = "<group>"; };
+		9ADA473716638642002084FF /* OCMConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		9ADA473816638642002084FF /* OCMConstraint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMConstraint.m; sourceTree = "<group>"; };
+		9ADA473916638642002084FF /* OCMExceptionReturnValueProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMExceptionReturnValueProvider.h; sourceTree = "<group>"; };
+		9ADA473A16638642002084FF /* OCMExceptionReturnValueProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMExceptionReturnValueProvider.m; sourceTree = "<group>"; };
+		9ADA473B16638642002084FF /* OCMIndirectReturnValueProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMIndirectReturnValueProvider.h; sourceTree = "<group>"; };
+		9ADA473C16638642002084FF /* OCMIndirectReturnValueProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMIndirectReturnValueProvider.m; sourceTree = "<group>"; };
+		9ADA473D16638642002084FF /* OCMNotificationPoster.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMNotificationPoster.h; sourceTree = "<group>"; };
+		9ADA473E16638642002084FF /* OCMNotificationPoster.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMNotificationPoster.m; sourceTree = "<group>"; };
+		9ADA473F16638642002084FF /* OCMObserverRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMObserverRecorder.h; sourceTree = "<group>"; };
+		9ADA474016638642002084FF /* OCMObserverRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMObserverRecorder.m; sourceTree = "<group>"; };
+		9ADA474116638642002084FF /* OCMock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCMock-Info.plist"; sourceTree = "<group>"; };
+		9ADA474216638642002084FF /* OCMock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCMock-Prefix.pch"; sourceTree = "<group>"; };
+		9ADA474316638642002084FF /* OCMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		9ADA474416638642002084FF /* OCMockObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		9ADA474516638642002084FF /* OCMockObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMockObject.m; sourceTree = "<group>"; };
+		9ADA474616638642002084FF /* OCMockRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		9ADA474716638642002084FF /* OCMockRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMockRecorder.m; sourceTree = "<group>"; };
+		9ADA474816638642002084FF /* OCMPassByRefSetter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMPassByRefSetter.h; sourceTree = "<group>"; };
+		9ADA474916638642002084FF /* OCMPassByRefSetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMPassByRefSetter.m; sourceTree = "<group>"; };
+		9ADA474A16638642002084FF /* OCMRealObjectForwarder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMRealObjectForwarder.h; sourceTree = "<group>"; };
+		9ADA474B16638642002084FF /* OCMRealObjectForwarder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMRealObjectForwarder.m; sourceTree = "<group>"; };
+		9ADA474C16638642002084FF /* OCMReturnValueProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMReturnValueProvider.h; sourceTree = "<group>"; };
+		9ADA474D16638642002084FF /* OCMReturnValueProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMReturnValueProvider.m; sourceTree = "<group>"; };
+		9ADA474E16638642002084FF /* OCObserverMockObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCObserverMockObject.h; sourceTree = "<group>"; };
+		9ADA474F16638642002084FF /* OCObserverMockObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCObserverMockObject.m; sourceTree = "<group>"; };
+		9ADA475016638642002084FF /* OCPartialMockObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCPartialMockObject.h; sourceTree = "<group>"; };
+		9ADA475116638642002084FF /* OCPartialMockObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCPartialMockObject.m; sourceTree = "<group>"; };
+		9ADA475216638642002084FF /* OCPartialMockRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCPartialMockRecorder.h; sourceTree = "<group>"; };
+		9ADA475316638642002084FF /* OCPartialMockRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCPartialMockRecorder.m; sourceTree = "<group>"; };
+		9ADA475416638642002084FF /* OCProtocolMockObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCProtocolMockObject.h; sourceTree = "<group>"; };
+		9ADA475516638642002084FF /* OCProtocolMockObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCProtocolMockObject.m; sourceTree = "<group>"; };
+		9ADA475716638642002084FF /* rkkeypath */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = rkkeypath; sourceTree = "<group>"; };
+		9ADA475A16638642002084FF /* appledoc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = appledoc; sourceTree = "<group>"; };
+		9ADA475E16638642002084FF /* info-template.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "info-template.plist"; sourceTree = "<group>"; };
+		9ADA476116638642002084FF /* documents-template */ = {isa = PBXFileReference; lastKnownFileType = text; path = "documents-template"; sourceTree = "<group>"; };
+		9ADA476216638642002084FF /* nodes-template.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "nodes-template.xml"; sourceTree = "<group>"; };
+		9ADA476316638642002084FF /* tokens-template.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "tokens-template.xml"; sourceTree = "<group>"; };
+		9ADA476616638642002084FF /* styles.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		9ADA476716638642002084FF /* stylesPrint.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = stylesPrint.css; sourceTree = "<group>"; };
+		9ADA476816638642002084FF /* document-template.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "document-template.html"; sourceTree = "<group>"; };
+		9ADA476916638642002084FF /* hierarchy-template.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "hierarchy-template.html"; sourceTree = "<group>"; };
+		9ADA476B16638642002084FF /* button_bar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bar_background.png; sourceTree = "<group>"; };
+		9ADA476C16638642002084FF /* disclosure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure.png; sourceTree = "<group>"; };
+		9ADA476D16638642002084FF /* disclosure_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disclosure_open.png; sourceTree = "<group>"; };
+		9ADA476E16638642002084FF /* library_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library_background.png; sourceTree = "<group>"; };
+		9ADA476F16638642002084FF /* title_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_background.png; sourceTree = "<group>"; };
+		9ADA477016638642002084FF /* index-template.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "index-template.html"; sourceTree = "<group>"; };
+		9ADA477116638642002084FF /* object-template.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "object-template.html"; sourceTree = "<group>"; };
+		9ADA477316638642002084FF /* GCOAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCOAuth.h; sourceTree = "<group>"; };
+		9ADA477416638642002084FF /* GCOAuth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCOAuth.m; sourceTree = "<group>"; };
+		9ADA477516638642002084FF /* NSData+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		9ADA477616638642002084FF /* NSData+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		9ADA477716638642002084FF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		9ADA477916638642002084FF /* FileMD5Hash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FileMD5Hash.c; sourceTree = "<group>"; };
+		9ADA477A16638642002084FF /* FileMD5Hash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileMD5Hash.h; sourceTree = "<group>"; };
+		9ADA477B16638642002084FF /* FileMD5Hash_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileMD5Hash_Prefix.pch; sourceTree = "<group>"; };
+		9ADA477C16638642002084FF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9ADA477D16638642002084FF /* NOTICE */ = {isa = PBXFileReference; lastKnownFileType = text; path = NOTICE; sourceTree = "<group>"; };
+		9ADA477E16638642002084FF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		9ADA478016638642002084FF /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatter.h; sourceTree = "<group>"; };
+		9ADA478116638642002084FF /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatter.m; sourceTree = "<group>"; };
+		9ADA478216638642002084FF /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		9ADA478316638642002084FF /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		9ADA478516638642002084FF /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		9ADA478616638642002084FF /* JSONKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		9ADA478716638642002084FF /* JSONKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		9ADA478816638642002084FF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		9ADA478B16638642002084FF /* lcl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lcl.h; sourceTree = "<group>"; };
+		9ADA478C16638642002084FF /* lcl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lcl.m; sourceTree = "<group>"; };
+		9ADA478D16638642002084FF /* lcl_config_components.template.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lcl_config_components.template.h; sourceTree = "<group>"; };
+		9ADA478E16638642002084FF /* lcl_config_extensions.template.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lcl_config_extensions.template.h; sourceTree = "<group>"; };
+		9ADA478F16638642002084FF /* lcl_config_logger.template.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lcl_config_logger.template.h; sourceTree = "<group>"; };
+		9ADA479016638642002084FF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		9ADA479216638642002084FF /* lcl_config_logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lcl_config_logger.h; sourceTree = "<group>"; };
+		9ADA479316638642002084FF /* LCLNSLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCLNSLog.h; sourceTree = "<group>"; };
+		9ADA479416638642002084FF /* LCLNSLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCLNSLog.m; sourceTree = "<group>"; };
+		9ADA479516638642002084FF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		9ADA479616638642002084FF /* PortableStaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PortableStaticLibrary.xcconfig; sourceTree = "<group>"; };
+		9ADA479816638642002084FF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9ADA479916638642002084FF /* AUTHORS */ = {isa = PBXFileReference; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		9ADA479A16638642002084FF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9ADA479B16638642002084FF /* NOTICE */ = {isa = PBXFileReference; lastKnownFileType = text; path = NOTICE; sourceTree = "<group>"; };
+		9ADA479C16638642002084FF /* README.mdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.mdown; sourceTree = "<group>"; };
+		9ADA479D16638642002084FF /* SOCKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOCKit.h; sourceTree = "<group>"; };
+		9ADA479E16638642002084FF /* SOCKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOCKit.m; sourceTree = "<group>"; };
+		9ADA479F16638642002084FF /* SOCKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SOCKit.xcodeproj; sourceTree = "<group>"; };
+		9ADA47A416638642002084FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9ADA47A516638642002084FF /* SOCKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SOCKitTests-Info.plist"; sourceTree = "<group>"; };
+		9ADA47A616638642002084FF /* SOCKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOCKitTests.m; sourceTree = "<group>"; };
+		9ADA47A816638642002084FF /* LICENCE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
+		9ADA47A916638642002084FF /* XMLReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		9ADA47AA16638642002084FF /* XMLReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		9ADA47AB16638642002084FF /* VERSION */ = {isa = PBXFileReference; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
 		9AED2495165684B400350CF9 /* MFMapViewEditEventControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMapViewEditEventControllerViewController.h; sourceTree = "<group>"; };
 		9AED2496165684B400350CF9 /* MFMapViewEditEventControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMapViewEditEventControllerViewController.m; sourceTree = "<group>"; };
 		9AED2497165684B400350CF9 /* MFMapViewEditEventControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFMapViewEditEventControllerViewController.xib; sourceTree = "<group>"; };
@@ -407,6 +1095,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADA480416638687002084FF /* libRestKit.a in Frameworks */,
 				843139F116635E9E0006311A /* CoreLocation.framework in Frameworks */,
 				843139F216635E9E0006311A /* MapKit.framework in Frameworks */,
 				843139F316635E9E0006311A /* libiconv.dylib in Frameworks */,
@@ -414,7 +1103,6 @@
 				843139F516635E9E0006311A /* CoreVideo.framework in Frameworks */,
 				843139F616635E9E0006311A /* CoreMedia.framework in Frameworks */,
 				843139F716635E9E0006311A /* AVFoundation.framework in Frameworks */,
-				843139F816635E9E0006311A /* libRestKit.a in Frameworks */,
 				843139F916635E9E0006311A /* libxml2.dylib in Frameworks */,
 				843139FA16635E9E0006311A /* SystemConfiguration.framework in Frameworks */,
 				843139FB16635E9E0006311A /* Security.framework in Frameworks */,
@@ -433,6 +1121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADA480316638651002084FF /* libRestKit.a in Frameworks */,
 				84B2BB971653B1A700CC9F6F /* CoreLocation.framework in Frameworks */,
 				84B2BB951653AD5000CC9F6F /* MapKit.framework in Frameworks */,
 				84B2BB8D16539F3100CC9F6F /* libiconv.dylib in Frameworks */,
@@ -440,7 +1129,6 @@
 				84B2BB8B16539F1B00CC9F6F /* CoreVideo.framework in Frameworks */,
 				84B2BB8916539F1400CC9F6F /* CoreMedia.framework in Frameworks */,
 				84B2BB8716539F0D00CC9F6F /* AVFoundation.framework in Frameworks */,
-				841BB3D51650EE27006B59C8 /* libRestKit.a in Frameworks */,
 				9A126DD7164D1DFB0037538A /* libxml2.dylib in Frameworks */,
 				9A126DD3164D1DEB0037538A /* SystemConfiguration.framework in Frameworks */,
 				9A126DD1164D1DE50037538A /* Security.framework in Frameworks */,
@@ -584,7 +1272,6 @@
 				9A126DD6164D1DFB0037538A /* libxml2.dylib */,
 				84B2BB6316539EDC00CC9F6F /* ZBarSDK */,
 				84B2BB8C16539F3100CC9F6F /* libiconv.dylib */,
-				84AC26861650EB25008B1F02 /* RestKit.xcodeproj */,
 			);
 			name = LIbraries;
 			sourceTree = "<group>";
@@ -663,18 +1350,6 @@
 				84B2BB5E16539CAF00CC9F6F /* MFFishRecognitionViewController.xib */,
 			);
 			name = FishRecognition;
-			sourceTree = "<group>";
-		};
-		84AC26871650EB25008B1F02 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				84AC26921650EB26008B1F02 /* libRestKit.a */,
-				84AC26941650EB26008B1F02 /* RestKitTests.octest */,
-				84AC26961650EB26008B1F02 /* RestKit.framework */,
-				84AC26981650EB26008B1F02 /* RestKitFrameworkTests.octest */,
-				84AC269A1650EB26008B1F02 /* RestKitResources.bundle */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		84B2BB0616537F8100CC9F6F /* Images */ = {
@@ -803,6 +1478,7 @@
 		9A126D6C164D1BC10037538A = {
 			isa = PBXGroup;
 			children = (
+				9ADA44B316638641002084FF /* RestKit */,
 				846010AB165E0BDE00377FE8 /* LIbraries */,
 				9A126D81164D1BC20037538A /* MinFangst */,
 				9A126D9F164D1BC20037538A /* MinFangstTests */,
@@ -906,6 +1582,1485 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9ADA44B316638641002084FF /* RestKit */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA44B416638641002084FF /* .gitignore */,
+				9ADA44B516638641002084FF /* .gitmodules */,
+				9ADA44B616638641002084FF /* .rvmrc */,
+				9ADA44B716638641002084FF /* Code */,
+				9ADA459F16638641002084FF /* CREDITS.md */,
+				9ADA45A016638641002084FF /* Docs */,
+				9ADA45CB16638641002084FF /* Examples */,
+				9ADA465516638642002084FF /* Gemfile */,
+				9ADA465616638642002084FF /* Gemfile.lock */,
+				9ADA465716638642002084FF /* LICENSE */,
+				9ADA465816638642002084FF /* Rakefile */,
+				9ADA465916638642002084FF /* README.md */,
+				9ADA465A16638642002084FF /* Resources */,
+				9ADA466E16638642002084FF /* RestKit.xcodeproj */,
+				9ADA467116638642002084FF /* RestKitResources.bundle */,
+				9ADA467216638642002084FF /* Tests */,
+				9ADA475616638642002084FF /* Tools */,
+				9ADA475816638642002084FF /* Vendor */,
+				9ADA47AB16638642002084FF /* VERSION */,
+			);
+			path = RestKit;
+			sourceTree = "<group>";
+		};
+		9ADA44B716638641002084FF /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA44B816638641002084FF /* CoreData */,
+				9ADA44E316638641002084FF /* Network */,
+				9ADA450516638641002084FF /* ObjectMapping */,
+				9ADA453516638641002084FF /* RestKit.h */,
+				9ADA453616638641002084FF /* Support */,
+				9ADA456B16638641002084FF /* Testing */,
+				9ADA457C16638641002084FF /* UI */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		9ADA44B816638641002084FF /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA44B916638641002084FF /* CoreData.h */,
+				9ADA44BA16638641002084FF /* NSEntityDescription+RKAdditions.h */,
+				9ADA44BB16638641002084FF /* NSEntityDescription+RKAdditions.m */,
+				9ADA44BC16638641002084FF /* NSManagedObject+ActiveRecord.h */,
+				9ADA44BD16638641002084FF /* NSManagedObject+ActiveRecord.m */,
+				9ADA44BE16638641002084FF /* NSManagedObject+RKAdditions.h */,
+				9ADA44BF16638641002084FF /* NSManagedObject+RKAdditions.m */,
+				9ADA44C016638641002084FF /* NSManagedObjectContext+RKAdditions.h */,
+				9ADA44C116638641002084FF /* NSManagedObjectContext+RKAdditions.m */,
+				9ADA44C216638641002084FF /* RKEntityByAttributeCache.h */,
+				9ADA44C316638641002084FF /* RKEntityByAttributeCache.m */,
+				9ADA44C416638641002084FF /* RKEntityCache.h */,
+				9ADA44C516638641002084FF /* RKEntityCache.m */,
+				9ADA44C616638641002084FF /* RKFetchRequestManagedObjectCache.h */,
+				9ADA44C716638641002084FF /* RKFetchRequestManagedObjectCache.m */,
+				9ADA44C816638641002084FF /* RKInMemoryManagedObjectCache.h */,
+				9ADA44C916638641002084FF /* RKInMemoryManagedObjectCache.m */,
+				9ADA44CA16638641002084FF /* RKManagedObjectCaching.h */,
+				9ADA44CB16638641002084FF /* RKManagedObjectLoader.h */,
+				9ADA44CC16638641002084FF /* RKManagedObjectLoader.m */,
+				9ADA44CD16638641002084FF /* RKManagedObjectMapping.h */,
+				9ADA44CE16638641002084FF /* RKManagedObjectMapping.m */,
+				9ADA44CF16638641002084FF /* RKManagedObjectMappingOperation.h */,
+				9ADA44D016638641002084FF /* RKManagedObjectMappingOperation.m */,
+				9ADA44D116638641002084FF /* RKManagedObjectSearchEngine.h */,
+				9ADA44D216638641002084FF /* RKManagedObjectSearchEngine.m */,
+				9ADA44D316638641002084FF /* RKManagedObjectSeeder.h */,
+				9ADA44D416638641002084FF /* RKManagedObjectSeeder.m */,
+				9ADA44D516638641002084FF /* RKManagedObjectStore.h */,
+				9ADA44D616638641002084FF /* RKManagedObjectStore.m */,
+				9ADA44D716638641002084FF /* RKManagedObjectThreadSafeInvocation.h */,
+				9ADA44D816638641002084FF /* RKManagedObjectThreadSafeInvocation.m */,
+				9ADA44D916638641002084FF /* RKObjectMappingProvider+CoreData.h */,
+				9ADA44DA16638641002084FF /* RKObjectMappingProvider+CoreData.m */,
+				9ADA44DB16638641002084FF /* RKObjectPropertyInspector+CoreData.h */,
+				9ADA44DC16638641002084FF /* RKObjectPropertyInspector+CoreData.m */,
+				9ADA44DD16638641002084FF /* RKSearchableManagedObject.h */,
+				9ADA44DE16638641002084FF /* RKSearchableManagedObject.m */,
+				9ADA44DF16638641002084FF /* RKSearchWord.h */,
+				9ADA44E016638641002084FF /* RKSearchWord.m */,
+				9ADA44E116638641002084FF /* RKSearchWordObserver.h */,
+				9ADA44E216638641002084FF /* RKSearchWordObserver.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9ADA44E316638641002084FF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA44E416638641002084FF /* Network.h */,
+				9ADA44E516638641002084FF /* NSData+RKAdditions.h */,
+				9ADA44E616638641002084FF /* NSData+RKAdditions.m */,
+				9ADA44E716638641002084FF /* NSDictionary+RKRequestSerialization.h */,
+				9ADA44E816638641002084FF /* NSDictionary+RKRequestSerialization.m */,
+				9ADA44E916638641002084FF /* NSObject+URLEncoding.h */,
+				9ADA44EA16638641002084FF /* NSObject+URLEncoding.m */,
+				9ADA44EB16638641002084FF /* RKClient.h */,
+				9ADA44EC16638641002084FF /* RKClient.m */,
+				9ADA44ED16638641002084FF /* RKNotifications.h */,
+				9ADA44EE16638641002084FF /* RKNotifications.m */,
+				9ADA44EF16638641002084FF /* RKOAuthClient.h */,
+				9ADA44F016638641002084FF /* RKOAuthClient.m */,
+				9ADA44F116638641002084FF /* RKParams.h */,
+				9ADA44F216638641002084FF /* RKParams.m */,
+				9ADA44F316638641002084FF /* RKParamsAttachment.h */,
+				9ADA44F416638641002084FF /* RKParamsAttachment.m */,
+				9ADA44F516638641002084FF /* RKReachabilityObserver.h */,
+				9ADA44F616638641002084FF /* RKReachabilityObserver.m */,
+				9ADA44F716638641002084FF /* RKRequest.h */,
+				9ADA44F816638641002084FF /* RKRequest.m */,
+				9ADA44F916638641002084FF /* RKRequest_Internals.h */,
+				9ADA44FA16638641002084FF /* RKRequestCache.h */,
+				9ADA44FB16638641002084FF /* RKRequestCache.m */,
+				9ADA44FC16638641002084FF /* RKRequestQueue.h */,
+				9ADA44FD16638641002084FF /* RKRequestQueue.m */,
+				9ADA44FE16638641002084FF /* RKRequestSerializable.h */,
+				9ADA44FF16638641002084FF /* RKRequestSerialization.h */,
+				9ADA450016638641002084FF /* RKRequestSerialization.m */,
+				9ADA450116638641002084FF /* RKResponse.h */,
+				9ADA450216638641002084FF /* RKResponse.m */,
+				9ADA450316638641002084FF /* RKURL.h */,
+				9ADA450416638641002084FF /* RKURL.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9ADA450516638641002084FF /* ObjectMapping */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA450616638641002084FF /* ObjectMapping.h */,
+				9ADA450716638641002084FF /* RKConfigurationDelegate.h */,
+				9ADA450816638641002084FF /* RKDynamicObjectMapping.h */,
+				9ADA450916638641002084FF /* RKDynamicObjectMapping.m */,
+				9ADA450A16638641002084FF /* RKDynamicObjectMappingMatcher.h */,
+				9ADA450B16638641002084FF /* RKDynamicObjectMappingMatcher.m */,
+				9ADA450C16638641002084FF /* RKErrorMessage.h */,
+				9ADA450D16638641002084FF /* RKErrorMessage.m */,
+				9ADA450E16638641002084FF /* RKMappingOperationQueue.h */,
+				9ADA450F16638641002084FF /* RKMappingOperationQueue.m */,
+				9ADA451016638641002084FF /* RKObjectAttributeMapping.h */,
+				9ADA451116638641002084FF /* RKObjectAttributeMapping.m */,
+				9ADA451216638641002084FF /* RKObjectLoader.h */,
+				9ADA451316638641002084FF /* RKObjectLoader.m */,
+				9ADA451416638641002084FF /* RKObjectLoader_Internals.h */,
+				9ADA451516638641002084FF /* RKObjectManager.h */,
+				9ADA451616638641002084FF /* RKObjectManager.m */,
+				9ADA451716638641002084FF /* RKObjectMapper.h */,
+				9ADA451816638641002084FF /* RKObjectMapper.m */,
+				9ADA451916638641002084FF /* RKObjectMapper_Private.h */,
+				9ADA451A16638641002084FF /* RKObjectMapperError.h */,
+				9ADA451B16638641002084FF /* RKObjectMapping.h */,
+				9ADA451C16638641002084FF /* RKObjectMapping.m */,
+				9ADA451D16638641002084FF /* RKObjectMappingDefinition.h */,
+				9ADA451E16638641002084FF /* RKObjectMappingDefinition.m */,
+				9ADA451F16638641002084FF /* RKObjectMappingOperation.h */,
+				9ADA452016638641002084FF /* RKObjectMappingOperation.m */,
+				9ADA452116638641002084FF /* RKObjectMappingProvider+Contexts.h */,
+				9ADA452216638641002084FF /* RKObjectMappingProvider.h */,
+				9ADA452316638641002084FF /* RKObjectMappingProvider.m */,
+				9ADA452416638641002084FF /* RKObjectMappingProviderContextEntry.h */,
+				9ADA452516638641002084FF /* RKObjectMappingProviderContextEntry.m */,
+				9ADA452616638641002084FF /* RKObjectMappingResult.h */,
+				9ADA452716638641002084FF /* RKObjectMappingResult.m */,
+				9ADA452816638641002084FF /* RKObjectPaginator.h */,
+				9ADA452916638641002084FF /* RKObjectPaginator.m */,
+				9ADA452A16638641002084FF /* RKObjectPropertyInspector.h */,
+				9ADA452B16638641002084FF /* RKObjectPropertyInspector.m */,
+				9ADA452C16638641002084FF /* RKObjectRelationshipMapping.h */,
+				9ADA452D16638641002084FF /* RKObjectRelationshipMapping.m */,
+				9ADA452E16638641002084FF /* RKObjectRouter.h */,
+				9ADA452F16638641002084FF /* RKObjectRouter.m */,
+				9ADA453016638641002084FF /* RKObjectSerializer.h */,
+				9ADA453116638641002084FF /* RKObjectSerializer.m */,
+				9ADA453216638641002084FF /* RKParserRegistry.h */,
+				9ADA453316638641002084FF /* RKParserRegistry.m */,
+				9ADA453416638641002084FF /* RKRouter.h */,
+			);
+			path = ObjectMapping;
+			sourceTree = "<group>";
+		};
+		9ADA453616638641002084FF /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA453716638641002084FF /* lcl_config_components.h */,
+				9ADA453816638641002084FF /* lcl_config_extensions.h */,
+				9ADA453916638641002084FF /* lcl_config_logger.h */,
+				9ADA453A16638641002084FF /* NSArray+RKAdditions.h */,
+				9ADA453B16638641002084FF /* NSArray+RKAdditions.m */,
+				9ADA453C16638641002084FF /* NSBundle+RKAdditions.h */,
+				9ADA453D16638641002084FF /* NSBundle+RKAdditions.m */,
+				9ADA453E16638641002084FF /* NSDictionary+RKAdditions.h */,
+				9ADA453F16638641002084FF /* NSDictionary+RKAdditions.m */,
+				9ADA454016638641002084FF /* NSString+RKAdditions.h */,
+				9ADA454116638641002084FF /* NSString+RKAdditions.m */,
+				9ADA454216638641002084FF /* NSURL+RKAdditions.h */,
+				9ADA454316638641002084FF /* NSURL+RKAdditions.m */,
+				9ADA454416638641002084FF /* Parsers */,
+				9ADA454B16638641002084FF /* RestKit-Prefix.pch */,
+				9ADA454C16638641002084FF /* RKAlert.h */,
+				9ADA454D16638641002084FF /* RKAlert.m */,
+				9ADA454E16638641002084FF /* RKBenchmark.h */,
+				9ADA454F16638641002084FF /* RKBenchmark.m */,
+				9ADA455016638641002084FF /* RKCache.h */,
+				9ADA455116638641002084FF /* RKCache.m */,
+				9ADA455216638641002084FF /* RKDirectory.h */,
+				9ADA455316638641002084FF /* RKDirectory.m */,
+				9ADA455416638641002084FF /* RKDotNetDateFormatter.h */,
+				9ADA455516638641002084FF /* RKDotNetDateFormatter.m */,
+				9ADA455616638641002084FF /* RKErrors.h */,
+				9ADA455716638641002084FF /* RKErrors.m */,
+				9ADA455816638641002084FF /* RKFixCategoryBug.h */,
+				9ADA455916638641002084FF /* RKISO8601DateFormatter.h */,
+				9ADA455A16638641002084FF /* RKISO8601DateFormatter.m */,
+				9ADA455B16638641002084FF /* RKLog.h */,
+				9ADA455C16638641002084FF /* RKLog.m */,
+				9ADA455D16638641002084FF /* RKMIMETypes.h */,
+				9ADA455E16638641002084FF /* RKMIMETypes.m */,
+				9ADA455F16638641002084FF /* RKMutableBlockDictionary.h */,
+				9ADA456016638641002084FF /* RKMutableBlockDictionary.m */,
+				9ADA456116638641002084FF /* RKOrderedDictionary.h */,
+				9ADA456216638641002084FF /* RKOrderedDictionary.m */,
+				9ADA456316638641002084FF /* RKParser.h */,
+				9ADA456416638641002084FF /* RKPathMatcher.h */,
+				9ADA456516638641002084FF /* RKPathMatcher.m */,
+				9ADA456616638641002084FF /* RKPortCheck.h */,
+				9ADA456716638641002084FF /* RKPortCheck.m */,
+				9ADA456816638641002084FF /* RKSearchEngine.h */,
+				9ADA456916638641002084FF /* RKSearchEngine.m */,
+				9ADA456A16638641002084FF /* Support.h */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		9ADA454416638641002084FF /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA454516638641002084FF /* JSON */,
+				9ADA454816638641002084FF /* XML */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		9ADA454516638641002084FF /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA454616638641002084FF /* RKJSONParserJSONKit.h */,
+				9ADA454716638641002084FF /* RKJSONParserJSONKit.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		9ADA454816638641002084FF /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA454916638641002084FF /* RKXMLParserXMLReader.h */,
+				9ADA454A16638641002084FF /* RKXMLParserXMLReader.m */,
+			);
+			path = XML;
+			sourceTree = "<group>";
+		};
+		9ADA456B16638641002084FF /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA456C16638641002084FF /* RKMappingTest.h */,
+				9ADA456D16638641002084FF /* RKMappingTest.m */,
+				9ADA456E16638641002084FF /* RKMappingTestExpectation.h */,
+				9ADA456F16638641002084FF /* RKMappingTestExpectation.m */,
+				9ADA457016638641002084FF /* RKTableControllerTestDelegate.h */,
+				9ADA457116638641002084FF /* RKTableControllerTestDelegate.m */,
+				9ADA457216638641002084FF /* RKTestConstants.m */,
+				9ADA457316638641002084FF /* RKTestFactory.h */,
+				9ADA457416638641002084FF /* RKTestFactory.m */,
+				9ADA457516638641002084FF /* RKTestFixture.h */,
+				9ADA457616638641002084FF /* RKTestFixture.m */,
+				9ADA457716638641002084FF /* RKTestNotificationObserver.h */,
+				9ADA457816638641002084FF /* RKTestNotificationObserver.m */,
+				9ADA457916638641002084FF /* RKTestResponseLoader.h */,
+				9ADA457A16638641002084FF /* RKTestResponseLoader.m */,
+				9ADA457B16638641002084FF /* Testing.h */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		9ADA457C16638641002084FF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA457D16638641002084FF /* RKAbstractTableController.h */,
+				9ADA457E16638641002084FF /* RKAbstractTableController.m */,
+				9ADA457F16638641002084FF /* RKAbstractTableController_Internals.h */,
+				9ADA458016638641002084FF /* RKControlTableItem.h */,
+				9ADA458116638641002084FF /* RKControlTableItem.m */,
+				9ADA458216638641002084FF /* RKControlTableViewCell.h */,
+				9ADA458316638641002084FF /* RKControlTableViewCell.m */,
+				9ADA458416638641002084FF /* RKFetchedResultsTableController.h */,
+				9ADA458516638641002084FF /* RKFetchedResultsTableController.m */,
+				9ADA458616638641002084FF /* RKForm.h */,
+				9ADA458716638641002084FF /* RKForm.m */,
+				9ADA458816638641002084FF /* RKFormSection.h */,
+				9ADA458916638641002084FF /* RKFormSection.m */,
+				9ADA458A16638641002084FF /* RKObjectManager+RKTableController.h */,
+				9ADA458B16638641002084FF /* RKObjectManager+RKTableController.m */,
+				9ADA458C16638641002084FF /* RKRefreshGestureRecognizer.h */,
+				9ADA458D16638641002084FF /* RKRefreshGestureRecognizer.m */,
+				9ADA458E16638641002084FF /* RKRefreshTriggerView.h */,
+				9ADA458F16638641002084FF /* RKRefreshTriggerView.m */,
+				9ADA459016638641002084FF /* RKTableController.h */,
+				9ADA459116638641002084FF /* RKTableController.m */,
+				9ADA459216638641002084FF /* RKTableItem.h */,
+				9ADA459316638641002084FF /* RKTableItem.m */,
+				9ADA459416638641002084FF /* RKTableSection.h */,
+				9ADA459516638641002084FF /* RKTableSection.m */,
+				9ADA459616638641002084FF /* RKTableViewCellMapping.h */,
+				9ADA459716638641002084FF /* RKTableViewCellMapping.m */,
+				9ADA459816638641002084FF /* RKTableViewCellMappings.h */,
+				9ADA459916638641002084FF /* RKTableViewCellMappings.m */,
+				9ADA459A16638641002084FF /* UI.h */,
+				9ADA459B16638641002084FF /* UIImage+RKAdditions.h */,
+				9ADA459C16638641002084FF /* UIImage+RKAdditions.m */,
+				9ADA459D16638641002084FF /* UIView+FindFirstResponder.h */,
+				9ADA459E16638641002084FF /* UIView+FindFirstResponder.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9ADA45A016638641002084FF /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45A116638641002084FF /* Design */,
+				9ADA45A416638641002084FF /* Images */,
+				9ADA45B816638641002084FF /* MobileTuts Advanced RestKit */,
+				9ADA45BA16638641002084FF /* MobileTuts Introduction to RestKit */,
+				9ADA45C416638641002084FF /* Object Mapping.md */,
+				9ADA45C516638641002084FF /* Presentations */,
+				9ADA45C916638641002084FF /* TESTING.md */,
+				9ADA45CA16638641002084FF /* WRITING_DOCS.md */,
+			);
+			path = Docs;
+			sourceTree = "<group>";
+		};
+		9ADA45A116638641002084FF /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45A216638641002084FF /* RKCache.txt */,
+				9ADA45A316638641002084FF /* RKRequestQueue.txt */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		9ADA45A416638641002084FF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45A516638641002084FF /* DerivedData */,
+				9ADA45A916638641002084FF /* Installation */,
+				9ADA45B516638641002084FF /* Troubleshooting */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9ADA45A516638641002084FF /* DerivedData */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45A616638641002084FF /* 01_Select_Project_Settings.png */,
+				9ADA45A716638641002084FF /* 02_Advanced_Button.png */,
+				9ADA45A816638641002084FF /* 03_Select_Build_Location.png */,
+			);
+			path = DerivedData;
+			sourceTree = "<group>";
+		};
+		9ADA45A916638641002084FF /* Installation */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45AA16638641002084FF /* 01_Add_Submodule.png */,
+				9ADA45AB16638641002084FF /* 02_Add_Project_Dependency.png */,
+				9ADA45AC16638641002084FF /* 03_Add_Header_Search_Path.png */,
+				9ADA45AD16638641002084FF /* 03_Add_Linker_Flag.png */,
+				9ADA45AE16638641002084FF /* 04_Add_Target_Dependency.png */,
+				9ADA45AF16638641002084FF /* 05_Select_RestKit_Target.png */,
+				9ADA45B016638641002084FF /* 06_Add_Libraries.png */,
+				9ADA45B116638641002084FF /* 07_Add_RestKit_Static_Libraries.png */,
+				9ADA45B216638641002084FF /* 08_Add_Required_Frameworks.png */,
+				9ADA45B316638641002084FF /* 09_Add_To_AppDelegate.png */,
+				9ADA45B416638641002084FF /* 10_Verify_Build.png */,
+			);
+			path = Installation;
+			sourceTree = "<group>";
+		};
+		9ADA45B516638641002084FF /* Troubleshooting */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45B616638641002084FF /* Clean_Build_Folder.png */,
+				9ADA45B716638641002084FF /* Delete_Derived_Data.png */,
+			);
+			path = Troubleshooting;
+			sourceTree = "<group>";
+		};
+		9ADA45B816638641002084FF /* MobileTuts Advanced RestKit */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45B916638641002084FF /* Advanced_RestKit_Tutorial.md */,
+			);
+			path = "MobileTuts Advanced RestKit";
+			sourceTree = "<group>";
+		};
+		9ADA45BA16638641002084FF /* MobileTuts Introduction to RestKit */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45BB16638641002084FF /* images */,
+				9ADA45C316638641002084FF /* index.html */,
+			);
+			path = "MobileTuts Introduction to RestKit";
+			sourceTree = "<group>";
+		};
+		9ADA45BB16638641002084FF /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45BC16638641002084FF /* add_to_project.png */,
+				9ADA45BD16638641002084FF /* all_configurations.png */,
+				9ADA45BE16638641002084FF /* build_settings.png */,
+				9ADA45BF16638641002084FF /* depedency.png */,
+				9ADA45C016638641002084FF /* frameworks.png */,
+				9ADA45C116638641002084FF /* get_info.png */,
+				9ADA45C216638641002084FF /* linking.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		9ADA45C516638641002084FF /* Presentations */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45C616638641002084FF /* Introduction to RestKit */,
+			);
+			path = Presentations;
+			sourceTree = "<group>";
+		};
+		9ADA45C616638641002084FF /* Introduction to RestKit */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45C716638641002084FF /* Introduction to RestKit.key */,
+				9ADA45C816638641002084FF /* Introduction to RestKit.pdf */,
+			);
+			path = "Introduction to RestKit";
+			sourceTree = "<group>";
+		};
+		9ADA45CB16638641002084FF /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45CC16638641002084FF /* RestKit CLI */,
+				9ADA45D416638642002084FF /* RKCatalog */,
+				9ADA461416638642002084FF /* RKMacOSX */,
+				9ADA462416638642002084FF /* RKTwitter */,
+				9ADA463C16638642002084FF /* RKTwitterCoreData */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		9ADA45CC16638641002084FF /* RestKit CLI */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45CD16638641002084FF /* RestKit CLI */,
+				9ADA45D116638642002084FF /* RestKit CLI.xcodeproj */,
+			);
+			path = "RestKit CLI";
+			sourceTree = "<group>";
+		};
+		9ADA45CD16638641002084FF /* RestKit CLI */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45CE16638641002084FF /* main.m */,
+				9ADA45CF16638642002084FF /* RestKit CLI-Prefix.pch */,
+				9ADA45D016638642002084FF /* RestKit_CLI.1 */,
+			);
+			path = "RestKit CLI";
+			sourceTree = "<group>";
+		};
+		9ADA45D216638642002084FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA47D316638643002084FF /* rkkeypath */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ADA45D416638642002084FF /* RKCatalog */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45D516638642002084FF /* App */,
+				9ADA45E416638642002084FF /* Examples */,
+				9ADA461016638642002084FF /* RKCatalog.xcodeproj */,
+				9ADA461316638642002084FF /* Server */,
+			);
+			path = RKCatalog;
+			sourceTree = "<group>";
+		};
+		9ADA45D516638642002084FF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45D616638642002084FF /* InfoPlist.strings */,
+				9ADA45D816638642002084FF /* MainWindow.xib */,
+				9ADA45DA16638642002084FF /* RootViewController.xib */,
+				9ADA45DC16638642002084FF /* main.m */,
+				9ADA45DD16638642002084FF /* RKCatalog-Info.plist */,
+				9ADA45DE16638642002084FF /* RKCatalog-Prefix.pch */,
+				9ADA45DF16638642002084FF /* RKCatalog.h */,
+				9ADA45E016638642002084FF /* RKCatalogAppDelegate.h */,
+				9ADA45E116638642002084FF /* RKCatalogAppDelegate.m */,
+				9ADA45E216638642002084FF /* RootViewController.h */,
+				9ADA45E316638642002084FF /* RootViewController.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9ADA45E416638642002084FF /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45E516638642002084FF /* RKAuthenticationExample */,
+				9ADA45E916638642002084FF /* RKBackgroundRequestExample */,
+				9ADA45ED16638642002084FF /* RKCoreDataExample */,
+				9ADA45F316638642002084FF /* RKKeyValueMappingExample */,
+				9ADA45F716638642002084FF /* RKParamsExample */,
+				9ADA45FC16638642002084FF /* RKReachabilityExample */,
+				9ADA460016638642002084FF /* RKRelationshipMappingExample */,
+				9ADA460C16638642002084FF /* RKRequestQueueExample */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		9ADA45E516638642002084FF /* RKAuthenticationExample */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45E616638642002084FF /* RKAuthenticationExample.h */,
+				9ADA45E716638642002084FF /* RKAuthenticationExample.m */,
+				9ADA45E816638642002084FF /* RKAuthenticationExample.xib */,
+			);
+			path = RKAuthenticationExample;
+			sourceTree = "<group>";
+		};
+		9ADA45E916638642002084FF /* RKBackgroundRequestExample */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45EA16638642002084FF /* RKBackgroundRequestExample.h */,
+				9ADA45EB16638642002084FF /* RKBackgroundRequestExample.m */,
+				9ADA45EC16638642002084FF /* RKBackgroundRequestExample.xib */,
+			);
+			path = RKBackgroundRequestExample;
+			sourceTree = "<group>";
+		};
+		9ADA45ED16638642002084FF /* RKCoreDataExample */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45EE16638642002084FF /* RKCoreDataExample.h */,
+				9ADA45EF16638642002084FF /* RKCoreDataExample.m */,
+				9ADA45F016638642002084FF /* RKCoreDataExample.xcdatamodeld */,
+				9ADA45F216638642002084FF /* RKCoreDataExample.xib */,
+			);
+			path = RKCoreDataExample;
+			sourceTree = "<group>";
+		};
+		9ADA45F316638642002084FF /* RKKeyValueMappingExample */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45F416638642002084FF /* RKKeyValueMappingExample.h */,
+				9ADA45F516638642002084FF /* RKKeyValueMappingExample.m */,
+				9ADA45F616638642002084FF /* RKKeyValueMappingExample.xib */,
+			);
+			path = RKKeyValueMappingExample;
+			sourceTree = "<group>";
+		};
+		9ADA45F716638642002084FF /* RKParamsExample */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45F816638642002084FF /* RestKit.png */,
+				9ADA45F916638642002084FF /* RKParamsExample.h */,
+				9ADA45FA16638642002084FF /* RKParamsExample.m */,
+				9ADA45FB16638642002084FF /* RKParamsExample.xib */,
+			);
+			path = RKParamsExample;
+			sourceTree = "<group>";
+		};
+		9ADA45FC16638642002084FF /* RKReachabilityExample */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA45FD16638642002084FF /* RKReachabilityExample.h */,
+				9ADA45FE16638642002084FF /* RKReachabilityExample.m */,
+				9ADA45FF16638642002084FF /* RKReachabilityExample.xib */,
+			);
+			path = RKReachabilityExample;
+			sourceTree = "<group>";
+		};
+		9ADA460016638642002084FF /* RKRelationshipMappingExample */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA460116638642002084FF /* Project.h */,
+				9ADA460216638642002084FF /* Project.m */,
+				9ADA460316638642002084FF /* RKRelationshipMappingExample.h */,
+				9ADA460416638642002084FF /* RKRelationshipMappingExample.m */,
+				9ADA460516638642002084FF /* RKRelationshipMappingExample.xcdatamodeld */,
+				9ADA460716638642002084FF /* RKRelationshipMappingExample.xib */,
+				9ADA460816638642002084FF /* Task.h */,
+				9ADA460916638642002084FF /* Task.m */,
+				9ADA460A16638642002084FF /* User.h */,
+				9ADA460B16638642002084FF /* User.m */,
+			);
+			path = RKRelationshipMappingExample;
+			sourceTree = "<group>";
+		};
+		9ADA460C16638642002084FF /* RKRequestQueueExample */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA460D16638642002084FF /* RKRequestQueueExample.h */,
+				9ADA460E16638642002084FF /* RKRequestQueueExample.m */,
+				9ADA460F16638642002084FF /* RKRequestQueueExample.xib */,
+			);
+			path = RKRequestQueueExample;
+			sourceTree = "<group>";
+		};
+		9ADA461116638642002084FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA47EB16638643002084FF /* RKCatalog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ADA461316638642002084FF /* Server */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		9ADA461416638642002084FF /* RKMacOSX */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA461516638642002084FF /* RKMacOSX */,
+				9ADA462116638642002084FF /* RKMacOSX.xcodeproj */,
+			);
+			path = RKMacOSX;
+			sourceTree = "<group>";
+		};
+		9ADA461516638642002084FF /* RKMacOSX */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA461616638642002084FF /* Credits.rtf */,
+				9ADA461816638642002084FF /* InfoPlist.strings */,
+				9ADA461A16638642002084FF /* MainMenu.xib */,
+				9ADA461C16638642002084FF /* main.m */,
+				9ADA461D16638642002084FF /* RKMacOSX-Info.plist */,
+				9ADA461E16638642002084FF /* RKMacOSX-Prefix.pch */,
+				9ADA461F16638642002084FF /* RKMacOSXAppDelegate.h */,
+				9ADA462016638642002084FF /* RKMacOSXAppDelegate.m */,
+			);
+			path = RKMacOSX;
+			sourceTree = "<group>";
+		};
+		9ADA462216638642002084FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA47EE16638643002084FF /* RKMacOSX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ADA462416638642002084FF /* RKTwitter */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA462516638642002084FF /* Classes */,
+				9ADA462E16638642002084FF /* Default-568h@2x.png */,
+				9ADA462F16638642002084FF /* main.m */,
+				9ADA463016638642002084FF /* Resources */,
+				9ADA463816638642002084FF /* RKTwitter.xcodeproj */,
+				9ADA463B16638642002084FF /* RKTwitter_Prefix.pch */,
+			);
+			path = RKTwitter;
+			sourceTree = "<group>";
+		};
+		9ADA462516638642002084FF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA462616638642002084FF /* RKTStatus.h */,
+				9ADA462716638642002084FF /* RKTStatus.m */,
+				9ADA462816638642002084FF /* RKTUser.h */,
+				9ADA462916638642002084FF /* RKTUser.m */,
+				9ADA462A16638642002084FF /* RKTwitterAppDelegate.h */,
+				9ADA462B16638642002084FF /* RKTwitterAppDelegate.m */,
+				9ADA462C16638642002084FF /* RKTwitterViewController.h */,
+				9ADA462D16638642002084FF /* RKTwitterViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9ADA463016638642002084FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA463116638642002084FF /* BG.png */,
+				9ADA463216638642002084FF /* BG@2x.png */,
+				9ADA463316638642002084FF /* Default.png */,
+				9ADA463416638642002084FF /* Default@2x.png */,
+				9ADA463516638642002084FF /* listbg.png */,
+				9ADA463616638642002084FF /* listbg@2x.png */,
+				9ADA463716638642002084FF /* RKTwitter-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9ADA463916638642002084FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA47F116638643002084FF /* RKTwitter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ADA463C16638642002084FF /* RKTwitterCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA463D16638642002084FF /* Classes */,
+				9ADA464416638642002084FF /* main.m */,
+				9ADA464516638642002084FF /* Resources */,
+				9ADA464E16638642002084FF /* restkit.json */,
+				9ADA464F16638642002084FF /* RKSeedDatabase.sqlite */,
+				9ADA465016638642002084FF /* RKTwitter_Prefix.pch */,
+				9ADA465116638642002084FF /* RKTwitterCoreData.xcodeproj */,
+				9ADA465416638642002084FF /* users.json */,
+			);
+			path = RKTwitterCoreData;
+			sourceTree = "<group>";
+		};
+		9ADA463D16638642002084FF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA463E16638642002084FF /* RKTStatus.h */,
+				9ADA463F16638642002084FF /* RKTStatus.m */,
+				9ADA464016638642002084FF /* RKTwitterAppDelegate.h */,
+				9ADA464116638642002084FF /* RKTwitterAppDelegate.m */,
+				9ADA464216638642002084FF /* RKTwitterViewController.h */,
+				9ADA464316638642002084FF /* RKTwitterViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9ADA464516638642002084FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA464616638642002084FF /* BG.png */,
+				9ADA464716638642002084FF /* BG@2x.png */,
+				9ADA464816638642002084FF /* Default.png */,
+				9ADA464916638642002084FF /* Default@2x.png */,
+				9ADA464A16638642002084FF /* listbg.png */,
+				9ADA464B16638642002084FF /* listbg@2x.png */,
+				9ADA464C16638642002084FF /* RKTwitter-Info.plist */,
+				9ADA464D16638642002084FF /* RKTwitterCoreData.xcdatamodel */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9ADA465216638642002084FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA47F516638643002084FF /* RKTwitterCoreData.app */,
+				9ADA47F716638643002084FF /* Generate Seed Database.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ADA465A16638642002084FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA465B16638642002084FF /* InfoPlist.strings */,
+				9ADA465D16638642002084FF /* PLISTs */,
+				9ADA466216638642002084FF /* RestKitCoreData.xcdatamodeld */,
+				9ADA466416638642002084FF /* RestKitResources-Prefix.pch */,
+				9ADA466516638642002084FF /* RKRefreshTriggerViewAssets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9ADA465D16638642002084FF /* PLISTs */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA465E16638642002084FF /* RestKitFramework-Info.plist */,
+				9ADA465F16638642002084FF /* RestKitFrameworkTests-Info.plist */,
+				9ADA466016638642002084FF /* RestKitResources-Info.plist */,
+				9ADA466116638642002084FF /* RestKitTests-Info.plist */,
+			);
+			path = PLISTs;
+			sourceTree = "<group>";
+		};
+		9ADA466516638642002084FF /* RKRefreshTriggerViewAssets */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA466616638642002084FF /* blackArrow.png */,
+				9ADA466716638642002084FF /* blackArrow@2x.png */,
+				9ADA466816638642002084FF /* blueArrow.png */,
+				9ADA466916638642002084FF /* blueArrow@2x.png */,
+				9ADA466A16638642002084FF /* grayArrow.png */,
+				9ADA466B16638642002084FF /* grayArrow@2x.png */,
+				9ADA466C16638642002084FF /* whiteArrow.png */,
+				9ADA466D16638642002084FF /* whiteArrow@2x.png */,
+			);
+			path = RKRefreshTriggerViewAssets;
+			sourceTree = "<group>";
+		};
+		9ADA466F16638642002084FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA47DA16638643002084FF /* libRestKit.a */,
+				9ADA47DC16638643002084FF /* RestKitTests.octest */,
+				9ADA47DE16638643002084FF /* RestKit.framework */,
+				9ADA47E016638643002084FF /* RestKitFrameworkTests.octest */,
+				9ADA47E216638643002084FF /* RestKitResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ADA467216638642002084FF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA467316638642002084FF /* Application */,
+				9ADA468D16638642002084FF /* cibuild */,
+				9ADA468E16638642002084FF /* Fixtures */,
+				9ADA46BA16638642002084FF /* Logic */,
+				9ADA46E916638642002084FF /* Models */,
+				9ADA470916638642002084FF /* RKTestEnvironment.h */,
+				9ADA470A16638642002084FF /* RKTestEnvironment.m */,
+				9ADA470B16638642002084FF /* RunPlatformUnitTests */,
+				9ADA470C16638642002084FF /* Server */,
+				9ADA472116638642002084FF /* Vendor */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		9ADA467316638642002084FF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA467416638642002084FF /* RKApplicationTests */,
+				9ADA468316638642002084FF /* RKApplicationTests.xcodeproj */,
+				9ADA468616638642002084FF /* UI */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9ADA467416638642002084FF /* RKApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA467516638642002084FF /* App */,
+				9ADA467F16638642002084FF /* Tests */,
+			);
+			path = RKApplicationTests;
+			sourceTree = "<group>";
+		};
+		9ADA467516638642002084FF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA467616638642002084FF /* InfoPlist.strings */,
+				9ADA467816638642002084FF /* main.m */,
+				9ADA467916638642002084FF /* RKApplicationTests-Info.plist */,
+				9ADA467A16638642002084FF /* RKApplicationTests-Prefix.pch */,
+				9ADA467B16638642002084FF /* RKATAppDelegate.h */,
+				9ADA467C16638642002084FF /* RKATAppDelegate.m */,
+				9ADA467D16638642002084FF /* RKATTests.xcdatamodeld */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9ADA467F16638642002084FF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA468016638642002084FF /* InfoPlist.strings */,
+				9ADA468216638642002084FF /* RKApplicationTestsTests-Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		9ADA468416638642002084FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA47E616638643002084FF /* RKApplicationTests.app */,
+				9ADA47E816638643002084FF /* Application Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ADA468616638642002084FF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA468716638642002084FF /* RKFetchedResultsTableControllerTest.m */,
+				9ADA468816638642002084FF /* RKFormTest.m */,
+				9ADA468916638642002084FF /* RKTableControllerTest.m */,
+				9ADA468A16638642002084FF /* RKTableViewCellMappingsTest.m */,
+				9ADA468B16638642002084FF /* RKTableViewCellMappingTest.m */,
+				9ADA468C16638642002084FF /* RKTableViewSectionTest.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9ADA468E16638642002084FF /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA468F16638642002084FF /* Assets */,
+				9ADA469116638642002084FF /* JSON */,
+				9ADA46B016638642002084FF /* Uploads */,
+				9ADA46B216638642002084FF /* XML */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		9ADA468F16638642002084FF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA469016638642002084FF /* blake.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		9ADA469116638642002084FF /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA469216638642002084FF /* ArrayOfHumans.json */,
+				9ADA469316638642002084FF /* ArrayOfNestedDictionaries.json */,
+				9ADA469416638642002084FF /* ArrayOfResults.json */,
+				9ADA469516638642002084FF /* benchmark_parents_and_children.json */,
+				9ADA469616638642002084FF /* ComplexNestedUser.json */,
+				9ADA469716638642002084FF /* ConnectingParents.json */,
+				9ADA469816638642002084FF /* Dynamic */,
+				9ADA469F16638642002084FF /* DynamicKeys.json */,
+				9ADA46A016638642002084FF /* DynamicKeysWithNestedRelationship.json */,
+				9ADA46A116638642002084FF /* DynamicKeysWithRelationship.json */,
+				9ADA46A216638642002084FF /* error.json */,
+				9ADA46A316638642002084FF /* errors.json */,
+				9ADA46A416638642002084FF /* Foursquare.json */,
+				9ADA46A516638642002084FF /* humans */,
+				9ADA46A916638642002084FF /* NakedEvents.json */,
+				9ADA46AA16638642002084FF /* nested_user.json */,
+				9ADA46AB16638642002084FF /* parents_and_children.json */,
+				9ADA46AC16638642002084FF /* RailsUser.json */,
+				9ADA46AD16638642002084FF /* SameKeyDifferentTargetClasses.json */,
+				9ADA46AE16638642002084FF /* user.json */,
+				9ADA46AF16638642002084FF /* users.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		9ADA469816638642002084FF /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA469916638642002084FF /* boy.json */,
+				9ADA469A16638642002084FF /* child.json */,
+				9ADA469B16638642002084FF /* friends.json */,
+				9ADA469C16638642002084FF /* girl.json */,
+				9ADA469D16638642002084FF /* mixed.json */,
+				9ADA469E16638642002084FF /* parent.json */,
+			);
+			path = Dynamic;
+			sourceTree = "<group>";
+		};
+		9ADA46A516638642002084FF /* humans */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA46A616638642002084FF /* 1.json */,
+				9ADA46A716638642002084FF /* all.json */,
+				9ADA46A816638642002084FF /* with_to_one_relationship.json */,
+			);
+			path = humans;
+			sourceTree = "<group>";
+		};
+		9ADA46B016638642002084FF /* Uploads */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA46B116638642002084FF /* .gitignore */,
+			);
+			path = Uploads;
+			sourceTree = "<group>";
+		};
+		9ADA46B216638642002084FF /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA46B316638642002084FF /* attributes_without_text_content.xml */,
+				9ADA46B416638642002084FF /* channels.xml */,
+				9ADA46B516638642002084FF /* container_attributes.xml */,
+				9ADA46B616638642002084FF /* national_weather_service.xml */,
+				9ADA46B716638642002084FF /* orders.xml */,
+				9ADA46B816638642002084FF /* tab_data.xml */,
+				9ADA46B916638642002084FF /* zend.xml */,
+			);
+			path = XML;
+			sourceTree = "<group>";
+		};
+		9ADA46BA16638642002084FF /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA46BB16638642002084FF /* CoreData */,
+				9ADA46C816638642002084FF /* Network */,
+				9ADA46D216638642002084FF /* ObjectMapping */,
+				9ADA46DE16638642002084FF /* Support */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		9ADA46BB16638642002084FF /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA46BC16638642002084FF /* NSEntityDescription+RKAdditionsTest.m */,
+				9ADA46BD16638642002084FF /* NSManagedObject+ActiveRecordTest.m */,
+				9ADA46BE16638642002084FF /* RKEntityByAttributeCacheTest.m */,
+				9ADA46BF16638642002084FF /* RKEntityCacheTest.m */,
+				9ADA46C016638642002084FF /* RKFetchRequestMappingCacheTest.m */,
+				9ADA46C116638642002084FF /* RKManagedObjectLoaderTest.m */,
+				9ADA46C216638642002084FF /* RKManagedObjectMappingOperationTest.m */,
+				9ADA46C316638642002084FF /* RKManagedObjectMappingTest.m */,
+				9ADA46C416638642002084FF /* RKManagedObjectStoreTest.m */,
+				9ADA46C516638642002084FF /* RKManagedObjectThreadSafeInvocationTest.m */,
+				9ADA46C616638642002084FF /* RKSearchableManagedObjectTest.m */,
+				9ADA46C716638642002084FF /* RKSearchWordObserverTest.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9ADA46C816638642002084FF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA46C916638642002084FF /* RKAuthenticationTest.m */,
+				9ADA46CA16638642002084FF /* RKClientTest.m */,
+				9ADA46CB16638642002084FF /* RKOAuthClientTest.m */,
+				9ADA46CC16638642002084FF /* RKParamsAttachmentTest.m */,
+				9ADA46CD16638642002084FF /* RKParamsTest.m */,
+				9ADA46CE16638642002084FF /* RKRequestQueueTest.m */,
+				9ADA46CF16638642002084FF /* RKRequestTest.m */,
+				9ADA46D016638642002084FF /* RKResponseTest.m */,
+				9ADA46D116638642002084FF /* RKURLTest.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9ADA46D216638642002084FF /* ObjectMapping */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA46D316638642002084FF /* RKDynamicObjectMappingTest.m */,
+				9ADA46D416638642002084FF /* RKObjectLoaderTest.m */,
+				9ADA46D516638642002084FF /* RKObjectManagerTest.m */,
+				9ADA46D616638642002084FF /* RKObjectMappingNextGenTest.m */,
+				9ADA46D716638642002084FF /* RKObjectMappingOperationTest.m */,
+				9ADA46D816638642002084FF /* RKObjectMappingProviderTest.m */,
+				9ADA46D916638642002084FF /* RKObjectMappingResultTest.m */,
+				9ADA46DA16638642002084FF /* RKObjectPaginatorTest.m */,
+				9ADA46DB16638642002084FF /* RKObjectRouterTest.m */,
+				9ADA46DC16638642002084FF /* RKObjectSerializerTest.m */,
+				9ADA46DD16638642002084FF /* RKParserRegistryTest.m */,
+			);
+			path = ObjectMapping;
+			sourceTree = "<group>";
+		};
+		9ADA46DE16638642002084FF /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA46DF16638642002084FF /* NSArray+RKAdditionsTest.m */,
+				9ADA46E016638642002084FF /* NSDictionary+RKRequestSerializationTest.m */,
+				9ADA46E116638642002084FF /* NSStringRestKitTest.m */,
+				9ADA46E216638642002084FF /* RKCacheTest.m */,
+				9ADA46E316638642002084FF /* RKDotNetDateFormatterTest.m */,
+				9ADA46E416638642002084FF /* RKJSONParserJSONKitTest.m */,
+				9ADA46E516638642002084FF /* RKMutableBlockDictionaryTest.m */,
+				9ADA46E616638642002084FF /* RKObjectiveCppTest.mm */,
+				9ADA46E716638642002084FF /* RKPathMatcherTest.m */,
+				9ADA46E816638642002084FF /* RKXMLParserTest.m */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		9ADA46E916638642002084FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA46EA16638642002084FF /* Data Model.xcdatamodel */,
+				9ADA46EB16638642002084FF /* RKCat.h */,
+				9ADA46EC16638642002084FF /* RKCat.m */,
+				9ADA46ED16638642002084FF /* RKChild.h */,
+				9ADA46EE16638642002084FF /* RKChild.m */,
+				9ADA46EF16638642002084FF /* RKDynamicMappingModels.h */,
+				9ADA46F016638642002084FF /* RKDynamicMappingModels.m */,
+				9ADA46F116638642002084FF /* RKEvent.h */,
+				9ADA46F216638642002084FF /* RKEvent.m */,
+				9ADA46F316638642002084FF /* RKHouse.h */,
+				9ADA46F416638642002084FF /* RKHouse.m */,
+				9ADA46F516638642002084FF /* RKHuman.h */,
+				9ADA46F616638642002084FF /* RKHuman.m */,
+				9ADA46F716638642002084FF /* RKMappableAssociation.h */,
+				9ADA46F816638642002084FF /* RKMappableAssociation.m */,
+				9ADA46F916638642002084FF /* RKMappableObject.h */,
+				9ADA46FA16638642002084FF /* RKMappableObject.m */,
+				9ADA46FB16638642002084FF /* RKObjectLoaderTestResultModel.h */,
+				9ADA46FC16638642002084FF /* RKObjectLoaderTestResultModel.m */,
+				9ADA46FD16638642002084FF /* RKObjectMapperTestModel.h */,
+				9ADA46FE16638642002084FF /* RKObjectMapperTestModel.m */,
+				9ADA46FF16638642002084FF /* RKParent.h */,
+				9ADA470016638642002084FF /* RKParent.m */,
+				9ADA470116638642002084FF /* RKResident.h */,
+				9ADA470216638642002084FF /* RKResident.m */,
+				9ADA470316638642002084FF /* RKSearchable.h */,
+				9ADA470416638642002084FF /* RKSearchable.m */,
+				9ADA470516638642002084FF /* RKTestAddress.h */,
+				9ADA470616638642002084FF /* RKTestAddress.m */,
+				9ADA470716638642002084FF /* RKTestUser.h */,
+				9ADA470816638642002084FF /* RKTestUser.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9ADA470C16638642002084FF /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA470D16638642002084FF /* .gitignore */,
+				9ADA470E16638642002084FF /* fixtures.rb */,
+				9ADA470F16638642002084FF /* lib */,
+				9ADA471916638642002084FF /* Rakefile */,
+				9ADA471A16638642002084FF /* server.rb */,
+				9ADA471B16638642002084FF /* server.ru */,
+				9ADA471C16638642002084FF /* spec */,
+				9ADA472016638642002084FF /* thin.yml */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		9ADA470F16638642002084FF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA471016638642002084FF /* restkit */,
+				9ADA471816638642002084FF /* restkit.rb */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		9ADA471016638642002084FF /* restkit */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA471116638642002084FF /* network */,
+			);
+			path = restkit;
+			sourceTree = "<group>";
+		};
+		9ADA471116638642002084FF /* network */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA471216638642002084FF /* authentication.rb */,
+				9ADA471316638642002084FF /* etags.rb */,
+				9ADA471416638642002084FF /* oauth1.rb */,
+				9ADA471516638642002084FF /* oauth2.rb */,
+				9ADA471616638642002084FF /* redirection.rb */,
+				9ADA471716638642002084FF /* timeout.rb */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		9ADA471C16638642002084FF /* spec */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA471D16638642002084FF /* oauth1_spec.rb */,
+				9ADA471E16638642002084FF /* oauth2_spec.rb */,
+				9ADA471F16638642002084FF /* spec_helper.rb */,
+			);
+			path = spec;
+			sourceTree = "<group>";
+		};
+		9ADA472116638642002084FF /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA472216638642002084FF /* OCHamcrest */,
+				9ADA472516638642002084FF /* OCMock */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		9ADA472216638642002084FF /* OCHamcrest */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA472316638642002084FF /* OCHamcrest.framework */,
+				9ADA472416638642002084FF /* OCHamcrestIOS.framework */,
+			);
+			path = OCHamcrest;
+			sourceTree = "<group>";
+		};
+		9ADA472516638642002084FF /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA472616638642002084FF /* OCMock */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		9ADA472616638642002084FF /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA472716638642002084FF /* InfoPlist.strings */,
+				9ADA472916638642002084FF /* NSInvocation+OCMAdditions.h */,
+				9ADA472A16638642002084FF /* NSInvocation+OCMAdditions.m */,
+				9ADA472B16638642002084FF /* NSMethodSignature+OCMAdditions.h */,
+				9ADA472C16638642002084FF /* NSMethodSignature+OCMAdditions.m */,
+				9ADA472D16638642002084FF /* NSNotificationCenter+OCMAdditions.h */,
+				9ADA472E16638642002084FF /* NSNotificationCenter+OCMAdditions.m */,
+				9ADA472F16638642002084FF /* OCClassMockObject.h */,
+				9ADA473016638642002084FF /* OCClassMockObject.m */,
+				9ADA473116638642002084FF /* OCMArg.h */,
+				9ADA473216638642002084FF /* OCMArg.m */,
+				9ADA473316638642002084FF /* OCMBlockCaller.h */,
+				9ADA473416638642002084FF /* OCMBlockCaller.m */,
+				9ADA473516638642002084FF /* OCMBoxedReturnValueProvider.h */,
+				9ADA473616638642002084FF /* OCMBoxedReturnValueProvider.m */,
+				9ADA473716638642002084FF /* OCMConstraint.h */,
+				9ADA473816638642002084FF /* OCMConstraint.m */,
+				9ADA473916638642002084FF /* OCMExceptionReturnValueProvider.h */,
+				9ADA473A16638642002084FF /* OCMExceptionReturnValueProvider.m */,
+				9ADA473B16638642002084FF /* OCMIndirectReturnValueProvider.h */,
+				9ADA473C16638642002084FF /* OCMIndirectReturnValueProvider.m */,
+				9ADA473D16638642002084FF /* OCMNotificationPoster.h */,
+				9ADA473E16638642002084FF /* OCMNotificationPoster.m */,
+				9ADA473F16638642002084FF /* OCMObserverRecorder.h */,
+				9ADA474016638642002084FF /* OCMObserverRecorder.m */,
+				9ADA474116638642002084FF /* OCMock-Info.plist */,
+				9ADA474216638642002084FF /* OCMock-Prefix.pch */,
+				9ADA474316638642002084FF /* OCMock.h */,
+				9ADA474416638642002084FF /* OCMockObject.h */,
+				9ADA474516638642002084FF /* OCMockObject.m */,
+				9ADA474616638642002084FF /* OCMockRecorder.h */,
+				9ADA474716638642002084FF /* OCMockRecorder.m */,
+				9ADA474816638642002084FF /* OCMPassByRefSetter.h */,
+				9ADA474916638642002084FF /* OCMPassByRefSetter.m */,
+				9ADA474A16638642002084FF /* OCMRealObjectForwarder.h */,
+				9ADA474B16638642002084FF /* OCMRealObjectForwarder.m */,
+				9ADA474C16638642002084FF /* OCMReturnValueProvider.h */,
+				9ADA474D16638642002084FF /* OCMReturnValueProvider.m */,
+				9ADA474E16638642002084FF /* OCObserverMockObject.h */,
+				9ADA474F16638642002084FF /* OCObserverMockObject.m */,
+				9ADA475016638642002084FF /* OCPartialMockObject.h */,
+				9ADA475116638642002084FF /* OCPartialMockObject.m */,
+				9ADA475216638642002084FF /* OCPartialMockRecorder.h */,
+				9ADA475316638642002084FF /* OCPartialMockRecorder.m */,
+				9ADA475416638642002084FF /* OCProtocolMockObject.h */,
+				9ADA475516638642002084FF /* OCProtocolMockObject.m */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		9ADA475616638642002084FF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA475716638642002084FF /* rkkeypath */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		9ADA475816638642002084FF /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA475916638642002084FF /* appledoc */,
+				9ADA477216638642002084FF /* cocoa-oauth */,
+				9ADA477816638642002084FF /* FileMD5Hash */,
+				9ADA477F16638642002084FF /* iso8601parser */,
+				9ADA478416638642002084FF /* JSONKit */,
+				9ADA478916638642002084FF /* LibComponentLogging */,
+				9ADA479616638642002084FF /* PortableStaticLibrary.xcconfig */,
+				9ADA479716638642002084FF /* SOCKit */,
+				9ADA47A716638642002084FF /* XMLReader */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		9ADA475916638642002084FF /* appledoc */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA475A16638642002084FF /* appledoc */,
+				9ADA475B16638642002084FF /* Templates */,
+			);
+			path = appledoc;
+			sourceTree = "<group>";
+		};
+		9ADA475B16638642002084FF /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA475C16638642002084FF /* docset */,
+				9ADA476416638642002084FF /* html */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		9ADA475C16638642002084FF /* docset */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA475D16638642002084FF /* Contents */,
+			);
+			path = docset;
+			sourceTree = "<group>";
+		};
+		9ADA475D16638642002084FF /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA475E16638642002084FF /* info-template.plist */,
+				9ADA475F16638642002084FF /* Resources */,
+			);
+			path = Contents;
+			sourceTree = "<group>";
+		};
+		9ADA475F16638642002084FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA476016638642002084FF /* Documents */,
+				9ADA476216638642002084FF /* nodes-template.xml */,
+				9ADA476316638642002084FF /* tokens-template.xml */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9ADA476016638642002084FF /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA476116638642002084FF /* documents-template */,
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
+		9ADA476416638642002084FF /* html */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA476516638642002084FF /* css */,
+				9ADA476816638642002084FF /* document-template.html */,
+				9ADA476916638642002084FF /* hierarchy-template.html */,
+				9ADA476A16638642002084FF /* img */,
+				9ADA477016638642002084FF /* index-template.html */,
+				9ADA477116638642002084FF /* object-template.html */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		9ADA476516638642002084FF /* css */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA476616638642002084FF /* styles.css */,
+				9ADA476716638642002084FF /* stylesPrint.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		9ADA476A16638642002084FF /* img */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA476B16638642002084FF /* button_bar_background.png */,
+				9ADA476C16638642002084FF /* disclosure.png */,
+				9ADA476D16638642002084FF /* disclosure_open.png */,
+				9ADA476E16638642002084FF /* library_background.png */,
+				9ADA476F16638642002084FF /* title_background.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		9ADA477216638642002084FF /* cocoa-oauth */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA477316638642002084FF /* GCOAuth.h */,
+				9ADA477416638642002084FF /* GCOAuth.m */,
+				9ADA477516638642002084FF /* NSData+Base64.h */,
+				9ADA477616638642002084FF /* NSData+Base64.m */,
+				9ADA477716638642002084FF /* README.md */,
+			);
+			path = "cocoa-oauth";
+			sourceTree = "<group>";
+		};
+		9ADA477816638642002084FF /* FileMD5Hash */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA477916638642002084FF /* FileMD5Hash.c */,
+				9ADA477A16638642002084FF /* FileMD5Hash.h */,
+				9ADA477B16638642002084FF /* FileMD5Hash_Prefix.pch */,
+				9ADA477C16638642002084FF /* LICENSE */,
+				9ADA477D16638642002084FF /* NOTICE */,
+				9ADA477E16638642002084FF /* README.md */,
+			);
+			path = FileMD5Hash;
+			sourceTree = "<group>";
+		};
+		9ADA477F16638642002084FF /* iso8601parser */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA478016638642002084FF /* ISO8601DateFormatter.h */,
+				9ADA478116638642002084FF /* ISO8601DateFormatter.m */,
+				9ADA478216638642002084FF /* LICENSE.txt */,
+				9ADA478316638642002084FF /* README.txt */,
+			);
+			path = iso8601parser;
+			sourceTree = "<group>";
+		};
+		9ADA478416638642002084FF /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA478516638642002084FF /* CHANGELOG.md */,
+				9ADA478616638642002084FF /* JSONKit.h */,
+				9ADA478716638642002084FF /* JSONKit.m */,
+				9ADA478816638642002084FF /* README.md */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		9ADA478916638642002084FF /* LibComponentLogging */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA478A16638642002084FF /* Core */,
+				9ADA479116638642002084FF /* NSLog */,
+			);
+			path = LibComponentLogging;
+			sourceTree = "<group>";
+		};
+		9ADA478A16638642002084FF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA478B16638642002084FF /* lcl.h */,
+				9ADA478C16638642002084FF /* lcl.m */,
+				9ADA478D16638642002084FF /* lcl_config_components.template.h */,
+				9ADA478E16638642002084FF /* lcl_config_extensions.template.h */,
+				9ADA478F16638642002084FF /* lcl_config_logger.template.h */,
+				9ADA479016638642002084FF /* README.md */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9ADA479116638642002084FF /* NSLog */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA479216638642002084FF /* lcl_config_logger.h */,
+				9ADA479316638642002084FF /* LCLNSLog.h */,
+				9ADA479416638642002084FF /* LCLNSLog.m */,
+				9ADA479516638642002084FF /* README.md */,
+			);
+			path = NSLog;
+			sourceTree = "<group>";
+		};
+		9ADA479716638642002084FF /* SOCKit */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA479816638642002084FF /* .gitignore */,
+				9ADA479916638642002084FF /* AUTHORS */,
+				9ADA479A16638642002084FF /* LICENSE */,
+				9ADA479B16638642002084FF /* NOTICE */,
+				9ADA479C16638642002084FF /* README.mdown */,
+				9ADA479D16638642002084FF /* SOCKit.h */,
+				9ADA479E16638642002084FF /* SOCKit.m */,
+				9ADA479F16638642002084FF /* SOCKit.xcodeproj */,
+				9ADA47A216638642002084FF /* tests */,
+			);
+			path = SOCKit;
+			sourceTree = "<group>";
+		};
+		9ADA47A016638642002084FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA47FB16638643002084FF /* libSOCKit.a */,
+				9ADA47FD16638643002084FF /* SOCKitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ADA47A216638642002084FF /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA47A316638642002084FF /* InfoPlist.strings */,
+				9ADA47A516638642002084FF /* SOCKitTests-Info.plist */,
+				9ADA47A616638642002084FF /* SOCKitTests.m */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		9ADA47A716638642002084FF /* XMLReader */ = {
+			isa = PBXGroup;
+			children = (
+				9ADA47A816638642002084FF /* LICENCE */,
+				9ADA47A916638642002084FF /* XMLReader.h */,
+				9ADA47AA16638642002084FF /* XMLReader.m */,
+			);
+			path = XMLReader;
+			sourceTree = "<group>";
+		};
 		9AED24A8165E6A5700350CF9 /* FishInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -930,7 +3085,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				843139D116635E9E0006311A /* PBXTargetDependency */,
 			);
 			name = "MinFangst-cal";
 			productName = MinFangst;
@@ -948,7 +3102,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				841BB3D41650EE11006B59C8 /* PBXTargetDependency */,
 			);
 			name = MinFangst;
 			productName = MinFangst;
@@ -996,8 +3149,36 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 84AC26871650EB25008B1F02 /* Products */;
-					ProjectRef = 84AC26861650EB25008B1F02 /* RestKit.xcodeproj */;
+					ProductGroup = 9ADA45D216638642002084FF /* Products */;
+					ProjectRef = 9ADA45D116638642002084FF /* RestKit CLI.xcodeproj */;
+				},
+				{
+					ProductGroup = 9ADA466F16638642002084FF /* Products */;
+					ProjectRef = 9ADA466E16638642002084FF /* RestKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 9ADA468416638642002084FF /* Products */;
+					ProjectRef = 9ADA468316638642002084FF /* RKApplicationTests.xcodeproj */;
+				},
+				{
+					ProductGroup = 9ADA461116638642002084FF /* Products */;
+					ProjectRef = 9ADA461016638642002084FF /* RKCatalog.xcodeproj */;
+				},
+				{
+					ProductGroup = 9ADA462216638642002084FF /* Products */;
+					ProjectRef = 9ADA462116638642002084FF /* RKMacOSX.xcodeproj */;
+				},
+				{
+					ProductGroup = 9ADA463916638642002084FF /* Products */;
+					ProjectRef = 9ADA463816638642002084FF /* RKTwitter.xcodeproj */;
+				},
+				{
+					ProductGroup = 9ADA465216638642002084FF /* Products */;
+					ProjectRef = 9ADA465116638642002084FF /* RKTwitterCoreData.xcodeproj */;
+				},
+				{
+					ProductGroup = 9ADA47A016638642002084FF /* Products */;
+					ProjectRef = 9ADA479F16638642002084FF /* SOCKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1010,39 +3191,109 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		84AC26921650EB26008B1F02 /* libRestKit.a */ = {
+		9ADA47D316638643002084FF /* rkkeypath */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = rkkeypath;
+			remoteRef = 9ADA47D216638643002084FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADA47DA16638643002084FF /* libRestKit.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRestKit.a;
-			remoteRef = 84AC26911650EB26008B1F02 /* PBXContainerItemProxy */;
+			remoteRef = 9ADA47D916638643002084FF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		84AC26941650EB26008B1F02 /* RestKitTests.octest */ = {
+		9ADA47DC16638643002084FF /* RestKitTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = RestKitTests.octest;
-			remoteRef = 84AC26931650EB26008B1F02 /* PBXContainerItemProxy */;
+			remoteRef = 9ADA47DB16638643002084FF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		84AC26961650EB26008B1F02 /* RestKit.framework */ = {
+		9ADA47DE16638643002084FF /* RestKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = RestKit.framework;
-			remoteRef = 84AC26951650EB26008B1F02 /* PBXContainerItemProxy */;
+			remoteRef = 9ADA47DD16638643002084FF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		84AC26981650EB26008B1F02 /* RestKitFrameworkTests.octest */ = {
+		9ADA47E016638643002084FF /* RestKitFrameworkTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = RestKitFrameworkTests.octest;
-			remoteRef = 84AC26971650EB26008B1F02 /* PBXContainerItemProxy */;
+			remoteRef = 9ADA47DF16638643002084FF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		84AC269A1650EB26008B1F02 /* RestKitResources.bundle */ = {
+		9ADA47E216638643002084FF /* RestKitResources.bundle */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = RestKitResources.bundle;
-			remoteRef = 84AC26991650EB26008B1F02 /* PBXContainerItemProxy */;
+			remoteRef = 9ADA47E116638643002084FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADA47E616638643002084FF /* RKApplicationTests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RKApplicationTests.app;
+			remoteRef = 9ADA47E516638643002084FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADA47E816638643002084FF /* Application Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Application Tests.octest";
+			remoteRef = 9ADA47E716638643002084FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADA47EB16638643002084FF /* RKCatalog.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RKCatalog.app;
+			remoteRef = 9ADA47EA16638643002084FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADA47EE16638643002084FF /* RKMacOSX.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RKMacOSX.app;
+			remoteRef = 9ADA47ED16638643002084FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADA47F116638643002084FF /* RKTwitter.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RKTwitter.app;
+			remoteRef = 9ADA47F016638643002084FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADA47F516638643002084FF /* RKTwitterCoreData.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RKTwitterCoreData.app;
+			remoteRef = 9ADA47F416638643002084FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADA47F716638643002084FF /* Generate Seed Database.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Generate Seed Database.app";
+			remoteRef = 9ADA47F616638643002084FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADA47FB16638643002084FF /* libSOCKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSOCKit.a;
+			remoteRef = 9ADA47FA16638643002084FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ADA47FD16638643002084FF /* SOCKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SOCKitTests.octest;
+			remoteRef = 9ADA47FC16638643002084FF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1244,16 +3495,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		841BB3D41650EE11006B59C8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RestKit;
-			targetProxy = 841BB3D31650EE11006B59C8 /* PBXContainerItemProxy */;
-		};
-		843139D116635E9E0006311A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RestKit;
-			targetProxy = 843139D216635E9E0006311A /* PBXContainerItemProxy */;
-		};
 		9A126D9E164D1BC20037538A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9A126D76164D1BC20037538A /* MinFangst */;
@@ -1274,6 +3515,94 @@
 			isa = PBXVariantGroup;
 			children = (
 				9A126DA3164D1BC20037538A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9ADA45D616638642002084FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ADA45D716638642002084FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9ADA45D816638642002084FF /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ADA45D916638642002084FF /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		9ADA45DA16638642002084FF /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ADA45DB16638642002084FF /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		9ADA461616638642002084FF /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ADA461716638642002084FF /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		9ADA461816638642002084FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ADA461916638642002084FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9ADA461A16638642002084FF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ADA461B16638642002084FF /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		9ADA465B16638642002084FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ADA465C16638642002084FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9ADA467616638642002084FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ADA467716638642002084FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9ADA468016638642002084FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ADA468116638642002084FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9ADA472716638642002084FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ADA472816638642002084FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9ADA47A316638642002084FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ADA47A416638642002084FF /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1521,6 +3850,49 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9ADA45F016638642002084FF /* RKCoreDataExample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9ADA45F116638642002084FF /* RKCoreDataExample.xcdatamodel */,
+			);
+			currentVersion = 9ADA45F116638642002084FF /* RKCoreDataExample.xcdatamodel */;
+			path = RKCoreDataExample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		9ADA460516638642002084FF /* RKRelationshipMappingExample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9ADA460616638642002084FF /* RKRelationshipMappingExample.xcdatamodel */,
+			);
+			currentVersion = 9ADA460616638642002084FF /* RKRelationshipMappingExample.xcdatamodel */;
+			path = RKRelationshipMappingExample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		9ADA466216638642002084FF /* RestKitCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9ADA466316638642002084FF /* RestKitCoreData.xcdatamodel */,
+			);
+			currentVersion = 9ADA466316638642002084FF /* RestKitCoreData.xcdatamodel */;
+			path = RestKitCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		9ADA467D16638642002084FF /* RKATTests.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9ADA467E16638642002084FF /* RKUITests.xcdatamodel */,
+			);
+			currentVersion = 9ADA467E16638642002084FF /* RKUITests.xcdatamodel */;
+			path = RKATTests.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9A126D6E164D1BC10037538A /* Project object */;
 }
