@@ -312,7 +312,7 @@
 		84313A2E16635FF90006311A /* calabash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
 		84313A3A16636AC70006311A /* login.feature */ = {isa = PBXFileReference; lastKnownFileType = text; path = login.feature; sourceTree = "<group>"; };
 		84313A3C16636AC70006311A /* calabash_steps.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = calabash_steps.rb; sourceTree = "<group>"; };
-		84313A3D16636AC70006311A /* my_first_steps.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = my_first_steps.rb; sourceTree = "<group>"; };
+		84313A3D16636AC70006311A /* my_steps.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = my_steps.rb; sourceTree = "<group>"; };
 		84313A3F16636AC70006311A /* env.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = env.rb; sourceTree = "<group>"; };
 		84313A4016636AC70006311A /* hooks.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = hooks.rb; sourceTree = "<group>"; };
 		84313A4116636AC70006311A /* launch.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = launch.rb; sourceTree = "<group>"; };
@@ -1250,7 +1250,7 @@
 			isa = PBXGroup;
 			children = (
 				84313A3C16636AC70006311A /* calabash_steps.rb */,
-				84313A3D16636AC70006311A /* my_first_steps.rb */,
+				84313A3D16636AC70006311A /* my_steps.rb */,
 			);
 			path = step_definitions;
 			sourceTree = "<group>";
