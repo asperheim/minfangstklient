@@ -20,7 +20,6 @@
 @property (strong, nonatomic) MFLocation* Location;
 @property (strong, nonatomic) NSDate* DateTime;
 @property (strong, nonatomic) NSMutableArray* Images;
-//@property (strong, nonatomic) MFBlogEntry* BlogEntry;
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *subtitle;
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;
