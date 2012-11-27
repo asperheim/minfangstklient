@@ -97,6 +97,7 @@
 		843F54D0165B71C60056EA1A /* MFSharedInstances.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54CF165B71C60056EA1A /* MFSharedInstances.m */; };
 		843F54D2165BA6FF0056EA1A /* backgroundFish.png in Resources */ = {isa = PBXBuildFile; fileRef = 843F54D1165BA6FF0056EA1A /* backgroundFish.png */; };
 		843F54D5165BCB7F0056EA1A /* MFImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54D4165BCB7F0056EA1A /* MFImageCell.m */; };
+		844478411664D9200079CA2D /* view_fishevents_map.feature in Resources */ = {isa = PBXBuildFile; fileRef = 844478401664D9200079CA2D /* view_fishevents_map.feature */; };
 		8455DDC2165CCA88008E5F74 /* blogIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDB9165CCA88008E5F74 /* blogIcon.png */; };
 		8455DDC3165CCA88008E5F74 /* blogIconLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDBA165CCA88008E5F74 /* blogIconLarge.png */; };
 		8455DDC4165CCA88008E5F74 /* fishFactsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDBB165CCA88008E5F74 /* fishFactsIcon.png */; };
@@ -312,7 +313,7 @@
 		84313A2E16635FF90006311A /* calabash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
 		84313A3A16636AC70006311A /* login.feature */ = {isa = PBXFileReference; lastKnownFileType = text; path = login.feature; sourceTree = "<group>"; };
 		84313A3C16636AC70006311A /* calabash_steps.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = calabash_steps.rb; sourceTree = "<group>"; };
-		84313A3D16636AC70006311A /* my_steps.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = my_steps.rb; sourceTree = "<group>"; };
+		84313A3D16636AC70006311A /* login_steps.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = login_steps.rb; sourceTree = "<group>"; };
 		84313A3F16636AC70006311A /* env.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = env.rb; sourceTree = "<group>"; };
 		84313A4016636AC70006311A /* hooks.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = hooks.rb; sourceTree = "<group>"; };
 		84313A4116636AC70006311A /* launch.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = launch.rb; sourceTree = "<group>"; };
@@ -322,6 +323,8 @@
 		843F54D1165BA6FF0056EA1A /* backgroundFish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundFish.png; sourceTree = "<group>"; };
 		843F54D3165BCB7F0056EA1A /* MFImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFImageCell.h; sourceTree = "<group>"; };
 		843F54D4165BCB7F0056EA1A /* MFImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFImageCell.m; sourceTree = "<group>"; };
+		8444783F1664CF730079CA2D /* map_steps.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = map_steps.rb; sourceTree = "<group>"; };
+		844478401664D9200079CA2D /* view_fishevents_map.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = view_fishevents_map.feature; sourceTree = "<group>"; };
 		8455DDB9165CCA88008E5F74 /* blogIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blogIcon.png; sourceTree = "<group>"; };
 		8455DDBA165CCA88008E5F74 /* blogIconLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blogIconLarge.png; sourceTree = "<group>"; };
 		8455DDBB165CCA88008E5F74 /* fishFactsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fishFactsIcon.png; sourceTree = "<group>"; };
@@ -1240,6 +1243,7 @@
 		84313A3916636AC70006311A /* features */ = {
 			isa = PBXGroup;
 			children = (
+				844478401664D9200079CA2D /* view_fishevents_map.feature */,
 				84313A3A16636AC70006311A /* login.feature */,
 				84313A3B16636AC70006311A /* step_definitions */,
 				84313A3E16636AC70006311A /* support */,
@@ -1252,7 +1256,8 @@
 			isa = PBXGroup;
 			children = (
 				84313A3C16636AC70006311A /* calabash_steps.rb */,
-				84313A3D16636AC70006311A /* my_steps.rb */,
+				84313A3D16636AC70006311A /* login_steps.rb */,
+				8444783F1664CF730079CA2D /* map_steps.rb */,
 			);
 			path = step_definitions;
 			sourceTree = "<group>";
@@ -3392,6 +3397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A126DA4164D1BC20037538A /* InfoPlist.strings in Resources */,
+				844478411664D9200079CA2D /* view_fishevents_map.feature in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
