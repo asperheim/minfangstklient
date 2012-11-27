@@ -18,6 +18,7 @@
 @interface MFLoginViewController ()
 - (void)launchDashboard;
 - (void)showCustomLoginMessage:(NSString*) errorContent;
+- (void)resetLogin:(NSString*)message;
 @end
 
 @implementation MFLoginViewController
@@ -47,8 +48,13 @@
 }
 
 - (IBAction)btnLoggInnClick:(id)sender {
+    
     [self.loginActivityMonitor startAnimating];
     self.btnLoggInn.enabled = NO;
+    
+    //Temporary solution to check if the button is disabled in a calabash test
+    self.btnLoggInn.accessibilityLabel = @"Logg inn disabled";
+    
     NSString * pass = [MFUtils md5HexDigest:self.txtPassord.text];
     //NSLog(@"Brukernavn: %@,Password: %@, hash: %@", self.txtBrukernavn.text, self.txtPassord.text, pass);
     
@@ -111,17 +117,21 @@
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error {
     NSLog(@"Encountered an error: %@", error);
-    [self.loginActivityMonitor stopAnimating];
-    self.btnLoggInn.enabled = YES;
-    [self showCustomLoginMessage:@"Got an error from the server."];
+    
+    [self resetLogin:@"Got an error from the server."];
 }
 
 - (void)objectLoaderDidLoadUnexpectedResponse:(RKObjectLoader *)objectLoader {
     NSLog(@"objectLoaderDidLoadUnexpectedResponse!");
+    
+    [self resetLogin:@"Got a malformed response from the server."];
+}
+
+- (void)resetLogin:(NSString *)message {
     [self.loginActivityMonitor stopAnimating];
     self.btnLoggInn.enabled = YES;
-    [self showCustomLoginMessage:@"Got a malformed response from the server."];
-    
+    self.btnLoggInn.accessibilityLabel = @"Logg inn";
+    [self showCustomLoginMessage:message];
 }
 
 -(void)showCustomLoginMessage:(NSString *)errorContent {
@@ -139,5 +149,9 @@
     
     self.navigationController.navigationBar.hidden = NO;
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)textFieldReturn:(id)sender {
+    [sender resignFirstResponder];
 }
 @end

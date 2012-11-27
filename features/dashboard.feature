@@ -7,14 +7,15 @@ Feature: Navigate from the dashboard view to other views accessible from the das
         Given I am on the Login Screen
         Then I log in
         And I am on the Dashboard Screen
+        
 
     Scenario: Navigate to Blog Entries
         When I touch the "Blog Entries" button
-        Then I wait to see a navigation bar titled "Blog Entries"
+        Then I wait to see a navigation bar titled "Blogginnlegg"
         
     Scenario: Navigate to Fish Recognition
         When I touch the "Fish Recognition" button
-        Then I wait to see a navigation bar titled "Fish Recognition"
+        Then I wait to see a navigation bar titled "Fiskegjenkjenning"
         
     Scenario: Navigate to Map
         When I touch the "Map" button
@@ -22,10 +23,10 @@ Feature: Navigate from the dashboard view to other views accessible from the das
         
     Scenario: Navigate to Fish Info
         When I touch the "Fish Info" button
-        Then I wait to see a navigation bar titled "Fish Info"
+        Then I wait to see a navigation bar titled "Fiskeinfo"
         
     Scenario: Navigate to Settings
         When I touch the "Settings" button
-        Then I wait to see a navigation bar titled "Settings"
+        Then I wait to see a navigation bar titled "Instillinger"
         	
         
