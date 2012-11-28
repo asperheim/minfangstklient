@@ -418,6 +418,8 @@
 		84B2BBC91653E56E00CC9F6F /* MFLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFLocation.m; sourceTree = "<group>"; };
 		84B2BBCB1653E60B00CC9F6F /* MFFishEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFFishEvent.h; sourceTree = "<group>"; };
 		84B2BBCC1653E60B00CC9F6F /* MFFishEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFFishEvent.m; sourceTree = "<group>"; };
+		84EA06D916662A8E00A68012 /* long_press_map_ios6_iphone.base64 */ = {isa = PBXFileReference; lastKnownFileType = text; path = long_press_map_ios6_iphone.base64; sourceTree = "<group>"; };
+		84F103A01665F3A2003CB1BF /* edit_fishevents_map.feature */ = {isa = PBXFileReference; lastKnownFileType = text; path = edit_fishevents_map.feature; sourceTree = "<group>"; };
 		9A126D77164D1BC20037538A /* MinFangst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinFangst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A126D7B164D1BC20037538A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9A126D7D164D1BC20037538A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -1243,11 +1245,13 @@
 		84313A3916636AC70006311A /* features */ = {
 			isa = PBXGroup;
 			children = (
+				84EA06D916662A8E00A68012 /* long_press_map_ios6_iphone.base64 */,
 				844478401664D9200079CA2D /* view_fishevents_map.feature */,
 				84313A3A16636AC70006311A /* login.feature */,
 				84313A3B16636AC70006311A /* step_definitions */,
 				84313A3E16636AC70006311A /* support */,
 				84313A4F16638A5C0006311A /* dashboard.feature */,
+				84F103A01665F3A2003CB1BF /* edit_fishevents_map.feature */,
 			);
 			path = features;
 			sourceTree = SOURCE_ROOT;

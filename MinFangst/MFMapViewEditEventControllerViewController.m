@@ -71,16 +71,25 @@
                                    initWithBarButtonSystemItem:UIBarButtonSystemItemDone
                                                                                 target:self
                                                                                 action:@selector(saveButtonClick:)];
+    saveButton.isAccessibilityElement = YES;
+    saveButton.accessibilityLabel = @"Done";
+    
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc]
                                    initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
                                    target:self
                                    action:@selector(cancelButtonClick:)];
+    cancelButton.isAccessibilityElement = YES;
+    cancelButton.accessibilityLabel = @"Cancel";
+    
     
     self.navigationItem.rightBarButtonItem = saveButton;
     self.navigationItem.leftBarButtonItem = cancelButton;
     [self.navigationItem setHidesBackButton:YES];
     
-    self.title = currentUserMadeAnnot.title;
+    if (isNew)
+        self.title = @"Ny hendelse";
+    else
+        self.title = currentUserMadeAnnot.title;
     
     self.txtName.text = currentUserMadeAnnot.title;
     self.txtCommentField.text = currentUserMadeAnnot.subtitle;
@@ -104,7 +113,7 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
     if (!isSaved) {
-        if (mapView && !isNew) {
+        if (mapView && isNew) {
             [self.mapView removeAnnotation:currentUserMadeAnnot];
         }
         
@@ -122,13 +131,17 @@
     currentUserMadeAnnot.title = self.txtName.text;
     currentUserMadeAnnot.subtitle = self.txtCommentField.text;
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Fisketur"
-                                                    message:@"Fisketuren er lagret"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hendelsen er lagret"
+                                                    message:[NSString stringWithFormat:@"%@ er lagret.",
+                                                             currentUserMadeAnnot.title]
                                                    delegate:self
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
+    alert.isAccessibilityElement = YES;
     
     [[RKObjectManager sharedManager] postObject:currentUserMadeAnnot delegate:self];
+    
+    isSaved = YES;
     
     [alert show];
 }

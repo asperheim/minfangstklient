@@ -26,7 +26,10 @@ end
 Then /^I should see the fish event's title and comment$/ do
     # Should only get one result from selectedAnnotations, so should be safe
     selected = query("view:'MKMapView'", :selectedAnnotations).first
+
+    # Gets the title 
     @title = /Title: (.*) -/.match(selected).captures.first.to_s
+
     element_exists(@title)
     sleep(STEP_PAUSE)
 end
@@ -35,4 +38,11 @@ Then /^I wait to see a navigation bar with the title of the selected fish event$
     wait_for(WAIT_TIMEOUT) do
         query('navigationItemView', :accessibilityLabel).include?(@title)
     end
+end
+
+When /^I long press on the map$/ do
+    x_offset = 100 #rand(100)
+    y_offset = 100 #rand(100)
+    
+    playback("long_press_map", :query => "view:'MKMapView'", :offset => {:x => x_offset, :y => y_offset})
 end
