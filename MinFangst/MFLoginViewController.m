@@ -38,7 +38,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self.loginActivityMonitor setHidesWhenStopped:YES];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,9 +50,6 @@
     
     [self.loginActivityMonitor startAnimating];
     self.btnLoggInn.enabled = NO;
-    
-    //Temporary solution to check if the button is disabled in a calabash test
-    self.btnLoggInn.accessibilityLabel = @"Logg inn disabled";
     
     NSString * pass = [MFUtils md5HexDigest:self.txtPassord.text];
     //NSLog(@"Brukernavn: %@,Password: %@, hash: %@", self.txtBrukernavn.text, self.txtPassord.text, pass);
@@ -130,7 +126,6 @@
 - (void)resetLogin:(NSString *)message {
     [self.loginActivityMonitor stopAnimating];
     self.btnLoggInn.enabled = YES;
-    self.btnLoggInn.accessibilityLabel = @"Logg inn";
     [self showCustomLoginMessage:message];
 }
 

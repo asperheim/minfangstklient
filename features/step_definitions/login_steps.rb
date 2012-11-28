@@ -1,7 +1,8 @@
 DASHBOARD_TITLE = 'Min Fangst'
 USERNAME_PLACEHOLDER = 'Brukernavn'
 PASSWORD_PLACEHOLDER = 'Passord'
-ACTIVITY_INDICATOR = 'gray activity indicator'
+ACTIVITY_INDICATOR_QUERY = 'ActivityIndicatorView isAnimating:1'
+#LOGIN_BUTTON_ENABLED_QUERY = 'button marked:#{label} isEnabled:1'
 
 USERS = {'Anders' => {:username => 'andersa', :password => 'pass2'},
          'Tore' => {:username => 'toreb', :password => 'pass1'} }
@@ -18,6 +19,7 @@ end
 
 Given /^I am on the Dashboard Screen$/ do
     view_with_mark_exists(DASHBOARD_TITLE)
+    @login_is_in_progress = false
     
     # Waits for 1.5 sec to make sure the dashboard is completely loaded
     # Should fixes random fails (probably due to animated navigation)
@@ -25,7 +27,7 @@ Given /^I am on the Dashboard Screen$/ do
 end
 
 Then /^I log in$/ do
-    step %Q[I log in as #{'Anders'}]
+    step %Q[I log in as "Anders"]
 end
                     
 Given /^I am logged in$/ do
@@ -36,17 +38,25 @@ Given /^I am logged in$/ do
     }
 end
 
+Given /^login is in progress$/ do
+    if !@login_is_in_progress
+       fail('login not in progress')
+    end
+end
+
 Then /^I should see an activity indicator$/ do
-  element_exists(ACTIVITY_INDICATOR)
-  sleep(STEP_PAUSE)
+    #activity_indicator_animating?
+    check_element_exists(ACTIVITY_INDICATOR_QUERY)
+    sleep(STEP_PAUSE)
 end
    
 Then /^I should not see an activity indicator$/ do
-  element_does_not_exist(ACTIVITY_INDICATOR)
-  sleep(STEP_PAUSE)
+    #!activity_indicator_animating?
+    check_element_does_not_exist(ACTIVITY_INDICATOR_QUERY)
+    sleep(STEP_PAUSE)
 end
 
-Then /^I log in as ([^\"]*)$/ do |user|
+Then /^I log in as "([^\"]*)"$/ do |user|
     username = 'username'
     password = 'password'
                     
@@ -58,4 +68,20 @@ Then /^I log in as ([^\"]*)$/ do |user|
     macro %Q[I enter "#{username}" into the "#{USERNAME_PLACEHOLDER}" input field]
     macro %Q[I enter "#{password}" into the "#{PASSWORD_PLACEHOLDER}" input field]
     macro 'I touch the "Logg inn" button'
+    
+    @login_is_in_progress = true
+end
+
+Then /^I should not be able to click "([^\"]*)"$/ do |label|
+    check_element_does_not_exist(button_enabled?(label))
+    sleep(STEP_PAUSE)
+end
+
+Then /^I should be able to click "([^\"]*)"$/ do |label|
+    check_element_exists(button_enabled?(label))
+    sleep(STEP_PAUSE)
+end
+
+def button_enabled?(label)
+    return "button marked:'#{label}' isEnabled:1"
 end
