@@ -16,3 +16,7 @@ profile
 *.moved-aside
 DerivedData
 .idea/
+
+# other
+screenshot_*.png
+.irb-history
