@@ -151,6 +151,9 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)sender viewForAnnotation:(id < MKAnnotation >)annotation
 {
+    if ([annotation isKindOfClass:[MKUserLocation class]])
+        return nil;
+    
     static NSString *reuseId = @"StandardPin";
     
     MKPinAnnotationView *aView = (MKPinAnnotationView *)[sender

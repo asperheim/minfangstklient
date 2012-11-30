@@ -2,7 +2,6 @@ DASHBOARD_TITLE = 'Min Fangst'
 USERNAME_PLACEHOLDER = 'Brukernavn'
 PASSWORD_PLACEHOLDER = 'Passord'
 ACTIVITY_INDICATOR_QUERY = 'ActivityIndicatorView isAnimating:1'
-#LOGIN_BUTTON_ENABLED_QUERY = 'button marked:#{label} isEnabled:1'
 
 USERS = {'Anders' => {:username => 'andersa', :password => 'pass2'},
          'Tore' => {:username => 'toreb', :password => 'pass1'} }

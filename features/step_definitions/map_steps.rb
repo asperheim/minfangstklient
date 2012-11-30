@@ -1,4 +1,7 @@
+CUCUMBER_ANNOTATION_OFFSET = {:x => 100, :y => 100}
+
 Given /^I am on the Map Screen$/ do
+    macro 'I wait for the "Map" button to appear'
     macro 'I touch the "Map" button'
     macro %Q[I wait to see a navigation bar titled "Fiskekart"]
     sleep(STEP_PAUSE)
@@ -16,10 +19,17 @@ Given /^I have selected an annotation$/ do
     }
 end
 
+Given /^I am on the Show Details Screen$/ do
+    touch(nil, {:offset => {:x => CUCUMBER_ANNOTATION_OFFSET[:x],
+                            :y => CUCUMBER_ANNOTATION_OFFSET[:y]}})
+    macro %Q[I should see the fish event's title and comment]
+    macro %Q[I wait to see a navigation bar with the title of the selected fish event]
+end
+
 When /^I touch the closest annotation$/ do
     # Will touch the first MKMapAnnotationView,
     # which, I assume, is the closest one in the displayed region of the map
-    touch("view:'MKAnnotationView'")
+    touch("view:'MKPinAnnotationView'")
     sleep(STEP_PAUSE)
 end
 
@@ -41,8 +51,24 @@ Then /^I wait to see a navigation bar with the title of the selected fish event$
 end
 
 When /^I long press on the map$/ do
-    x_offset = 100 #rand(100)
-    y_offset = 100 #rand(100)
+    playback("long_press_map", :query => "view:'MKMapView'",
+                                :offset => {:x => CUCUMBER_ANNOTATION_OFFSET[:x],
+                                            :y => CUCUMBER_ANNOTATION_OFFSET[:y]})
+    sleep(STEP_PAUSE)
+end
+
+Then /^I enter "([^\"]*)" into the "([^\"]*)" text view$/ do |text_to_type, field_name|
+    set_text("textView marked:'#{field_name}'", text_to_type)
+    sleep(STEP_PAUSE)
+end
+
+Given /^I (?:have created|create) a fish event titled "([^\"]*)"$/ do |title|
+    macro %Q[I long press on the map]
+    macro %Q[I wait to see a navigation bar titled "Ny hendelse"]
+    macro %Q[I enter "#{title}" into the "Title" input field]
+    macro %Q[I touch the "Done" button]
+    macro %Q[I should see "Hendelsen er lagret"]
+    macro %Q[I touch the "OK" button]
     
-    playback("long_press_map", :query => "view:'MKMapView'", :offset => {:x => x_offset, :y => y_offset})
+    sleep(STEP_PAUSE)
 end
