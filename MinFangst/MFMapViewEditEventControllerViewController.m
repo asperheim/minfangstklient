@@ -143,7 +143,11 @@
                                           otherButtonTitles:nil];
     alert.isAccessibilityElement = YES;
     
-    [[RKObjectManager sharedManager] postObject:currentUserMadeAnnot delegate:self];
+    if (isNew) {
+        [[RKObjectManager sharedManager] postObject:currentUserMadeAnnot delegate:self];
+    } else {
+        [[RKObjectManager sharedManager] putObject:currentUserMadeAnnot delegate:self];
+    }
     
     isSaved = YES;
     
