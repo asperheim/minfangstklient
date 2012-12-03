@@ -1,40 +1,58 @@
 require 'net/http'
+require 'json'
+require 'uri'
 
-CUCUMBER_ANNOTATION_TITLE = 'Cucumbers can create events too!';
+CUCUMBER_ANNOTATION_TITLE = 'Cucumbers can create events too!'
+HTTP_CLIENT = Net::HTTP.new('fishback.azurewebsites.net')
 
-# Cleanup after the Adding a new fish event scenario
-After('@add_new_fish_event, @edit_fish_event') do
-    remove_annotation_from_map(CUCUMBER_ANNOTATION_TITLE)
+Before('@edit_fish_event') do
+    create_fishevent
 end
 
-# Doesnt work as it should, it rarely gets executed, due to failure
-# when querying the map (first line), which makes me believe that the simulator
-# sometimes shuts down too quickly
-def remove_annotation_from_map(annotation_title)
-    annotations = query("view:'MKMapView'", :annotations).first.split(/,\n/)
+# Cleanup after the Adding a new fish event to the map
+After('@add_new_fish_event, @edit_fish_event') do
+    delete_cucumber_annotation(CUCUMBER_ANNOTATION_TITLE)
+end
+
+def delete_cucumber_annotation(annotation_title)
+    request = Net::HTTP::Get.new("/api/fishevent?title=#{URI.escape(CUCUMBER_ANNOTATION_TITLE)}")
+    response = HTTP_CLIENT.request(request)
     
-    # Gets rid of the last element, which is the user location
-    annotations.delete_at(annotations.length-1)
+    # Parse the response to a hash
+    hash = JSON.parse(response.body)
+       
+    hash['FishEvents'].each do |event|
+        send_delete_request(event['Id'])
+    end	
     
-    # Alters the annotations array to only contain elements that has a
-    # title which equals the title of the cucumber annotation
-    annotations.select! { |item| /Title: (.*) -/.match(item).captures.first.to_s.eql?(annotation_title) }
-    
-    # Returns if there wasnt a cucumber annotation
-    annotation = annotations.first
-    return if annotation == nil
-    
-    # Gets the Id
-    event_id = /Id: (\d+)/.match(annotation).captures.first.to_s
-    
-    send_delete_request(event_id)
 end
 
 def send_delete_request(id)
-    http = Net::HTTP.new("fishback.azurewebsites.net")
-    
     request = Net::HTTP::Delete.new("/api/fishevent/#{id}")
     
-    response = http.request(request)
+    response = HTTP_CLIENT.request(request)
     puts(response)
+end
+
+def create_fishevent
+    fish_event = {
+        :User => nil,
+        :Location => {
+            :Latitude => 59.88001,
+            :Longitude => 10.81,
+            :MAMSL => 25
+        },
+        :DateTime => Time.now,
+        :Images => nil,
+        :Title => CUCUMBER_ANNOTATION_TITLE,
+        :Comment => "Cucumbers can comment"
+    }
+    
+    # Sends post request
+    request = Net::HTTP::Post.new('/api/fishevent/', initheader = {'Content-Type' => 'application/json'})
+    request.body = fish_event.to_json
+    
+    response = HTTP_CLIENT.request(request)
+    puts(response)
+    
 end

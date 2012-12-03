@@ -20,9 +20,11 @@ Given /^I have selected an annotation$/ do
 end
 
 Given /^I am on the Show Details Screen$/ do
-    touch(nil, {:offset => {:x => CUCUMBER_ANNOTATION_OFFSET[:x],
-                            :y => CUCUMBER_ANNOTATION_OFFSET[:y]}})
+    # Calls the long press step to be able to click on the exact same spot as
+    # where the annotations is created. Could have been normal touch event.
+    macro %Q[I long press on the map]
     macro %Q[I should see the fish event's title and comment]
+    macro %Q[I touch the "disclose details" button]
     macro %Q[I wait to see a navigation bar with the title of the selected fish event]
 end
 
@@ -62,13 +64,17 @@ Then /^I enter "([^\"]*)" into the "([^\"]*)" text view$/ do |text_to_type, fiel
     sleep(STEP_PAUSE)
 end
 
-Given /^I (?:have created|create) a fish event titled "([^\"]*)"$/ do |title|
-    macro %Q[I long press on the map]
-    macro %Q[I wait to see a navigation bar titled "Ny hendelse"]
-    macro %Q[I enter "#{title}" into the "Title" input field]
-    macro %Q[I touch the "Done" button]
-    macro %Q[I should see "Hendelsen er lagret"]
-    macro %Q[I touch the "OK" button]
+Given /^I have created a fish event titled "([^\"]*)"$/ do |title|
+    annotations = query("view:'MKMapView'", :annotations).first.split(/,\n/)
+    
+    # Gets rid of the last element, which is the user location
+    annotations.delete_at(annotations.length-1)
+    
+    # Alters the annotations array to only contain elements that has a
+    # title which equals the title of the cucumber annotation
+    annotations.select! { |annotation| /Title: (.*) -/.match(annotation).captures.first.to_s.eql?(title) }
+    
+    fail('There were no cucumber annotations on the map') if annotations.first == nil
     
     sleep(STEP_PAUSE)
 end

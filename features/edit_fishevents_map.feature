@@ -23,12 +23,14 @@ Feature: Add, edit or remove fish events from the map
   Scenario: Edit a fish event
     Given I have created a fish event titled "Cucumbers can create events too!"
     And I am on the Show Details Screen
-    Then I touch the "Edit" button
     
-    When I should see "Endre 'Cucumbers can create events too!'"
-    Then I enter "Litt norsk her, litt engelsk der." into the "Comments" text view
+    When I touch the "Edit" button
+    Then I wait to see a navigation bar titled "Endre 'Cucumbers can create events too!'"
+    And I enter "Litt norsk her, litt engelsk der." into the "Comments" text view
 
     When I touch the "Done" button
+    Then I should see "Hendelsen er lagret"
+    And I touch the "OK" button
     Then I see the text "Litt norsk her, litt engelsk der."
     
     
