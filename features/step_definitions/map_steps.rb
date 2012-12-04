@@ -65,6 +65,10 @@ Then /^I enter "([^\"]*)" into the "([^\"]*)" text view$/ do |text_to_type, fiel
 end
 
 Given /^I have created a fish event titled "([^\"]*)"$/ do |title|
+    # Gets the annotations
+    # Uses .first because the query returns an array with one element
+    # (due to only one map view on the screen), which returns a string where each
+    # element is seperated by ',/n', so we split on that to get the elements
     annotations = query("view:'MKMapView'", :annotations).first.split(/,\n/)
     
     # Gets rid of the last element, which is the user location

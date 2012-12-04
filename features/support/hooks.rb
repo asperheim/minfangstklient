@@ -15,7 +15,7 @@ After('@add_new_fish_event, @edit_fish_event') do
 end
 
 def delete_cucumber_annotation(annotation_title)
-    request = Net::HTTP::Get.new("/api/fishevent?title=#{URI.escape(CUCUMBER_ANNOTATION_TITLE)}")
+    request = Net::HTTP::Get.new("/api/fishevent?title=#{URI.escape(annotation_title)}")
     response = HTTP_CLIENT.request(request)
     
     # Parse the response to a hash
@@ -23,8 +23,7 @@ def delete_cucumber_annotation(annotation_title)
        
     hash['FishEvents'].each do |event|
         send_delete_request(event['Id'])
-    end	
-    
+    end
 end
 
 def send_delete_request(id)
@@ -36,7 +35,7 @@ end
 
 def create_fishevent
     fish_event = {
-        :User => nil,
+        :User => {:Id => 1},
         :Location => {
             :Latitude => 59.88001,
             :Longitude => 10.81,
