@@ -181,6 +181,8 @@
 		9A126DDC164D1E6F0037538A /* MFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A126DDA164D1E6F0037538A /* MFLoginViewController.xib */; };
 		9A126DDF164D20340037538A /* MFClientLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126DDE164D20340037538A /* MFClientLogin.m */; };
 		9A126DE2164D20950037538A /* MFClientInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126DE1164D20950037538A /* MFClientInfo.m */; };
+		9AA044811670C53900D02F01 /* MFMapShowFishEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA0447F1670C53900D02F01 /* MFMapShowFishEventViewController.m */; };
+		9AA044821670C53900D02F01 /* MFMapShowFishEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA044801670C53900D02F01 /* MFMapShowFishEventViewController.xib */; };
 		9ADA480316638651002084FF /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADA47DA16638643002084FF /* libRestKit.a */; };
 		9ADA480416638687002084FF /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADA47DA16638643002084FF /* libRestKit.a */; };
 		9AED2498165684B400350CF9 /* MFMapViewEditEventControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AED2496165684B400350CF9 /* MFMapViewEditEventControllerViewController.m */; };
@@ -468,6 +470,9 @@
 		9A126DDE164D20340037538A /* MFClientLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFClientLogin.m; sourceTree = "<group>"; };
 		9A126DE0164D20950037538A /* MFClientInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFClientInfo.h; sourceTree = "<group>"; };
 		9A126DE1164D20950037538A /* MFClientInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFClientInfo.m; sourceTree = "<group>"; };
+		9AA0447E1670C53900D02F01 /* MFMapShowFishEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMapShowFishEventViewController.h; sourceTree = "<group>"; };
+		9AA0447F1670C53900D02F01 /* MFMapShowFishEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMapShowFishEventViewController.m; sourceTree = "<group>"; };
+		9AA044801670C53900D02F01 /* MFMapShowFishEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFMapShowFishEventViewController.xib; sourceTree = "<group>"; };
 		9ADA44B416638641002084FF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		9ADA44B516638641002084FF /* .gitmodules */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
 		9ADA44B616638641002084FF /* .rvmrc */ = {isa = PBXFileReference; lastKnownFileType = text; path = .rvmrc; sourceTree = "<group>"; };
@@ -1506,6 +1511,9 @@
 				8455DDCD165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.xib */,
 				8455DDD0165CCFDE008E5F74 /* MFCollectionDelegate.h */,
 				8455DDD1165CCFDE008E5F74 /* MFCollectionDelegate.m */,
+				9AA0447E1670C53900D02F01 /* MFMapShowFishEventViewController.h */,
+				9AA0447F1670C53900D02F01 /* MFMapShowFishEventViewController.m */,
+				9AA044801670C53900D02F01 /* MFMapShowFishEventViewController.xib */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -3434,6 +3442,7 @@
 				9AED24AD165E6A7300350CF9 /* MFFishInfoViewController.xib in Resources */,
 				9AED24B1165E796900350CF9 /* backgroundImage.png in Resources */,
 				84AF738C166E094B009CAE02 /* MFFishCameraViewController.xib in Resources */,
+				9AA044821670C53900D02F01 /* MFMapShowFishEventViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3535,6 +3544,7 @@
 				840DE789165E4FF5000B0F47 /* MFBlogEntryCell.m in Sources */,
 				9AED24AC165E6A7300350CF9 /* MFFishInfoViewController.m in Sources */,
 				84AF7389166E094B009CAE02 /* MFFishCameraViewController.m in Sources */,
+				9AA044811670C53900D02F01 /* MFMapShowFishEventViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3731,7 +3741,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Anders Asperheim (5E738229C2)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -3749,6 +3759,7 @@
 				LIBRARY_SEARCH_PATHS = "\"$SRCROOT\"";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-all_load";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -3762,7 +3773,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anders Asperheim (5E738229C2)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -3771,8 +3782,10 @@
 				HEADER_SEARCH_PATHS = "\"$SRCROOT\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "\"$SRCROOT\"";
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-all_load";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A33AE3D9-300E-4B21-9C6D-84D64C7D4491";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -3781,10 +3794,13 @@
 		9A126DAB164D1BC20037538A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Anders Asperheim (5E738229C2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MinFangst/MinFangst-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "MinFangst/MinFangst-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ZBarSDK\"",
@@ -3795,6 +3811,8 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -3802,10 +3820,12 @@
 		9A126DAC164D1BC20037538A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anders Asperheim (5E738229C2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MinFangst/MinFangst-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "MinFangst/MinFangst-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ZBarSDK\"",
@@ -3816,6 +3836,8 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A33AE3D9-300E-4B21-9C6D-84D64C7D4491";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
