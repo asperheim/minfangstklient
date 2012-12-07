@@ -18,6 +18,7 @@
 @interface MFLoginViewController ()
 - (void)launchDashboard;
 - (void)showCustomLoginMessage:(NSString*) errorContent;
+- (void)resetLogin:(NSString*)message;
 @end
 
 @implementation MFLoginViewController
@@ -37,7 +38,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self.loginActivityMonitor setHidesWhenStopped:YES];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,8 +47,10 @@
 }
 
 - (IBAction)btnLoggInnClick:(id)sender {
+    
     [self.loginActivityMonitor startAnimating];
     self.btnLoggInn.enabled = NO;
+    
     NSString * pass = [MFUtils md5HexDigest:self.txtPassord.text];
     //NSLog(@"Brukernavn: %@,Password: %@, hash: %@", self.txtBrukernavn.text, self.txtPassord.text, pass);
     
@@ -111,22 +113,28 @@
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error {
     NSLog(@"Encountered an error: %@", error);
-    [self.loginActivityMonitor stopAnimating];
-    self.btnLoggInn.enabled = YES;
-    [self showCustomLoginMessage:@"Got an error from the server."];
+    
+    [self resetLogin:@"Got an error from the server."];
 }
 
 - (void)objectLoaderDidLoadUnexpectedResponse:(RKObjectLoader *)objectLoader {
     NSLog(@"objectLoaderDidLoadUnexpectedResponse!");
+    
+    [self resetLogin:@"Got a malformed response from the server."];
+}
+
+- (void)resetLogin:(NSString *)message {
     [self.loginActivityMonitor stopAnimating];
     self.btnLoggInn.enabled = YES;
-    [self showCustomLoginMessage:@"Got a malformed response from the server."];
-    
+    [self showCustomLoginMessage:message];
 }
 
 -(void)showCustomLoginMessage:(NSString *)errorContent {
     UIAlertView *messageAlert = [[UIAlertView alloc]
                                  initWithTitle:@"Login Error" message:errorContent delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    
+    messageAlert.isAccessibilityElement = YES;
+    messageAlert.accessibilityLabel = @"Login Error Message";
     
     // Display Alert Message
     [messageAlert show];
@@ -136,5 +144,9 @@
     
     self.navigationController.navigationBar.hidden = NO;
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)textFieldReturn:(id)sender {
+    [sender resignFirstResponder];
 }
 @end

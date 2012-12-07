@@ -160,6 +160,7 @@
         aView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation
                                                  reuseIdentifier:reuseId];
         aView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        aView.rightCalloutAccessoryView.accessibilityLabel = @"disclose details";
         aView.canShowCallout = YES;
     }
     

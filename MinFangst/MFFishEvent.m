@@ -17,7 +17,6 @@
 @synthesize Location;
 @synthesize DateTime;
 @synthesize Images;
-//@synthesize BlogEntry;
 @synthesize title;
 @synthesize subtitle;
 
@@ -38,6 +37,10 @@
     
 }
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"Id: %d - User.Id: %d - Location: %@ - DateTime: %@ - Images: %@ - Title: %@ - Subtitle: %@", self.Id, self.User.Id, self.Location, self.DateTime, self.Images, self.title, self.subtitle];
+}
+
 + (RKObjectMapping *)objectMapping {
     
     RKObjectMapping* fishEventMapping = [RKObjectMapping mappingForClass:[MFFishEvent class]];
@@ -46,7 +49,6 @@
     [fishEventMapping mapKeyPath:@"Location" toRelationship:@"Location" withMapping:[MFLocation objectMapping]];
     [fishEventMapping mapKeyPath:@"DateTime" toAttribute:@"DateTime"];
     [fishEventMapping mapKeyPath:@"Images" toRelationship:@"Images" withMapping:[MFImage objectMapping]];
-    //[fishEventMapping mapKeyPath:@"BlogEntry" toRelationship:@"BlogEntry" withMapping:[MFBlogEntry objectMapping]];
     [fishEventMapping mapKeyPath:@"Title" toAttribute:@"title"];
     [fishEventMapping mapKeyPath:@"Comment" toAttribute:@"subtitle"];
     

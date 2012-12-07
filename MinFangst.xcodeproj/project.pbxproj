@@ -97,6 +97,7 @@
 		843F54D0165B71C60056EA1A /* MFSharedInstances.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54CF165B71C60056EA1A /* MFSharedInstances.m */; };
 		843F54D2165BA6FF0056EA1A /* backgroundFish.png in Resources */ = {isa = PBXBuildFile; fileRef = 843F54D1165BA6FF0056EA1A /* backgroundFish.png */; };
 		843F54D5165BCB7F0056EA1A /* MFImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F54D4165BCB7F0056EA1A /* MFImageCell.m */; };
+		844478411664D9200079CA2D /* view_fishevents_map.feature in Resources */ = {isa = PBXBuildFile; fileRef = 844478401664D9200079CA2D /* view_fishevents_map.feature */; };
 		8455DDC2165CCA88008E5F74 /* blogIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDB9165CCA88008E5F74 /* blogIcon.png */; };
 		8455DDC3165CCA88008E5F74 /* blogIconLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDBA165CCA88008E5F74 /* blogIconLarge.png */; };
 		8455DDC4165CCA88008E5F74 /* fishFactsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8455DDBB165CCA88008E5F74 /* fishFactsIcon.png */; };
@@ -172,6 +173,8 @@
 		9A126DDC164D1E6F0037538A /* MFLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A126DDA164D1E6F0037538A /* MFLoginViewController.xib */; };
 		9A126DDF164D20340037538A /* MFClientLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126DDE164D20340037538A /* MFClientLogin.m */; };
 		9A126DE2164D20950037538A /* MFClientInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A126DE1164D20950037538A /* MFClientInfo.m */; };
+		9AA044811670C53900D02F01 /* MFMapShowFishEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA0447F1670C53900D02F01 /* MFMapShowFishEventViewController.m */; };
+		9AA044821670C53900D02F01 /* MFMapShowFishEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA044801670C53900D02F01 /* MFMapShowFishEventViewController.xib */; };
 		9ADA480316638651002084FF /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADA47DA16638643002084FF /* libRestKit.a */; };
 		9ADA480416638687002084FF /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADA47DA16638643002084FF /* libRestKit.a */; };
 		9AED2498165684B400350CF9 /* MFMapViewEditEventControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AED2496165684B400350CF9 /* MFMapViewEditEventControllerViewController.m */; };
@@ -312,15 +315,18 @@
 		84313A2E16635FF90006311A /* calabash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
 		84313A3A16636AC70006311A /* login.feature */ = {isa = PBXFileReference; lastKnownFileType = text; path = login.feature; sourceTree = "<group>"; };
 		84313A3C16636AC70006311A /* calabash_steps.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = calabash_steps.rb; sourceTree = "<group>"; };
-		84313A3D16636AC70006311A /* my_steps.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = my_steps.rb; sourceTree = "<group>"; };
+		84313A3D16636AC70006311A /* login_steps.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = login_steps.rb; sourceTree = "<group>"; };
 		84313A3F16636AC70006311A /* env.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = env.rb; sourceTree = "<group>"; };
 		84313A4016636AC70006311A /* hooks.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = hooks.rb; sourceTree = "<group>"; };
 		84313A4116636AC70006311A /* launch.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = launch.rb; sourceTree = "<group>"; };
+		84313A4F16638A5C0006311A /* dashboard.feature */ = {isa = PBXFileReference; lastKnownFileType = text; path = dashboard.feature; sourceTree = "<group>"; };
 		843F54CE165B71C60056EA1A /* MFSharedInstances.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSharedInstances.h; sourceTree = "<group>"; };
 		843F54CF165B71C60056EA1A /* MFSharedInstances.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSharedInstances.m; sourceTree = "<group>"; };
 		843F54D1165BA6FF0056EA1A /* backgroundFish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundFish.png; sourceTree = "<group>"; };
 		843F54D3165BCB7F0056EA1A /* MFImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFImageCell.h; sourceTree = "<group>"; };
 		843F54D4165BCB7F0056EA1A /* MFImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFImageCell.m; sourceTree = "<group>"; };
+		8444783F1664CF730079CA2D /* map_steps.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = map_steps.rb; sourceTree = "<group>"; };
+		844478401664D9200079CA2D /* view_fishevents_map.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = view_fishevents_map.feature; sourceTree = "<group>"; };
 		8455DDB9165CCA88008E5F74 /* blogIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blogIcon.png; sourceTree = "<group>"; };
 		8455DDBA165CCA88008E5F74 /* blogIconLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blogIconLarge.png; sourceTree = "<group>"; };
 		8455DDBB165CCA88008E5F74 /* fishFactsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fishFactsIcon.png; sourceTree = "<group>"; };
@@ -414,6 +420,8 @@
 		84B2BBC91653E56E00CC9F6F /* MFLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFLocation.m; sourceTree = "<group>"; };
 		84B2BBCB1653E60B00CC9F6F /* MFFishEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFFishEvent.h; sourceTree = "<group>"; };
 		84B2BBCC1653E60B00CC9F6F /* MFFishEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFFishEvent.m; sourceTree = "<group>"; };
+		84EA06D916662A8E00A68012 /* long_press_map_ios6_iphone.base64 */ = {isa = PBXFileReference; lastKnownFileType = text; path = long_press_map_ios6_iphone.base64; sourceTree = "<group>"; };
+		84F103A01665F3A2003CB1BF /* edit_fishevents_map.feature */ = {isa = PBXFileReference; lastKnownFileType = text; path = edit_fishevents_map.feature; sourceTree = "<group>"; };
 		9A126D77164D1BC20037538A /* MinFangst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinFangst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A126D7B164D1BC20037538A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9A126D7D164D1BC20037538A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -447,6 +455,9 @@
 		9A126DDE164D20340037538A /* MFClientLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFClientLogin.m; sourceTree = "<group>"; };
 		9A126DE0164D20950037538A /* MFClientInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFClientInfo.h; sourceTree = "<group>"; };
 		9A126DE1164D20950037538A /* MFClientInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFClientInfo.m; sourceTree = "<group>"; };
+		9AA0447E1670C53900D02F01 /* MFMapShowFishEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMapShowFishEventViewController.h; sourceTree = "<group>"; };
+		9AA0447F1670C53900D02F01 /* MFMapShowFishEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFMapShowFishEventViewController.m; sourceTree = "<group>"; };
+		9AA044801670C53900D02F01 /* MFMapShowFishEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFMapShowFishEventViewController.xib; sourceTree = "<group>"; };
 		9ADA44B416638641002084FF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		9ADA44B516638641002084FF /* .gitmodules */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
 		9ADA44B616638641002084FF /* .rvmrc */ = {isa = PBXFileReference; lastKnownFileType = text; path = .rvmrc; sourceTree = "<group>"; };
@@ -1239,9 +1250,13 @@
 		84313A3916636AC70006311A /* features */ = {
 			isa = PBXGroup;
 			children = (
+				84EA06D916662A8E00A68012 /* long_press_map_ios6_iphone.base64 */,
+				844478401664D9200079CA2D /* view_fishevents_map.feature */,
 				84313A3A16636AC70006311A /* login.feature */,
 				84313A3B16636AC70006311A /* step_definitions */,
 				84313A3E16636AC70006311A /* support */,
+				84313A4F16638A5C0006311A /* dashboard.feature */,
+				84F103A01665F3A2003CB1BF /* edit_fishevents_map.feature */,
 			);
 			path = features;
 			sourceTree = SOURCE_ROOT;
@@ -1250,7 +1265,8 @@
 			isa = PBXGroup;
 			children = (
 				84313A3C16636AC70006311A /* calabash_steps.rb */,
-				84313A3D16636AC70006311A /* my_steps.rb */,
+				84313A3D16636AC70006311A /* login_steps.rb */,
+				8444783F1664CF730079CA2D /* map_steps.rb */,
 			);
 			path = step_definitions;
 			sourceTree = "<group>";
@@ -1458,6 +1474,9 @@
 				8455DDCD165CCDE3008E5F74 /* MFMapViewShowDetailsViewController.xib */,
 				8455DDD0165CCFDE008E5F74 /* MFCollectionDelegate.h */,
 				8455DDD1165CCFDE008E5F74 /* MFCollectionDelegate.m */,
+				9AA0447E1670C53900D02F01 /* MFMapShowFishEventViewController.h */,
+				9AA0447F1670C53900D02F01 /* MFMapShowFishEventViewController.m */,
+				9AA044801670C53900D02F01 /* MFMapShowFishEventViewController.xib */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -3382,6 +3401,7 @@
 				9AED24A6165E68C800350CF9 /* BlogEntry_missingImage.png in Resources */,
 				9AED24AD165E6A7300350CF9 /* MFFishInfoViewController.xib in Resources */,
 				9AED24B1165E796900350CF9 /* backgroundImage.png in Resources */,
+				9AA044821670C53900D02F01 /* MFMapShowFishEventViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3390,6 +3410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A126DA4164D1BC20037538A /* InfoPlist.strings in Resources */,
+				844478411664D9200079CA2D /* view_fishevents_map.feature in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3479,6 +3500,7 @@
 				8455DDD2165CCFDE008E5F74 /* MFCollectionDelegate.m in Sources */,
 				840DE789165E4FF5000B0F47 /* MFBlogEntryCell.m in Sources */,
 				9AED24AC165E6A7300350CF9 /* MFFishInfoViewController.m in Sources */,
+				9AA044811670C53900D02F01 /* MFMapShowFishEventViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3673,7 +3695,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Anders Asperheim (5E738229C2)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -3688,6 +3710,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				"PROVISIONING_PROFILE[sdk=*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -3701,7 +3724,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -3717,10 +3740,13 @@
 		9A126DAB164D1BC20037538A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Anders Asperheim (5E738229C2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MinFangst/MinFangst-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "MinFangst/MinFangst-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ZBarSDK\"",
@@ -3730,6 +3756,8 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -3737,10 +3765,12 @@
 		9A126DAC164D1BC20037538A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MinFangst/MinFangst-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				INFOPLIST_FILE = "MinFangst/MinFangst-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ZBarSDK\"",
@@ -3750,6 +3780,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
