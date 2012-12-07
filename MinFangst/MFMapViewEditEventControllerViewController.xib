@@ -139,10 +139,9 @@
 								<object class="NSPSMatrix" key="NSFrameMatrix"/>
 								<string key="NSFrame">{{0, 191}, {280, 118}}</string>
 								<reference key="NSSuperview" ref="694577363"/>
-<<<<<<< HEAD
+
 								<reference key="NSWindow"/>
-=======
->>>>>>> 7b8eddc9904f6d5a11b8e640dae6f387a64abff6
+
 								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<object class="NSColor" key="IBUIBackgroundColor" id="268100">
@@ -10842,7 +10841,6 @@ AAEAAQABA</bytes>
 			<nil key="sourceID"/>
 			<int key="maxID">199</int>
 		</object>
-<<<<<<< HEAD
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
@@ -10925,9 +10923,8 @@ AAEAAQABA</bytes>
 				</object>
 			</array>
 		</object>
-=======
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
->>>>>>> 7b8eddc9904f6d5a11b8e640dae6f387a64abff6
+
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>

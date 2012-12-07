@@ -3760,6 +3760,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				"VALID_ARCHS[sdk=*]" = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -3784,6 +3785,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A33AE3D9-300E-4B21-9C6D-84D64C7D4491";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				"VALID_ARCHS[sdk=*]" = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
