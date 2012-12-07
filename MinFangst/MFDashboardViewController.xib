@@ -88,7 +88,7 @@
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<object class="IBUIAccessibilityConfiguration" key="IBUIAccessibilityConfiguration">
-							<string key="IBUIAccessibilityLabel">Fish Recognition</string>
+							<string key="IBUIAccessibilityLabel">Fish Camera</string>
 						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -516,11 +516,11 @@
 								<float key="scoringTypeFloat">29</float>
 								<int key="contentType">3</int>
 							</object>
-							<reference ref="8138519"/>
 							<reference ref="932013351"/>
 							<reference ref="807689522"/>
 							<reference ref="865456351"/>
 							<reference ref="50973735"/>
+							<reference ref="8138519"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -852,7 +852,6 @@
 						<string key="btnBlogClick:">id</string>
 						<string key="btnFishFaceClick:">id</string>
 						<string key="btnFishFactsClick:">id</string>
-						<string key="btnLogoutClick:">id</string>
 						<string key="btnMapClick:">id</string>
 						<string key="btnSettingsClick:">id</string>
 					</dictionary>
@@ -867,10 +866,6 @@
 						</object>
 						<object class="IBActionInfo" key="btnFishFactsClick:">
 							<string key="name">btnFishFactsClick:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="btnLogoutClick:">
-							<string key="name">btnLogoutClick:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="btnMapClick:">

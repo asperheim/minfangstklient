@@ -15,6 +15,5 @@
 - (IBAction)btnFishFaceClick:(id)sender;
 - (IBAction)btnFishFactsClick:(id)sender;
 - (IBAction)btnSettingsClick:(id)sender;
-- (IBAction)btnLogoutClick:(id)sender;
 
 @end

@@ -8,7 +8,7 @@
 
 #import "MFDashboardVCTests.h"
 #import "MFDashboardViewController.h"
-#import "OCMockObject.h"
+#import "OCMock/OCMockObject.h"
 
 @implementation MFDashboardVCTests {
     id dashboardVCMock;

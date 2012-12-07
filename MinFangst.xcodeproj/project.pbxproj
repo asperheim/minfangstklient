@@ -117,6 +117,14 @@
 		84A6434C165293370082F3AF /* MFDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6434A165293370082F3AF /* MFDashboardViewController.m */; };
 		84A6434D165293370082F3AF /* MFDashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A6434B165293370082F3AF /* MFDashboardViewController.xib */; };
 		84A643501652982B0082F3AF /* fishRecognition.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A6434F1652982B0082F3AF /* fishRecognition.png */; };
+		84AF7382166DFA72009CAE02 /* MFFishCameraVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF7381166DFA72009CAE02 /* MFFishCameraVCTests.m */; };
+		84AF7385166DFEC4009CAE02 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8473C628165FA579001CC575 /* libOCMock.a */; };
+		84AF7389166E094B009CAE02 /* MFFishCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF7387166E094B009CAE02 /* MFFishCameraViewController.m */; };
+		84AF738A166E094B009CAE02 /* MFFishCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF7387166E094B009CAE02 /* MFFishCameraViewController.m */; };
+		84AF738B166E094B009CAE02 /* MFFishCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AF7387166E094B009CAE02 /* MFFishCameraViewController.m */; };
+		84AF738C166E094B009CAE02 /* MFFishCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AF7388166E094B009CAE02 /* MFFishCameraViewController.xib */; };
+		84AF738D166E094B009CAE02 /* MFFishCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AF7388166E094B009CAE02 /* MFFishCameraViewController.xib */; };
+		84AF738E166E094B009CAE02 /* MFFishCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AF7388166E094B009CAE02 /* MFFishCameraViewController.xib */; };
 		84B2BB0516537F7200CC9F6F /* mapImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B2BB0416537F7200CC9F6F /* mapImage.png */; };
 		84B2BB57165397C300CC9F6F /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B2BB56165397C300CC9F6F /* settings.png */; };
 		84B2BB5A16539C1900CC9F6F /* blog.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B2BB5816539C1900CC9F6F /* blog.png */; };
@@ -355,6 +363,13 @@
 		84A6434A165293370082F3AF /* MFDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFDashboardViewController.m; sourceTree = "<group>"; };
 		84A6434B165293370082F3AF /* MFDashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFDashboardViewController.xib; sourceTree = "<group>"; };
 		84A6434F1652982B0082F3AF /* fishRecognition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fishRecognition.png; sourceTree = "<group>"; };
+		84AF737B166DF4F6009CAE02 /* camera.feature */ = {isa = PBXFileReference; lastKnownFileType = text; path = camera.feature; sourceTree = "<group>"; };
+		84AF737D166DF7FE009CAE02 /* camera_steps.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = camera_steps.rb; sourceTree = "<group>"; };
+		84AF7380166DFA72009CAE02 /* MFFishCameraVCTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFFishCameraVCTests.h; sourceTree = "<group>"; };
+		84AF7381166DFA72009CAE02 /* MFFishCameraVCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFFishCameraVCTests.m; sourceTree = "<group>"; };
+		84AF7386166E094B009CAE02 /* MFFishCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFFishCameraViewController.h; sourceTree = "<group>"; };
+		84AF7387166E094B009CAE02 /* MFFishCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFFishCameraViewController.m; sourceTree = "<group>"; };
+		84AF7388166E094B009CAE02 /* MFFishCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFFishCameraViewController.xib; sourceTree = "<group>"; };
 		84B2BB0416537F7200CC9F6F /* mapImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapImage.png; sourceTree = "<group>"; };
 		84B2BB56165397C300CC9F6F /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		84B2BB5816539C1900CC9F6F /* blog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blog.png; sourceTree = "<group>"; };
@@ -1145,6 +1160,7 @@
 				9A126D7E164D1BC20037538A /* Foundation.framework in Frameworks */,
 				9A126D80164D1BC20037538A /* CoreGraphics.framework in Frameworks */,
 				84B2BB8116539EDC00CC9F6F /* libzbar.a in Frameworks */,
+				84AF7385166DFEC4009CAE02 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1252,6 +1268,7 @@
 				84313A3E16636AC70006311A /* support */,
 				84313A4F16638A5C0006311A /* dashboard.feature */,
 				84F103A01665F3A2003CB1BF /* edit_fishevents_map.feature */,
+				84AF737B166DF4F6009CAE02 /* camera.feature */,
 			);
 			path = features;
 			sourceTree = SOURCE_ROOT;
@@ -1262,6 +1279,7 @@
 				84313A3C16636AC70006311A /* calabash_steps.rb */,
 				84313A3D16636AC70006311A /* login_steps.rb */,
 				8444783F1664CF730079CA2D /* map_steps.rb */,
+				84AF737D166DF7FE009CAE02 /* camera_steps.rb */,
 			);
 			path = step_definitions;
 			sourceTree = "<group>";
@@ -1361,6 +1379,25 @@
 				84B2BB5E16539CAF00CC9F6F /* MFFishRecognitionViewController.xib */,
 			);
 			name = FishRecognition;
+			sourceTree = "<group>";
+		};
+		84AF737E166DF9C9009CAE02 /* FishCamera */ = {
+			isa = PBXGroup;
+			children = (
+				84AF7386166E094B009CAE02 /* MFFishCameraViewController.h */,
+				84AF7387166E094B009CAE02 /* MFFishCameraViewController.m */,
+				84AF7388166E094B009CAE02 /* MFFishCameraViewController.xib */,
+			);
+			name = FishCamera;
+			sourceTree = "<group>";
+		};
+		84AF737F166DFA00009CAE02 /* FishCamera */ = {
+			isa = PBXGroup;
+			children = (
+				84AF7380166DFA72009CAE02 /* MFFishCameraVCTests.h */,
+				84AF7381166DFA72009CAE02 /* MFFishCameraVCTests.m */,
+			);
+			name = FishCamera;
 			sourceTree = "<group>";
 		};
 		84B2BB0616537F8100CC9F6F /* Images */ = {
@@ -1534,16 +1571,17 @@
 		9A126D81164D1BC20037538A /* MinFangst */ = {
 			isa = PBXGroup;
 			children = (
-				840DE798165E7232000B0F47 /* Dashboard */,
-				840DE797165E7204000B0F47 /* Login */,
-				9AED24A8165E6A5700350CF9 /* FishInfo */,
 				84B2BB981653C0E200CC9F6F /* Blog */,
-				84B2BB8E1653AB1200CC9F6F /* Map */,
+				840DE798165E7232000B0F47 /* Dashboard */,
+				84AF737E166DF9C9009CAE02 /* FishCamera */,
+				9AED24A8165E6A5700350CF9 /* FishInfo */,
 				84A6434E165296F00082F3AF /* FishRecognition */,
 				84A56D8B1652718B00B64D66 /* Helpers */,
-				84A56D891652713600B64D66 /* Models */,
+				840DE797165E7204000B0F47 /* Login */,
+				84B2BB8E1653AB1200CC9F6F /* Map */,
 				9A126D8A164D1BC20037538A /* MFAppDelegate.h */,
 				9A126D8B164D1BC20037538A /* MFAppDelegate.m */,
+				84A56D891652713600B64D66 /* Models */,
 				9A126D82164D1BC20037538A /* Supporting Files */,
 			);
 			path = MinFangst;
@@ -1569,16 +1607,17 @@
 			isa = PBXGroup;
 			children = (
 				84313A3916636AC70006311A /* features */,
-				840DE7A0165E72E7000B0F47 /* Models */,
-				840DE79F165E72DB000B0F47 /* Helpers */,
-				840DE79E165E72D1000B0F47 /* FishRecognition */,
-				840DE79D165E72CB000B0F47 /* Map */,
 				840DE79C165E72C6000B0F47 /* Blog */,
-				840DE79B165E72B9000B0F47 /* FishInfo */,
-				840DE79A165E72B2000B0F47 /* Login */,
 				840DE799165E72AD000B0F47 /* Dashboard */,
+				84AF737F166DFA00009CAE02 /* FishCamera */,
+				840DE79B165E72B9000B0F47 /* FishInfo */,
+				840DE79E165E72D1000B0F47 /* FishRecognition */,
+				840DE79F165E72DB000B0F47 /* Helpers */,
+				840DE79A165E72B2000B0F47 /* Login */,
+				840DE79D165E72CB000B0F47 /* Map */,
 				9A126DA5164D1BC20037538A /* MinFangstTests.h */,
 				9A126DA6164D1BC20037538A /* MinFangstTests.m */,
+				840DE7A0165E72E7000B0F47 /* Models */,
 				9A126DA0164D1BC20037538A /* Supporting Files */,
 			);
 			path = MinFangstTests;
@@ -3350,6 +3389,7 @@
 				84313A2516635E9E0006311A /* BlogEntry_missingImage.png in Resources */,
 				84313A2616635E9E0006311A /* MFFishInfoViewController.xib in Resources */,
 				84313A2716635E9E0006311A /* backgroundImage.png in Resources */,
+				84AF738E166E094B009CAE02 /* MFFishCameraViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3393,6 +3433,7 @@
 				9AED24A6165E68C800350CF9 /* BlogEntry_missingImage.png in Resources */,
 				9AED24AD165E6A7300350CF9 /* MFFishInfoViewController.xib in Resources */,
 				9AED24B1165E796900350CF9 /* backgroundImage.png in Resources */,
+				84AF738C166E094B009CAE02 /* MFFishCameraViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3402,6 +3443,7 @@
 			files = (
 				9A126DA4164D1BC20037538A /* InfoPlist.strings in Resources */,
 				844478411664D9200079CA2D /* view_fishevents_map.feature in Resources */,
+				84AF738D166E094B009CAE02 /* MFFishCameraViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3456,6 +3498,7 @@
 				843139ED16635E9E0006311A /* MFCollectionDelegate.m in Sources */,
 				843139EE16635E9E0006311A /* MFBlogEntryCell.m in Sources */,
 				843139EF16635E9E0006311A /* MFFishInfoViewController.m in Sources */,
+				84AF738B166E094B009CAE02 /* MFFishCameraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3491,6 +3534,7 @@
 				8455DDD2165CCFDE008E5F74 /* MFCollectionDelegate.m in Sources */,
 				840DE789165E4FF5000B0F47 /* MFBlogEntryCell.m in Sources */,
 				9AED24AC165E6A7300350CF9 /* MFFishInfoViewController.m in Sources */,
+				84AF7389166E094B009CAE02 /* MFFishCameraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3501,6 +3545,8 @@
 				9A126DA7164D1BC20037538A /* MinFangstTests.m in Sources */,
 				840A647F165F6136004D4DB9 /* MFUtilsTests.m in Sources */,
 				8473C623165F96B9001CC575 /* MFDashboardVCTests.m in Sources */,
+				84AF7382166DFA72009CAE02 /* MFFishCameraVCTests.m in Sources */,
+				84AF738A166E094B009CAE02 /* MFFishCameraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3698,8 +3744,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$SRCROOT\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "\"$SRCROOT\"";
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -3719,8 +3768,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$SRCROOT\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "\"$SRCROOT\"";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -3736,6 +3788,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ZBarSDK\"",
+					"\"$(SRCROOT)/OCMock\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -3756,6 +3809,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ZBarSDK\"",
+					"\"$(SRCROOT)/OCMock\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -3787,7 +3841,11 @@
 					"\"$(SRCROOT)/iOS\"",
 					"\"$(SRCROOT)/OCMock\"",
 				);
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"$SRCROOT/OCMock/libOCMock.a\"",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -3815,7 +3873,11 @@
 					"\"$(SRCROOT)/iOS\"",
 					"\"$(SRCROOT)/OCMock\"",
 				);
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"$SRCROOT/OCMock/libOCMock.a\"",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;

@@ -11,6 +11,7 @@
 #import "MFMapViewController.h"
 #import "MFBlogViewController.h"
 #import "MFFishInfoViewController.h"
+#import "MFFishCameraViewController.h"
 
 @interface MFDashboardViewController ()
 
@@ -52,9 +53,10 @@
 }
 
 - (IBAction)btnFishFaceClick:(id)sender {
-    MFFishRecognitionViewController* fishRecVC = [[MFFishRecognitionViewController alloc] initWithNibName:@"MFFishRecognitionViewController" bundle:nil];
+    //MFFishRecognitionViewController* fishRecVC = [[MFFishRecognitionViewController alloc] initWithNibName:@"MFFishRecognitionViewController" bundle:nil];
+    MFFishCameraViewController* fishCameraVC = [[MFFishCameraViewController alloc] initWithNibName:@"MFFishCameraViewController" bundle:nil];
     
-    [self.navigationController pushViewController:fishRecVC animated:YES];
+    [self.navigationController pushViewController:fishCameraVC animated:YES];
 }
 
 - (IBAction)btnFishFactsClick:(id)sender {
