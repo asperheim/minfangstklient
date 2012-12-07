@@ -39,7 +39,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction) scanButtonTapped
+- (IBAction) scanButtonTapped:(id)sender	
 {
     // ADD: present a barcode reader that scans from the camera feed
     ZBarReaderViewController *reader = [ZBarReaderViewController new];
@@ -90,4 +90,5 @@
     // ADD: dismiss the controller (NB dismiss from the *reader*!)
     [reader dismissViewControllerAnimated:YES completion:nil];
 }
+
 @end

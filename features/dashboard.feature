@@ -11,9 +11,9 @@ Feature: Navigate from the dashboard view to other views accessible from the das
     When I touch the "Blog Entries" button
     Then I wait to see a navigation bar titled "Blogginnlegg"
         
-  Scenario: Navigate to Fish Recognition
-    When I touch the "Fish Recognition" button
-    Then I wait to see a navigation bar titled "Fiskegjenkjenning"
+  Scenario: Navigate to Fish Camera
+    When I touch the "Fish Camera" button
+    Then I wait to see a navigation bar titled "Fiskekamera"
         
   Scenario: Navigate to Map
     When I touch the "Map" button
