@@ -15,7 +15,7 @@ Feature: Login
 
   Scenario: User login failure
     When I log in as "an invalid user"
-    Then I should see "Login Error"
+    Then I wait to see "Login Error"
         
   Scenario: User should see activity indicator while login is in progress
     When I log in
@@ -25,7 +25,7 @@ Feature: Login
   Scenario: User should not see the activity indicator if a login error occured
     When I log in as "an invalid user"
     Then I should not see an activity indicator
-    But I should see "Login Error"
+    But I wait to see "Login Error"
         
   Scenario: User should not be able to click login again while login is in progress
     When I log in as "Tore"

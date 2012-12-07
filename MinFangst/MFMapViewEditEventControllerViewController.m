@@ -66,6 +66,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    txtCommentField.isAccessibilityElement = YES;
+    txtCommentField.accessibilityLabel = @"Comments";
+    
     // Set up nav bar
     UIBarButtonItem *saveButton = [[UIBarButtonItem alloc]
                                    initWithBarButtonSystemItem:UIBarButtonSystemItemDone
@@ -89,7 +93,7 @@
     if (isNew)
         self.title = @"Ny hendelse";
     else
-        self.title = currentUserMadeAnnot.title;
+        self.title = [NSString stringWithFormat:@"Endre '%@'", currentUserMadeAnnot.title];
     
     self.txtName.text = currentUserMadeAnnot.title;
     self.txtCommentField.text = currentUserMadeAnnot.subtitle;
@@ -139,7 +143,11 @@
                                           otherButtonTitles:nil];
     alert.isAccessibilityElement = YES;
     
-    [[RKObjectManager sharedManager] postObject:currentUserMadeAnnot delegate:self];
+    if (isNew) {
+        [[RKObjectManager sharedManager] postObject:currentUserMadeAnnot delegate:self];
+    } else {
+        [[RKObjectManager sharedManager] putObject:currentUserMadeAnnot delegate:self];
+    }
     
     isSaved = YES;
     

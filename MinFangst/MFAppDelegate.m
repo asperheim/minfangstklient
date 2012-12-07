@@ -101,6 +101,7 @@
     
     // Route for posting fishevents
     [router routeClass:[MFFishEvent class] toResourcePath:@"/fishevent" forMethod:RKRequestMethodPOST];
+    [router routeClass:[MFFishEvent class] toResourcePath:@"/fishevent/:Id" forMethod:RKRequestMethodPUT];
     
     // Route for posting blogevents
     [router routeClass:[MFBlogEntry class] toResourcePath:@"/blogentry" forMethod:RKRequestMethodPOST];

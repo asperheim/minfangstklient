@@ -5,6 +5,7 @@ Feature: Navigate from the dashboard view to other views accessible from the das
     
   Background:
     Given I am logged in
+    And I am on the Dashboard Screen
 
   Scenario: Navigate to Blog Entries
     When I touch the "Blog Entries" button

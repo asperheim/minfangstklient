@@ -47,7 +47,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{20, 20}, {280, 30}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="405970072"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -56,6 +55,7 @@
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<string key="IBUIText"/>
 						<int key="IBUIBorderStyle">3</int>
+						<string key="IBUIPlaceholder">Title</string>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MAA</bytes>
@@ -83,7 +83,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{20, 58}, {92, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="430458749"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -108,7 +107,6 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{107, 58}, {193, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="694577363"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
@@ -141,7 +139,10 @@
 								<object class="NSPSMatrix" key="NSFrameMatrix"/>
 								<string key="NSFrame">{{0, 191}, {280, 118}}</string>
 								<reference key="NSSuperview" ref="694577363"/>
+<<<<<<< HEAD
 								<reference key="NSWindow"/>
+=======
+>>>>>>> 7b8eddc9904f6d5a11b8e640dae6f387a64abff6
 								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<object class="NSColor" key="IBUIBackgroundColor" id="268100">
@@ -170,7 +171,6 @@
 								<int key="NSvFlags">292</int>
 								<string key="NSFrameSize">{280, 183}</string>
 								<reference key="NSSuperview" ref="694577363"/>
-								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="122320525"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<object class="NSColor" key="IBUIBackgroundColor">
@@ -191,7 +191,6 @@
 						</array>
 						<string key="NSFrame">{{20, 87}, {280, 309}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="692568594"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -201,7 +200,6 @@
 				</array>
 				<string key="NSFrame">{{0, 64}, {320, 416}}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="45971736"/>
 				<reference key="IBUIBackgroundColor" ref="268100"/>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
@@ -10348,10 +10346,10 @@ AAEAAQABA</bytes>
 								<float key="scoringTypeFloat">29</float>
 								<int key="contentType">3</int>
 							</object>
-							<reference ref="45971736"/>
 							<reference ref="405970072"/>
 							<reference ref="430458749"/>
 							<reference ref="694577363"/>
+							<reference ref="45971736"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -10844,6 +10842,7 @@ AAEAAQABA</bytes>
 			<nil key="sourceID"/>
 			<int key="maxID">199</int>
 		</object>
+<<<<<<< HEAD
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
@@ -10926,6 +10925,9 @@ AAEAAQABA</bytes>
 				</object>
 			</array>
 		</object>
+=======
+		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+>>>>>>> 7b8eddc9904f6d5a11b8e640dae6f387a64abff6
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaTouchFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
