@@ -10,5 +10,6 @@
 
 @interface MFUtils : NSObject
 + (NSString *) md5HexDigest: (NSString * ) input;
-+(NSString*)getUUID;
++ (NSString *) getUUID;
++ (NSString *) base64StringFromData: (NSData *)data length: (int)length;
 @end

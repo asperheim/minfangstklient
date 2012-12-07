@@ -21,6 +21,10 @@
 @synthesize Title;
 @synthesize FileName;
 @synthesize OriginalFileName;
+@synthesize Size;
+@synthesize MIMEType;
+@synthesize FileNameSuffix;
+@synthesize ImageBytes;
 
 + (RKObjectMapping*)objectMapping {
     
@@ -34,6 +38,9 @@
     [imageMapping mapKeyPath:@"FileName" toAttribute:@"FileName"];
     [imageMapping mapKeyPath:@"OriginalFileName" toAttribute:@"OriginalFileName"];
     [imageMapping mapKeyPath:@"FileNameSuffix" toAttribute:@"FileNameSuffix"];
+    [imageMapping mapKeyPath:@"Size" toAttribute:@"Size"];
+    [imageMapping mapKeyPath:@"MIMEType" toAttribute:@"MIMEType"];
+    [imageMapping mapKeyPath:@"Bytes" toAttribute:@"ImageBytes"];
     
     imageMapping.setDefaultValueForMissingAttributes = YES;
     imageMapping.setNilForMissingRelationships = YES;

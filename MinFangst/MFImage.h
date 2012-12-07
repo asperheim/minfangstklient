@@ -20,6 +20,11 @@
 @property (strong, nonatomic) NSString* FileName;
 @property (strong, nonatomic) NSString* OriginalFileName;
 @property (strong, nonatomic) NSString* FileNameSuffix;
+@property (nonatomic) long              Size;
+@property (strong, nonatomic) NSString* MIMEType;
+@property (strong, nonatomic) NSString*   ImageBytes;
+
+
 
 + (RKObjectMapping*)objectMapping;
 

@@ -107,7 +107,7 @@
     [router routeClass:[MFBlogEntry class] toResourcePath:@"/blogentry" forMethod:RKRequestMethodPOST];
     
     //Route for posting image
-    [router routeClass:[UIImage class] toResourcePath:@"/image" forMethod:RKRequestMethodPOST];
+    [router routeClass:[MFImage class] toResourcePath:@"/images" forMethod:RKRequestMethodPOST];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

@@ -8,6 +8,8 @@
 
 #import "MFFishCameraViewController.h"
 #import <RestKit/RestKit.h>
+#import "MFImage.h"
+#import "MFUtils.h"
 
 @interface MFFishCameraViewController ()
 
@@ -67,13 +69,38 @@
     
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     
+    MFImage* postImage =  [[MFImage alloc] init];
+    
+    NSData* jpgImage = UIImageJPEGRepresentation(image, 1.0);
+    NSString* imageData = [[NSString alloc] initWithBytes:[jpgImage bytes] length:jpgImage.length encoding: NSUTF8StringEncoding];
+    //NSString* imageData = [MFUtils base64StringFromData:jpgImage length:jpgImage.length] ;
+    
+    postImage.Title = @"Nytt bilde";
+    postImage.Comment = @"Dette er et fint kommentarfelt";
+    //postImage.OriginalFileName = @"DCIM0000001.jpg";
+    postImage.FileNameSuffix = @"jpg";
+    //postImage.FileName = @"newFile";
+    postImage.ImageBytes = imageData;
+    postImage.Size = imageData.length;
+    postImage.MIMEType = @"image/jpg";
+    
+    
+    NSLog(@"\n\n Size: %d \n\n", imageData.length);
+    
+    NSLog(@"\n\n Bilde: %@ \n\n", imageData);
+    
+    
+    
     [self.lblInfo setHidden:YES];
     [self.imgCamera setImage:image];
     
-    //TEMPORARY POST, it's not supposed to be here, jsut for testing purposes
-    [[RKObjectManager sharedManager] postObject:image delegate:self];
     
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+    [[RKObjectManager sharedManager] postObject:postImage usingBlock:^(RKObjectLoader *loader){
+        loader.delegate = self;
+        loader.targetObject = nil;
+    }];
 }
 
 //RKRequestDelegate method
@@ -110,6 +137,8 @@
 - (void)objectLoaderDidLoadUnexpectedResponse:(RKObjectLoader *)objectLoader {
     NSLog(@"objectLoaderDidLoadUnexpectedResponse!");
 }
+
+
 
 
 @end
