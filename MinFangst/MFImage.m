@@ -26,6 +26,8 @@
 @synthesize FileNameSuffix;
 @synthesize ImageBytes;
 
+@synthesize FishEventId;
+
 + (RKObjectMapping*)objectMapping {
     
     RKObjectMapping* imageMapping = [RKObjectMapping mappingForClass:[MFImage class]];

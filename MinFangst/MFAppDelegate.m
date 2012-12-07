@@ -47,13 +47,12 @@
     RKObjectMapping* clientInfoMapping = [MFClientInfo objectMapping];
     [manager.mappingProvider setMapping:clientInfoMapping forKeyPath:@"ClientInfo"];
     [manager.mappingProvider setSerializationMapping:clientInfoMapping.inverseMapping forClass:[MFClientInfo class]];
-
+    
     //creates mapping for ClientLogin
     RKObjectMapping* clientLoginMapping = [MFClientLogin objectMapping];
     [manager.mappingProvider setMapping:clientLoginMapping forKeyPath:@"ClientLogin"];
     [manager.mappingProvider setSerializationMapping:clientLoginMapping.inverseMapping forClass:[MFClientLogin class]];
-  
-
+    
     //creates mapping for Session
     RKObjectMapping* sessionMapping = [MFSession objectMapping];
     [manager.mappingProvider setMapping:sessionMapping forKeyPath:@"Session"];
@@ -107,7 +106,7 @@
     [router routeClass:[MFBlogEntry class] toResourcePath:@"/blogentry" forMethod:RKRequestMethodPOST];
     
     //Route for posting image
-    [router routeClass:[MFImage class] toResourcePath:@"/images" forMethod:RKRequestMethodPOST];
+    [router routeClass:[MFImage class] toResourcePath:@"/fishevent/:FishEventId/images" forMethod:RKRequestMethodPOST];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

@@ -72,7 +72,8 @@
     MFImage* postImage =  [[MFImage alloc] init];
     
     NSData* jpgImage = UIImageJPEGRepresentation(image, 1.0);
-    NSString* imageData = [[NSString alloc] initWithBytes:[jpgImage bytes] length:jpgImage.length encoding: NSUTF8StringEncoding];
+    //NSString* imageData = [[NSString alloc] initWithBytes:[jpgImage bytes] length:jpgImage.length encoding: NSUTF8StringEncoding];
+    NSString* imageData = [jpgImage description];
     //NSString* imageData = [MFUtils base64StringFromData:jpgImage length:jpgImage.length] ;
     
     postImage.Title = @"Nytt bilde";
@@ -83,13 +84,9 @@
     postImage.ImageBytes = imageData;
     postImage.Size = imageData.length;
     postImage.MIMEType = @"image/jpg";
-    
+    postImage.FishEventId = 1;
     
     NSLog(@"\n\n Size: %d \n\n", imageData.length);
-    
-    NSLog(@"\n\n Bilde: %@ \n\n", imageData);
-    
-    
     
     [self.lblInfo setHidden:YES];
     [self.imgCamera setImage:image];

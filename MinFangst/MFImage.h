@@ -24,7 +24,7 @@
 @property (strong, nonatomic) NSString* MIMEType;
 @property (strong, nonatomic) NSString*   ImageBytes;
 
-
+@property (nonatomic) int FishEventId;
 
 + (RKObjectMapping*)objectMapping;
 
